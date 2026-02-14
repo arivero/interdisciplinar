@@ -9,6 +9,9 @@
       "Bash(git rm:*)",
       "Bash(git restore:*)",
       "Bash(git push:*)",
+      "Bash(git pull:*)",
+      "Bash(git fetch:*)",
+      "Bash(git merge:*)",
       "Bash(git checkout:*)",
       "Bash(git show:*)",
       "Bash(git branch:*)",
@@ -48,7 +51,8 @@
       "Bash(scripts/log-entry.sh:*)",
       "WebFetch(domain:arxiv.org)",
       "WebFetch(domain:sci-hub.kvnp.top)",
-      "Bash(git init:*)"
+      "Bash(git init:*)",
+      "Bash(test:*)"
     ],
     "deny": [
       "WebSearch",
