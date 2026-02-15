@@ -1155,7 +1155,7 @@ $$\nabla_{\mathrm{Uzzi}}(p_{i,j},\, x) = \frac{p_{i,j}(x) - e_{i,j}(x)}
 donde $e_{i,j}(x)$ y $\sigma[e_{i,j}(x)]$ son ​​la media y el estándar
 desviación de la frecuencia del par en redes de citas permutadas que
 preservar los recuentos de referencia. El método produce una *distribución* de
-puntuaciones de atipicidad dentro de $x$, de las cuales Uzzi et al. derivar dos
+puntuaciones de atipicidad dentro de $x$, de las cuales Uzzi et al. derivan dos
 Estadísticas resumidas no paramétricas que capturan la conformidad y la novedad.
 
 Las afirmaciones empíricas que surgieron de este marco fueron altamente
