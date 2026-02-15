@@ -111,7 +111,7 @@ of funding capacity.
 The combination of bibliometric and institutional indicators discriminates
 integration from polymathy:
 
-| Profile | Δ | S | CoAuth | CoSup | Interpretation |
+| Profile | $\Delta$ | S | CoAuth | CoSup | Interpretation |
 |---------|-------|-------|--------|-------|----------------|
 | Integrator | High | Moderate-high | High | High | Cross-disciplinary in publications AND processes |
 | Polymath | High | Low | Low | Low | Broad references but no collaborative integration |
@@ -222,7 +222,7 @@ cannot.
 
 Present indicators at three levels:
 
-1. **Individual**: Provide each researcher with their profile (Δ, S, E,
+1. **Individual**: Provide each researcher with their profile ($\Delta$, S, E,
    CoAuth, CoSup, Grants). This supports self-assessment and career
    planning.
 2. **Departmental**: Report distributions and medians across the department.
@@ -238,10 +238,10 @@ gaming (Rafols, 2019).
 ## Workaround When Citation Data Unavailable
 
 If the institution lacks access to citation databases, compute a
-**two-component internal panel** (Δ, S) plus institutional indicators
+**two-component internal panel** ($\Delta$, S) plus institutional indicators
 (CoAuth, CoSup, Grants). This still discriminates integrators from polymaths:
 
-| Profile | Δ | S | CoAuth | CoSup | Interpretation |
+| Profile | $\Delta$ | S | CoAuth | CoSup | Interpretation |
 |---------|-------|-------|--------|-------|----------------|
 | Integrator | High | Moderate-high | High | High | Integration via references AND processes |
 | Polymath | High | Low | Low | Low | Broad but disconnected |
