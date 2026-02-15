@@ -761,6 +761,21 @@ analysis (Bollen et al., 2009), betweenness loaded near the origin ---
 almost orthogonal to both citation-based and vector-based indicators ---
 suggesting that it captures a distinct positional dimension.
 
+**Distance-measure sensitivity.** Leydesdorff and Rafols (2011) also
+documented a striking sensitivity of Rao-Stirling diversity to the choice
+of distance matrix. When they computed the indicator using $(1 - \cos)$
+versus relative Euclidean distances across the same 8,207 journals, the
+Spearman rank-order correlation between the two resulting
+interdisciplinarity rankings was $\rho = -0.012$ in the cited direction
+and $\rho = -0.015$ in the citing direction --- effectively zero and, in
+the latter case, nominally negative. In a rotated factor analysis the
+Euclidean-based variant loaded on a different component from all other
+indicators, confirming that the two distance formulations capture
+fundamentally different structural features of the citation network. This
+dramatic finding underscores that the choice of distance measure is not a
+minor technical detail but a first-order determinant of measured
+interdisciplinarity.
+
 **IKF homogeneity.** Zhou, Guns, and Engels (2023) proposed the
 Interdisciplinary Knowledge Flow (IKF) framework, which decomposes
 inter-field citation relationships into three aspects: *broadness*
@@ -1212,9 +1227,21 @@ an Interdisciplinary Knowledge Flow (IKF) framework that characterizes the
 relationship between any two disciplines along three aspects: *broadness*
 (what fraction of publications cite a given external discipline), *intensity*
 (how deeply engaged those citing publications are), and *homogeneity*
-(cognitive similarity via co-citation overlap). The result is a distribution
-vector rather than a single number, answering "what is interdisciplined"
-rather than merely "how interdisciplinary."
+(cognitive similarity via co-citation overlap). Formally, given a citation
+matrix $M$ ($n \times n$) and entities $X$ (citing) and $Y$ (cited),
+broadness is $B(X,Y) = |X'|/|X|$, where $X'$ is the subset of publications
+in $X$ that cite at least one publication in $Y$. Intensity restricts the
+denominator to outward citations from $X'$ only:
+$I(X,Y) = \sum_{i \in X, j \in Y} M_{ij} / \sum_{i \in X, j=1}^{n}
+(M_{ij}\,\delta_i)$, where $\delta_i = 1$ iff $i \in X'$. Homogeneity
+measures knowledge-base overlap: $H(X,Y) = \sum_{i \in X, \gamma=1}^{n}
+M_{i\gamma}\,\varphi_{\gamma,Y} / \sum_{i \in X, j=1}^{n} M_{ij}$, where
+$\varphi_{\gamma,Y} = 1$ if publication $\gamma$ is also cited by $Y$. Each
+aspect is thus a well-defined fraction, and the triple
+$(B, I, H)$ jointly characterizes the *form* of interdisciplinary knowledge
+exchange --- yielding a distribution vector rather than a single number and
+answering "what is interdisciplined" rather than merely "how
+interdisciplinary."
 
 Cantone (2024) takes a complementary systemic approach, decomposing the
 measurement problem into a pipeline of analytical choices: selection of
@@ -1985,6 +2012,25 @@ indicate that the measures are capturing different phenomena. Comparing
 citing-side (knowledge integration) and cited-side (knowledge diffusion)
 indicators separately can further clarify which dimension is being measured.
 
+*Uncertainty quantification.* Even when methodological choices are held
+fixed, the stochastic nature of reference lists introduces measurement
+uncertainty. Nakhoda, Whigham, and Zwanenburg (2023) proposed a
+non-parametric bootstrap approach to quantify this uncertainty for the
+Rao-Stirling index. Their procedure takes a publication's $N$ recognized
+subject-category assignments, resamples them with replacement to produce
+$B = 500$ bootstrap replicates of size $N$, computes the Rao-Stirling index
+for each resample, and constructs a bias-corrected 95\% confidence interval
+from the resulting distribution. Across 42,660 publications, the median
+confidence-interval width was approximately 0.15, but values ranged from
+zero (when all references fell in a single category) to over 0.6. Papers
+with fewer than ten categorized references exhibited particularly wide
+intervals, indicating that point estimates of interdisciplinarity are
+unreliable for short reference lists. The authors further showed that
+combining the bootstrap confidence interval with the number of references
+yields a more effective reliability filter than either criterion alone,
+enabling practitioners to flag publications whose interdisciplinarity scores
+should not be interpreted at face value.
+
 ## Software Implementation
 
 Several software resources support the computation of interdisciplinarity
@@ -2028,12 +2074,15 @@ First, the relationship between self-reported and bibliometric
 interdisciplinarity is poorly understood. Aksnes, Karlstrøm, and Piro (2026),
 surveying over 3,000 publications across all fields, found that
 self-reported and bibliometric interdisciplinarity measures "rarely
-correspond" — correlations range from 0.13 to 0.18, explaining only 2–3% of
+correspond." Testing Shannon entropy, the true diversity measure ($^2D_S$),
+and the DIV* decomposition against researcher self-assessments, they
+obtained correlations ranging from 0.13 to 0.18, explaining only 2--3% of
 variance. Researchers assess interdisciplinarity based on collaboration
 dynamics and methodological integration, not reference patterns. This raises
-fundamental questions about construct validity: if bibliometric indicators
-do not capture what researchers themselves mean by interdisciplinarity, the
-gap must be acknowledged in any evaluation framework.
+fundamental questions about construct validity: if even a battery of
+complementary bibliometric indicators fails to capture what researchers
+themselves mean by interdisciplinarity, the gap must be acknowledged in any
+evaluation framework.
 
 Second, the estimation of disciplinary similarity matrices — a critical input
 to Rao-Stirling diversity and related measures — has traditionally relied on
@@ -2071,10 +2120,15 @@ interdisciplinarity (crossing disciplinary subject boundaries) is associated
 with lower acceptance rates — the two dimensions have opposite effects on
 peer review outcomes. A panel that characterizes the *type*
 of boundary-crossing — as ours does — provides the structural context needed
-to interpret quality indicators correctly. Notably, our cross-field effect
-$E$ is defined as a fraction (not an absolute citation count), avoiding the
-conflation of citation volume with interdisciplinarity that affects some
-diffusion measures.
+to interpret quality indicators correctly. Importantly, Xiang et al. also
+found that journals designated as "interdisciplinary" by their publisher
+showed no penalty against either form of interdisciplinarity, suggesting
+that the observed biases are specific to disciplinary venues rather than
+inherent to interdisciplinary work itself. This finding reinforces the case
+for dedicated interdisciplinary evaluation contexts. Notably, our
+cross-field effect $E$ is defined as a fraction (not an absolute citation
+count), avoiding the conflation of citation volume with interdisciplinarity
+that affects some diffusion measures.
 
 Fifth, the distribution-based approaches of Zhou et al. (2023) offer a
 promising direction for enriching scalar panels. Their IKF framework
