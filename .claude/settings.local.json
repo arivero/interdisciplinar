@@ -55,8 +55,6 @@
       "Bash(test:*)"
     ],
     "deny": [
-      "WebSearch",
-      "WebFetch"
     ]
   }
 }
