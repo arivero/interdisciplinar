@@ -274,10 +274,12 @@ def main() -> None:
     provider = detect_provider(source)
     kind = detect_kind(source, args.kind)
     resolved_source: str | None = None
-    if is_url(source) and args.kind == "auto":
+    if is_url(source) and (args.kind == "auto" or provider == "scihub"):
         resolved_source = resolve_provider_pdf_url(source, provider)
         if resolved_source:
             kind = "pdf"
+        elif provider == "scihub":
+            raise RuntimeError(f"Sci-hub did not return a PDF for this DOI (paper may not be available).")
     output = Path(args.output) if args.output else default_output_path(source, Path(args.sources_dir), args.name)
     output.parent.mkdir(parents=True, exist_ok=True)
 

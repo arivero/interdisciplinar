@@ -31,24 +31,32 @@ Default to:
 
 ## Active Threads (Pick One)
 
-### 1) Indicator Panel Design and Validation
+### 1) Indicator Taxonomy and Area Review
+- Goal: Expand paper/main.md from a methods paper into a genuine area review with indicator taxonomy, conceptual foundations, and practical measurement sections.
+- D02 taxonomy: 4 dimensions (Diversity, Coherence, Diffusion, Novelty) × 4 methodologies (reference-based, citation-based, text/semantic, network-based).
+- Our panel (Δ, S, E) covers 3 of 4 dimensions; Novelty out of scope.
+- Key sources: Wang-Schneider 2020 (23 measures, low inter-family correlation), Cantone 2024 (systemic design, 6 dimensions), Zhou et al. 2023 (IKF decomposition: broadness, intensity, homogeneity).
+- Proposed manuscript: 7 sections with review wrapping around existing contribution (§4).
+
+### 2) Indicator Panel Design and Validation
 - Goal: Define, compute, and validate a three-component indicator panel (Rao-Stirling diversity, mean linkage coherence, cross-field effect proxy) that discriminates cross-disciplinary integration from polymathic breadth.
 - Typical deliverable: blackboard derivations with toy-data witnesses; promotion to manuscript via C-cycles.
 - Key sources: Porter-Rafols 2009, Rafols-Meyer 2009, Leydesdorff-Rafols 2010.
+- Status: S00-S03 complete; C00-C01 promoted; Q00-Q01 reviewed.
 
-### 2) Institutional Measurement Feasibility
+### 3) Institutional Measurement Feasibility
 - Goal: Determine which indicators are computable with full internal university data (projects, publications, staffing, budgets).
 - Typical deliverable: mapping of indicators to data requirements; gap analysis.
 - Status: not started (depends on thread 1 stabilizing).
 
-### 3) National Evaluation of Interdisciplinary Researchers (Satellite 2)
+### 4) National Evaluation of Interdisciplinary Researchers (Satellite 2)
 - Goal: Design an evaluation protocol for national agencies assessing researchers in the "Interdisciplinar" science group.
 - Typical deliverable: indicator-panel evaluation protocol + committee composition rule + failure-mode taxonomy.
 - Key question: How can (Δ, S, E) serve as evidence framework for individual researcher evaluation?
 - Status: D01 complete; S02 witness needed.
 
 ## Immediate Next Actions
-1. S01: sensitivity analysis on S00 toy computation (perturb s_{ij}, test robustness).
-2. S02: toy evaluation scenario for Satellite 2 in `blackboards/2.md`.
-3. Acquire PENDING bibliography sources (wang-schneider-2020, leydesdorff-wagner-bornmann-2019).
-4. After sufficient D+S cycles, spawn C00 to begin main manuscript writing.
+1. C02: Promote D02 taxonomy + B03 sources into paper/main.md (major expansion).
+2. D03: "Quality" dimension framing — OQ1 partially unaddressed.
+3. D04: Institutional measurement literature — OQ2 and Satellite 1 topic.
+4. Acquire 5 PENDING post-2020 sources (alternative to sci-hub needed).
