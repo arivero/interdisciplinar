@@ -14,7 +14,7 @@
 - **Main manuscript**: 2,679 lines (post-C15 closure updates)
 - **Satellite 2**: 262 lines (post-C15 sync updates)
 - **Satellite 1**: 293 lines (post-C15 sync updates)
-- **Spanish review**: 2,650 lines (`paper/main.es.md`)
+- **Spanish review**: 2,643 lines (`paper/main.es.md`)
 - **Spanish satellite 1**: 242 lines (`papers/sat1-institutional/main.es.md`)
 - **Spanish satellite 2**: 168 lines (`papers/sat2-national-evaluation/main.es.md`)
 - **HTML outputs**: 6 single-page files (EN+ES review/satellites)
@@ -23,5 +23,5 @@
 - **Notebooks**: 5 (panel-worked-example, panel-sensitivity, panel-interpretation, formula-catalog, idr-typology)
 
 **Next priorities:**
-1. Regenerate HTML outputs, copy to `docs/`, update `docs` index; push GitHub Pages. (Done; minor ES refresh in C23.)
+1. ✅ Regenerate HTML outputs, copy to `docs/`, update `docs` index; push GitHub Pages. (Done; ES+EN PDFs deployed 2026-02-15)
 2. Bibliography hardening for remaining `PENDING`/`PENDING_LIBRARY` sources.

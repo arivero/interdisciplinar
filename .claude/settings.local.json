@@ -52,9 +52,23 @@
       "WebFetch(domain:arxiv.org)",
       "WebFetch(domain:sci-hub.kvnp.top)",
       "Bash(git init:*)",
-      "Bash(test:*)"
+      "Bash(test:*)",
+      "Bash(/tmp/custom-style.css:*)",
+      "Bash(/tmp/build-html.sh:*)",
+      "Bash(/tmp/header-style.html:*)",
+      "Bash(/tmp/pdf-link-main.html:*)",
+      "Bash(__NEW_LINE_510f00f1152ad1e2__ pandoc -f markdown+tex_math_single_backslash -s paper/main.md -o paper/main.html --mathjax --include-in-header=/tmp/header-style.html --include-before-body=/tmp/pdf-link-main.html)",
+      "Bash(/tmp/pdf-link-main-es.html:*)",
+      "Bash(__NEW_LINE_193164ca0bffbecd__ pandoc -f markdown+tex_math_single_backslash -s paper/main.es.md -o paper/main.es.html --mathjax --include-in-header=/tmp/header-style.html --include-before-body=/tmp/pdf-link-main-es.html --metadata lang=es)",
+      "Bash(/tmp/pdf-link-sat1.html:*)",
+      "Bash(__NEW_LINE_c1bbd90becc64001__ pandoc -f markdown+tex_math_single_backslash -s papers/sat1-institutional/main.md -o papers/sat1-institutional/main.html --mathjax --include-in-header=/tmp/header-style.html --include-before-body=/tmp/pdf-link-sat1.html)",
+      "Bash(/tmp/pdf-link-sat1-es.html:*)",
+      "Bash(__NEW_LINE_837596689b1e9f1b__ pandoc -f markdown+tex_math_single_backslash -s papers/sat1-institutional/main.es.md -o papers/sat1-institutional/main.es.html --mathjax --include-in-header=/tmp/header-style.html --include-before-body=/tmp/pdf-link-sat1-es.html --metadata lang=es)",
+      "Bash(/tmp/pdf-link-sat2.html:*)",
+      "Bash(__NEW_LINE_09064e6ad7930629__ pandoc -f markdown+tex_math_single_backslash -s papers/sat2-national-evaluation/main.md -o papers/sat2-national-evaluation/main.html --mathjax --include-in-header=/tmp/header-style.html --include-before-body=/tmp/pdf-link-sat2.html)",
+      "Bash(/tmp/pdf-link-sat2-es.html:*)",
+      "Bash(__NEW_LINE_22ec199b0ca4c061__ pandoc -f markdown+tex_math_single_backslash -s papers/sat2-national-evaluation/main.es.md -o papers/sat2-national-evaluation/main.es.html --mathjax --include-in-header=/tmp/header-style.html --include-before-body=/tmp/pdf-link-sat2-es.html --metadata lang=es)"
     ],
-    "deny": [
-    ]
+    "deny": []
   }
 }
