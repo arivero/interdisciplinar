@@ -3,25 +3,22 @@ title: "Medición de la interdisciplinariedad: un panel de indicadores de compon
 author: "A. Rivero"
 date: "2026"
 abstract: |
-  We review the landscape of bibliometric indicators for measuring
-  investigación interdisciplinaria y proponer un panel estructurado de tres componentes
-  que combina la diversidad de Rao-Stirling, la coherencia de la red (vínculo medio
-  fuerza), y un proxy de efecto de campo cruzado. Basándose en trabajos recientes que
-  expone la baja consistencia y la limitada validez de constructo de los
-  enfoques de indicador único, organizamos la literatura en una taxonomía de
-  cuatro dimensiones conceptuales: diversidad, coherencia, difusión y novedad.
-  y cuatro familias metodológicas. Utilizando un conjunto de datos de una universidad del juguete,
-  demostrar que ningún indicador escalar por sí solo puede discriminar
-  integración interdisciplinaria desde la amplitud polimática o la estrecha
-  especialización. El panel completo, por el contrario, caracteriza de manera única a cada
-  tipo investigador. Demostramos analíticamente que esta discriminación es sólida.
-  bajo perturbación de la matriz de similitud entre categorías. A
-  El estudio de caso a nivel departamental con siete investigadores confirma la opinión del panel.
-  poder discriminatorio a escala realista, distinguiendo correctamente
-  integradores, eruditos y especialistas en puentes donde los indicadores únicos
-  fallar. Estos resultados sugieren que la evaluación de la interdisciplinariedad
-  investigación, ya sea a nivel institucional o de agencia nacional,
-  requiere un enfoque multidimensional en lugar de una puntuación compuesta.
+  Revisamos el panorama de indicadores bibliométricos para medir la investigación
+  interdisciplinaria y proponemos un panel estructurado de tres componentes que
+  combina diversidad Rao-Stirling, coherencia de red (fuerza media de enlace) y
+  un proxy de efecto transcampo. A partir de resultados recientes que muestran
+  baja consistencia y validez limitada de los enfoques monoindicador,
+  organizamos la literatura en una taxonomía de cuatro dimensiones conceptuales
+  (diversidad, coherencia, difusión, novedad) y cuatro familias metodológicas.
+  Con un conjunto de datos universitario de juguete, mostramos que ningún
+  escalar único discrimina de forma fiable integración interdisciplinaria de
+  amplitud polímata o especialización estrecha. El panel completo, en cambio,
+  caracteriza perfiles de manera robusta bajo perturbaciones de la matriz de
+  similitud. Un estudio de caso departamental con siete investigadores confirma
+  su poder discriminatorio a escala realista. Estos resultados sugieren que la
+  evaluación de la investigación interdisciplinaria, tanto institucional como
+  de agencia nacional, requiere un enfoque multidimensional en lugar de una
+  puntuación compuesta.
 ---
 
 # Introducción
@@ -30,10 +27,10 @@ La investigación interdisciplinaria (IDR) se considera ampliamente esencial par
 abordar desafíos científicos y sociales complejos. Iniciativas políticas en
 Estados Unidos, Europa y otros lugares han tratado de fomentar
 interdisciplinariedad, a menudo basada en el supuesto de que cruzar
-Los límites disciplinarios conducen a resultados de investigación más impactantes (National
-Academias, 2005). Sin embargo, la medición de la interdisciplinariedad sigue siendo
-problemático. A pesar de décadas de trabajo, la literatura bibliométrica no ha
-convergieron en indicadores apropiados.
+los límites disciplinarios conduce a resultados de investigación más impactantes
+(National Academies, 2005). Sin embargo, la medición de la interdisciplinariedad
+sigue siendo problemática. A pesar de décadas de trabajo, la literatura
+bibliométrica no ha convergido en indicadores apropiados.
 
 Wang y Schneider (2020), probando 23 medidas de interdisciplinariedad en
 cuatro familias metodológicas, encontraron correlaciones sorprendentemente bajas incluso entre
@@ -48,19 +45,18 @@ desajuste entre la naturaleza multidimensional del IDR y los indicadores escalar
 utilizado para medirlo.
 
 Este artículo hace dos contribuciones. Primero, analizamos el panorama de indicadores.
-y organizarlo en una taxonomía de cuatro dimensiones conceptuales (diversidad,
+y lo organizamos en una taxonomía de cuatro dimensiones conceptuales (diversidad,
 coherencia, difusión, novedad) cruzado con cuatro familias metodológicas
-(basado en referencias, basado en citas, basado en texto, basado en redes). En segundo lugar, nosotros
-proponer un panel específico de tres componentes: diversidad, coherencia y
-efecto de campo cruzado y demostrar su poder de discriminación en un juguete
-conjunto de datos con garantías de robustez analítica.
+(basado en referencias, basado en citas, basado en texto, basado en redes). En segundo lugar, proponemos un panel específico de tres componentes: diversidad, coherencia y
+efecto transcampo, y mostramos su poder de discriminación en un conjunto de
+datos de juguete con garantías de robustez analítica.
 
 El resto del artículo está estructurado de la siguiente manera. La sección 2 revisa la
-Fundamentos conceptuales de la medición de la interdisciplinariedad. La sección 3 presenta
+los fundamentos conceptuales de la medición de la interdisciplinariedad. La sección 3 presenta
 la taxonomía de indicadores. La sección 4 define nuestro panel, demuestra su
 poder de discriminación y demuestra resultados de robustez. La sección 5 analiza
 implicaciones para la evaluación a nivel institucional y nacional. Sección 6
-Identifica problemas abiertos. La Sección 7 aplica el panel a nivel de departamento
+identifica problemas abiertos. La Sección 7 aplica el panel a nivel de departamento
 estudio de caso. La sección 8 concluye.
 
 # Fundamentos Conceptuales
@@ -141,7 +137,7 @@ formalizar la perspectiva del flujo a través de su flujo de conocimiento interd
 amplitud, intensidad y homogeneidad. Estas distinciones tienen consecuencias directas
 Implicaciones para el panel presentado en la Sección 4: diversidad ($\Delta$)
 captura la amplitud independientemente de la dirección, la coherencia ($S$) distingue
-integración a partir de yuxtaposición y el efecto de campo cruzado ($E$) mide
+integración a partir de yuxtaposición y el efecto transcampo ($E$) mide
 difusión más allá de la disciplina local.
 
 La evidencia empírica sobre las tendencias a largo plazo agudiza esta cuestión. portero y
@@ -1276,7 +1272,7 @@ está ligado a al menos una condición límite que limita la interpretación.
 | Índices de equilibrio de variedades (Shannon, Simpson, Herfindahl, Gini) | Porter y Ráfols (2009); Leydesdorff, Wagner y Bornmann (2019); Mutz (2022) | Estos índices no pueden, por sí solos, identificar la distancia cognitiva; La elección del operador de agregación (aditivo versus multiplicativo) cambia las clasificaciones. |
 | Coherencia (`S`) mediante acoplamiento bibliográfico | Ráfols y Meyer (2009); Jensen y Lutkouskaya (2014) | Las estimaciones de coherencia dependen del umbral de acoplamiento/binarización y de las convenciones de construcción de redes. |
 | Alternativas basadas en la centralidad | Leydesdorff y Ráfols (2011); Bollen et al. (2009) | La intermediación y los indicadores gráficos relacionados combinan la interdisciplinariedad con los efectos de tamaño/posición a menos que se normalicen cuidadosamente. |
-| Difusión/efecto de campo cruzado (`E`) | Leydesdorff, Wagner y Bornmann (2019); Xiang, Romero y Teplitskiy (2025); Lariviere y Gingras (2010) | La captación entre campos debe normalizarse en el campo; la difusión debe tratarse como algo distinto de la diversidad de insumos. |
+| Difusión/efecto transcampo (`E`) | Leydesdorff, Wagner y Bornmann (2019); Xiang, Romero y Teplitskiy (2025); Lariviere y Gingras (2010) | La captación entre campos debe normalizarse en el campo; la difusión debe tratarse como algo distinto de la diversidad de insumos. |
 | Descomposición del flujo de conocimiento `(B, I, H)` | Zhou, Guns y Engels (2023) | Los vectores de flujo distributivo responden a las preguntas sobre el intercambio direccional, pero no son sustitutos directos de los componentes del panel escalar. |
 | Novedad mediante combinaciones atípicas/emergencia cronometrada | Uzzi et al. (2013); Wang y cols. (2017); Bornmann (2019); Fontana et al. (2020) | Los indicadores de novedad capturan la atipicidad bajo supuestos explícitos de modelo nulo; la validación externa sigue siendo limitada para el uso de políticas. |
 | Estabilización de superposición cercana a cero | Moulton y Jiang (2018) | Las variantes probabilísticas de Jaccard mejoran el comportamiento de superposición cero, pero aún requieren modelos de disparidad complementarios para afirmaciones de interdisciplinariedad. |
@@ -1394,24 +1390,24 @@ quien lo operacionalizó como la densidad media de redes de acoplamiento bibliog
 Proporciona una perspectiva ascendente que complementa la diversidad de arriba hacia abajo.
 medida.
 
-### Proxy de efecto de campo cruzado
+### Proxy de efecto transcampo
 
 Para cada una de las publicaciones de un investigador, indique $k^*$ su principal
-categoría (la categoría con la mayor proporción de referencias). El campo cruzado
-efecto proxy es
+categoría (la categoría con la mayor proporción de referencias). El proxy de
+efecto transcampo es
 
-$$E = \frac{\text{citations from articles whose primary category} \neq k^*}{\text{total citations received}}$$
+$$E = \frac{\text{citas de artículos cuya categoría principal} \neq k^*}{\text{citas totales recibidas}}$$
 
-donde la suma se agrupa en todas las publicaciones de un investigador. un alto
-El valor de $E$ indica que el trabajo del investigador se utiliza en
+La suma se agrupa en todas las publicaciones de un investigador. Un valor alto
+de $E$ indica que el trabajo del investigador se utiliza a través de
 límites disciplinarios: produce un impacto en todos los campos, no simplemente
 entradas entre campos. Esto distingue la integración genuina (alta $\Delta$,
 moderado $S$, alto $E$) de amplitud polimática (alto $\Delta$, bajo $S$,
 bajo $E$).
 
-## Discriminación por datos sobre juguetes
+## Discriminación con datos de juguete
 
-Ilustramos el panel con un conjunto de datos de una universidad del juguete que consta de cinco
+Ilustramos el panel con un conjunto de datos universitario de juguete que consta de cinco
 categorías de sujetos y tres arquetipos de investigador.
 
 ### Configuración
@@ -1517,9 +1513,9 @@ Para el Investigador C, todas las publicaciones se agrupan en el vecindario $C_1
 produciendo cosenos por pares uniformemente altos (rango de 0,675 a 0,964) y
 [[MANTENER0]].
 
-**Paso 3: Efecto de campo cruzado ($E$).** Para cada publicación, asignamos el
-categoría primaria como $k^* = \arg\max_i r_{k,i}$ (empates rotos por el más bajo
-índice). El desglose de la cita es:
+**Paso 3: Efecto transcampo ($E$).** Para cada publicación, asignamos la
+categoría primaria como $k^* = \arg\max_i r_{k,i}$ (empates rotos por el índice
+más bajo). El desglose de citas es:
 
 | Publicación | Primaria | Total de citas | De primaria | De otro |
 |-------------|---------|-------------|-------------|------------|
@@ -1528,9 +1524,9 @@ categoría primaria como $k^* = \arg\max_i r_{k,i}$ (empates rotos por el más b
 | A3 | $C_4$ | 4 | 2 | 2 |
 | A4 | $C_3$ | 5 | 2 | 3 |
 | A5 | $C_1$ | 5 | 2 | 3 |
-| **Un total** | | **25** | **10** | **15** |
+| **Total** | | **25** | **10** | **15** |
 
-Por lo tanto $E_A = 15/25 = 0.600$: sesenta por ciento de las citas del Investigador A
+Por lo tanto $E_A = 15/25 = 0.600$: el sesenta por ciento de las citas del Investigador A
 se originan fuera de la categoría principal de la publicación citante, lo que confirma
 verdadero impacto transversal. Para el Investigador B, casi todas las citas provienen
 desde dentro del campo propio de cada publicación ($E_B = 1/16 = 0.063$); para
@@ -1555,14 +1551,14 @@ que la diversidad está estructurada.
 
 El indicador de coherencia $S$ revela la diferencia: publicaciones del investigador A
 compartir referencias a través de los límites de las categorías ($S = 0.733$), mientras que el Investigador B
-las publicaciones no se superponen en absoluto ($S = 0$). El efecto de campo cruzado $E$
+las publicaciones no se superponen en absoluto ($S = 0$). El efecto transcampo $E$
 confirma esto a nivel de impacto: el trabajo del investigador A se cita en todas partes
 disciplinas ($E = 0.600$), mientras que las contribuciones de un solo campo del Investigador B
 se citan casi exclusivamente dentro de sus propios campos ($E = 0.063$).
 
 Ningún componente del panel logra por sí solo una discriminación total. Diversidad
 por sí sola falla en A frente a B. La coherencia por sí sola no logra distinguir A (moderado-alto)
-desde C (muy alto) sin el contexto de diversidad. El efecto de campo cruzado
+desde C (muy alto) sin el contexto de diversidad. El efecto transcampo
 separa A de B y C, pero no puede por sí solo distinguir
 integradores de especialistas cuando se desconoce la diversidad. Solo el triple completo
 caracteriza de manera única a cada tipo.
@@ -1699,7 +1695,7 @@ separación porque las carteras especializadas, concentradas en los países veci
 categorías, se ven más afectados por los cambios de similitud de vecinos que los diversos
 carteras.
 
-### Invariancia de coherencia y efecto de campo cruzado.
+### Invariancia de coherencia y efecto transcampo.
 
 Una ventaja distintiva del enfoque de componentes múltiples es que sólo uno
 de los tres indicadores del panel depende de la matriz de similitud. El
@@ -1711,7 +1707,7 @@ $$S = \frac{1}{\binom{n}{2}} \sum_{k < l}
 {\|\mathbf{r}_k\|\;\|\mathbf{r}_l\|}$$
 
 Esta cantidad depende exclusivamente de los propios vectores de referencia, no
-en cualquier estructura de similitud entre categorías. El efecto de campo cruzado $E$
+en cualquier estructura de similitud entre categorías. El efecto transcampo $E$
 depende de los flujos de citas y de las asignaciones de categorías primarias (determinadas por
 $\arg\max_i r_{k,i}$), que también son independientes de $s_{ij}$. Ambos
 $S$ y $E$ son ​​por lo tanto *exactamente invariantes* bajo cualquier perturbación de
@@ -1722,7 +1718,7 @@ Investigador A ($S = 0.733$, $E = 0.600$) e Investigador B ($S = 0.000$,
 $E = 0.063$) no se ve afectado en absoluto por la elección de la matriz de similitud.
 Por lo tanto, el panel multicomponente es sustancialmente más robusto que cualquier otro.
 enfoque de indicador único basado únicamente en la diversidad, porque la coherencia
-y los canales de efecto de campo cruzado no conllevan incertidumbre de matriz de similitud
+y los canales de efecto transcampo no conllevan incertidumbre de matriz de similitud
 lo que.
 
 ### Resumen de robustez
@@ -1755,8 +1751,8 @@ componentes del panel:
 El investigador recurre a una amplia gama de categorías disciplinarias (alta
 diversidad), los entrelaza en un cuerpo coherente de trabajo con sustanciales
 acoplamiento bibliográfico entre publicaciones (alta coherencia) y produce
-investigación que se cita a través de fronteras disciplinarias (alto campo cruzado)
-efecto). Éste es el perfil canónico de la integración interdisciplinaria.
+investigación que se cita a través de fronteras disciplinarias (alto efecto
+transcampo). Este es el perfil canónico de la integración interdisciplinaria.
 En los datos de los juguetes, el investigador A ejemplifica este patrón con
 [[MANTENER0]].
 
@@ -1764,7 +1760,7 @@ En los datos de los juguetes, el investigador A ejemplifica este patrón con
 El investigador publica en muchos campos, produciendo altos categóricos.
 diversidad, pero las publicaciones son mutuamente incoherentes (baja o nula)
 acoplamiento bibliográfico) y cada uno se cita principalmente dentro de su propio campo
-(bajo efecto de campo cruzado). Este perfil indica amplitud sin
+(bajo efecto transcampo). Este perfil indica amplitud sin
 integración --- una colección de contribuciones disciplinarias independientes
 en lugar de un programa de investigación sintetizado. El investigador B ejemplifica
 este patrón con $(\Delta, S, E) = (0.580, 0.000, 0.063)$.
@@ -1870,7 +1866,7 @@ bien posicionado para calcular indicadores de diversidad y coherencia directamen
 El índice de diversidad de Rao-Stirling requiere sólo una clasificación disciplinaria de
 referencias citadas y una matriz de similitud; el indicador de coherencia requiere
 datos de acoplamiento bibliográfico a nivel de publicación. Ambos son computables
-a partir de datos de repositorios institucionales estándar. El efecto de campo cruzado, sin embargo, requiere
+a partir de datos de repositorios institucionales estándar. El efecto transcampo, sin embargo, requiere
 Datos de citas que las instituciones normalmente deben obtener de bases de datos externas.
 (Web of Science, Scopus o OpenAlex de acceso abierto). Esta brecha de datos es la
 principal obstáculo práctico para el despliegue total del panel interno. donde cita
@@ -2220,7 +2216,7 @@ no mostró ninguna penalización contra ninguna de las formas de interdisciplina
 que los sesgos observados son específicos de los ámbitos disciplinarios más que
 inherente al propio trabajo interdisciplinario. Este hallazgo refuerza el caso
 para contextos de evaluación interdisciplinarios dedicados. Cabe destacar que nuestro
-efecto de campo cruzado $E$ se define como una fracción (no una cita absoluta
+efecto transcampo $E$ se define como una fracción (no una cita absoluta
 recuento), evitando la combinación de volumen de citas con interdisciplinariedad
 que afecta algunas medidas de difusión.
 
@@ -2340,12 +2336,12 @@ cada categoría.
 | Karlsson | mi | 12 | (0,50, 0,30, 0,10, 0,05, 0,03, 0,02) | 45 | 8 (18%) |
 | Osei | S | 48 | (0,70, 0,20, 0,05, 0,03, 0,01, 0,01) | 680 | 75 (11%) |
 
-Varias características de este conjunto de datos merecen comentarios. La referencia de Al-Rahman
-La distribución es casi uniforme en las primeras cuatro categorías, asemejándose
-el arquetipo polimático de la Sección 4. La distribución de Romero está dominada
-por una sola categoría adyacente ($C_6$, nanociencia), sin embargo, su campo cruzado
-La fracción de citación es la más alta del departamento. Estos contrastantes
-Los perfiles presagian las discriminaciones que revelará el panel.
+Varias características de este conjunto de datos merecen comentarios. La distribución
+de referencias de Al-Rahman es casi uniforme en las primeras cuatro categorías,
+asemejándose al arquetipo polímata de la Sección 4. La distribución de Romero
+está dominada por una sola categoría adyacente ($C_6$, nanociencia); sin embargo,
+su fracción de citación transcampo es la más alta del departamento. Estos perfiles
+contrastantes presagian las discriminaciones que revelará el panel.
 
 ## Computación de paneles
 
@@ -2377,7 +2373,7 @@ a partir de similitudes de cosenos por pares entre vectores de referencia de pub
 Este indicador captura si las diversas publicaciones de un investigador forman
 un todo integrado o representan contribuciones desconectadas.
 
-**Efecto de campo cruzado ($E$).** La fracción de citas recibidas de
+**Efecto transcampo ($E$).** La fracción de citas recibidas de
 fuera de la categoría principal de cada publicación se agrupa en todo el
 todo el portafolio del investigador.
 
@@ -2406,8 +2402,8 @@ sus diversas publicaciones esencialmente no comparten referencias.
 Los valores del panel en la Tabla 2 respaldan una clasificación estructurada de cada
 investigador frente a la pregunta de evaluación. Adoptamos decisión indicativa.
 umbrales: $\Delta \geq 0.40$ para diversidad sustancial, $S \geq 0.30$
-para una coherencia significativa, y $E \geq 0.30$ para un campo cruzado significativo
-impacto. Estos umbrales son ilustrativos; en la práctica, serían
+para una coherencia significativa, y $E \geq 0.30$ para un impacto transcampo
+significativo. Estos umbrales son ilustrativos; en la práctica, serían
 calibrado al contexto disciplinario local (ver Sección 5).
 
 **Nguyen ($\Delta = 0.464$, $S = 0.50$, $E = 0.47$): genuino
@@ -2427,7 +2423,7 @@ al menos tres de sus categorías activas.
 **Chen ($\Delta = 0.390$, $S = 0.42$, $E = 0.35$): límite
 integrador.** Chen cae justo por debajo del umbral de diversidad
 ($\Delta = 0.390$ versus el límite de 0,40) pero cumple con la coherencia y
-Criterios de efecto de campo cruzado. Su patrón de publicación (fuerte en
+Criterios de efecto transcampo. Su patrón de publicación (fuerte en
 materia condensada y ciencia de los materiales, con una participación sistemática en
 química física: sugiere un integrador emergente cuyo
 El alcance interdisciplinario se concentra en campos estrechamente relacionados.
@@ -2458,13 +2454,13 @@ Al-Rahman tiene la mayor diversidad del departamento, con poblaciones casi unifo
 peso en cuatro categorías. Sin embargo, su coherencia es esencialmente nula.
 ($S = 0.04$), indicando que sus publicaciones en diferentes campos
 no comparten una base de referencia común: cada uno constituye una
-contribución a una conversación disciplinaria separada. Su campo cruzado
-El efecto es correspondientemente bajo (11%): a pesar de publicar ampliamente, su
-El trabajo se cita casi exclusivamente dentro de la categoría en la que cada artículo
+contribución a una conversación disciplinaria separada. Su efecto transcampo
+es correspondientemente bajo (11%): a pesar de publicar ampliamente, su
+trabajo se cita casi exclusivamente dentro de la categoría en la que cada artículo
 fue publicado. Este es el patrón clásico de amplitud sin integración.
 identificado por nuestro ejemplo de juguete. En particular, Al-Rahman no tiene
 coautorías interdepartamentales, confirmando que su disciplina
-la amplitud no se traduce en integración colaborativa. el panel
+la amplitud no se traduce en integración colaborativa. El panel
 recomienda la evaluación disciplinaria estándar, no la interdisciplinaria
 pista.
 
@@ -2472,7 +2468,7 @@ pista.
 investigadores tienen valores de diversidad por debajo de 0,35, lo que los sitúa claramente en
 la categoría de especialista. Osei ($\Delta = 0.176$) es el más
 concentrado, con un 70% de referencias en física de la materia condensada; su
-alta coherencia ($S = 0.58$) y bajo efecto de campo cruzado ($E = 0.11$)
+alta coherencia ($S = 0.58$) y bajo efecto transcampo ($E = 0.11$)
 describir a un investigador disciplinario enfocado y productivo. Kowalski
 y Karlsson son investigadores que inician su carrera y cuya baja diversidad refleja
 volumen de publicación limitado en lugar de un perfil disciplinario establecido.
@@ -2606,7 +2602,7 @@ apoyar protocolos de evaluación auditables a nivel de agencia a través de
 evidencia multidimensional en lugar de clasificación de puntuación única (OQ4).
 
 El panel de tres componentes que proponemos: diversidad ($\Delta$), coherencia ($S$),
-y efecto de campo cruzado ($E$): aborda esta insuficiencia al abarcar tres
+y efecto transcampo ($E$): aborda esta insuficiencia al abarcar tres
 dimensiones ortogonales. Nuestra demostración de datos sobre juguetes muestra que el panel
 caracteriza de manera única a integradores, eruditos y especialistas donde cualquier
 falla un solo componente. El estudio de caso a nivel departamental de la Sección 7

@@ -1,258 +1,164 @@
 ---
-title: "Evaluación basada en paneles de investigadores interdisciplinarios: un protocolo para agencias nacionales"
+title: "Evaluación Basada en Panel de Investigadores Interdisciplinarios: Protocolo para Agencias Nacionales"
 author: "A. Rivero"
 date: "2026"
 abstract: |
-  National evaluation agencies face a structural challenge when assessing
-  investigadores clasificados como "Interdisciplinarios": monodisciplinarios estándar
-  los paneles no pueden evaluar de manera justa carteras que abarcan múltiples campos. Nosotros
-  proponer un protocolo de evaluación basado en un panel de indicadores de tres componentes
-  (diversidad disciplinaria, coherencia de la red y efecto entre campos) que
-  Caracteriza el tipo y grado de cruce de límites en la actividad de un investigador.
-  trabajar. Utilizando perfiles de investigadores simulados, demostramos cómo informa el panel
-  composición del comité y distingue a los integradores genuinos de los eruditos
-  y especialistas mal clasificados. Identificamos seis modos de falla en
-  evaluación interdisciplinaria y proponer salvaguardas para cada uno. el protocolo
-  está diseñado para complementar, no reemplazar, el juicio de expertos.
+  Las agencias nacionales de evaluación enfrentan un problema estructural
+  cuando deben valorar investigadores clasificados como "Interdisciplinarios":
+  los paneles monodisciplinares no evalúan de manera justa trayectorias que
+  abarcan varios campos. Proponemos un protocolo basado en un panel de tres
+  componentes — diversidad disciplinar, coherencia de red y efecto transcampo
+  — para caracterizar el tipo y grado de cruce de fronteras disciplinares.
+  Con perfiles simulados mostramos cómo el panel orienta la composición del
+  comité y distingue integradores genuinos, polímatas y especialistas mal
+  clasificados. Identificamos seis modos de fallo y proponemos salvaguardas.
 ---
 
 # Introducción
 
-Las agencias nacionales de evaluación evalúan periódicamente la carrera de los investigadores
-avance, elegibilidad para financiamiento y acreditación institucional. Estos
-Las evaluaciones suelen depender de paneles disciplinarios: un comité de expertos en
-El campo del investigador evalúa su registro de publicaciones, citas y
-contribuciones más amplias. Este procedimiento funciona bien cuando el investigador
-cartera se encuadra dentro de una única disciplina reconocida.
+Las agencias nacionales evalúan investigadores para promoción, financiación y
+acreditación institucional. El procedimiento estándar usa paneles
+monodisciplinares, adecuado cuando la cartera del investigador se ubica en un
+único campo reconocido.
 
-Surge un problema cuando un investigador es clasificado en el grupo de ciencias
-"Interdisciplinario": una categoría que existe en varios sistemas nacionales.
-(por ejemplo, ANECA de España, ANVUR de Italia) para investigadores cuyo trabajo no
-encajar en cualquier panel disciplinario. Los procedimientos de evaluación estándar asignan
-revisores de una sola disciplina, creando un desajuste estructural: el
-El comité carece de experiencia en parte de la cartera del investigador, o peor aún,
-aplica normas disciplinarias (lugares de publicación, tasas de citación, metodologías
-estándares) que son inadecuados para el trabajo interdisciplinario.
+El problema aparece con investigadores clasificados en el grupo
+"Interdisciplinario" (por ejemplo en esquemas como ANECA o ANVUR): asignar
+un panel único crea desajuste estructural entre la pericia del comité y
+trayectoria evaluada.
 
-Esta nota propone un protocolo de evaluación que utiliza un método de tres componentes.
-panel de indicadores para caracterizar a los investigadores interdisciplinarios e informar
-composición del comité. El panel, desarrollado en una revisión complementaria (Rivero,
-2026), combina diversidad disciplinaria ($\Delta$), coherencia de red ($S$),
-y efecto de campo cruzado ($E$). Demostramos el protocolo sobre el investigador simulado.
-perfiles, identificar modos de falla y proponer salvaguardas.
+Este protocolo usa un panel de tres componentes — diversidad ($\Delta$),
+coherencia ($S$), efecto transcampo ($E$) — para caracterizar perfiles y
+diseñar comité. Operativamente tratamos "interdisciplinario" como reclamo de
+integración, no solo de amplitud: diversidad alta puede reflejar integración
+o yuxtaposición multidisciplinaria desconectada.
 
-Operacionalmente, tratamos lo "interdisciplinario" como un reclamo de integración, no
-sólo una afirmación de amplitud: una alta diversidad de insumos puede representar ya sea genuina
-integración o multidisciplinariedad desconectada, y el protocolo se construye
-distinguir estos casos explícitamente.
+# El Panel Indicador
 
-# El panel de indicadores
+**Diversidad** ($\Delta$): índice Rao-Stirling sobre referencias citadas.
 
-Resumimos brevemente los tres componentes del panel; definiciones formales y
-La validación aparece en la revisión complementaria.
+**Coherencia** ($S$): fuerza media de acoplamiento bibliográfico entre
+publicaciones del investigador.
 
-**Diversidad** ($\Delta$): El índice Rao-Stirling mide el nivel disciplinario
-difusión de las referencias citadas de un investigador, incorporando variedad, equilibrio,
-y disparidad. Alto $\Delta$ indica que el investigador recurre a una amplia
-gama de campos.
+**Efecto transcampo** ($E$): fracción de citas recibidas fuera del campo
+principal.
 
-**Coherencia** ($S$): La fuerza de vinculación media mide el promedio por pares
-acoplamiento bibliográfico entre las publicaciones de un investigador. Alto $S$
-indica que las publicaciones comparten referencias a través de los límites de las categorías:
-Los diversos aportes del investigador se entrelazan en un programa de investigación unificado.
+La idea central es que ningún componente por sí solo basta. Solo el triple
+($\Delta$, $S$, $E$) separa integrador, polímata y especialista.
 
-**Efecto de campo cruzado** ($E$): la fracción de citas recibidas desde fuera
-la categoría principal del investigador. Alto $E$ indica que el investigador
-el trabajo produce impacto a través de las fronteras disciplinarias.
+# Protocolo de Evaluación
 
-La idea clave es que ningún componente por sí solo es suficiente. La diversidad por sí sola no puede
-distinguir un integrador genuino ($\Delta$ alto, $S$ alto, $E$ alto) de un
-erudito que publica en múltiples campos no relacionados ($\Delta$ alto, $S$
-cerca de cero, $E$ bajo). Se necesita el triple completo.
+## Paso 1: Calcular el Panel
 
-# Protocolo de evaluación
+Para cada investigador en la categoría "Interdisciplinario", calcular
+($\Delta$, $S$, $E$) con datos de publicaciones y citas. Requisitos mínimos:
 
-## Paso 1: Calcular el panel
+- Clasificación disciplinar de referencias.
+- Matriz de similitud entre categorías.
+- Datos de citación para $E$.
 
-Para cada investigador clasificado como "interdisciplinario", la agencia calcula
-($\Delta$, $S$, $E$) de los datos de publicación y citación. Esto requiere:
+## Paso 2: Clasificar el Perfil
 
-- Una clasificación disciplinaria de las referencias citadas (por ejemplo, Web of Science
-categorías de materias o códigos Scopus ASJC).
-- Una matriz de similitud por pares entre categorías.
-- Datos de citas para el efecto de campo cruzado.
-
-## Paso 2: clasificar el perfil
-
-Los valores del panel se comparan con los umbrales de clasificación:
-
-| Clasificación | $\Delta$ | [[MANTENER1]] | [[MANTENER2]] |
+| Clasificación | $\Delta$ | $S$ | $E$ |
 |----------------|---------|---------|---------|
-| Integrador genuino | $\geq 0.40$ | [[MANTENER1]] | [[MANTENER2]] |
-| Polímata (no integrativa) | $\geq 0.40$ | [[MANTENER1]] | [[MANTENER2]] |
+| Integrador genuino | $\geq 0.40$ | $\geq 0.30$ | $\geq 0.30$ |
+| Polímata (no integrativo) | $\geq 0.40$ | $< 0.15$ | $< 0.15$ |
 | Especialista (reclasificar) | $< 0.35$ | cualquiera | cualquiera |
-| Provisional (superposición de IC) | superposición de límites | superposición de límites | superposición de límites |
-| Ambiguo (requiere revisión completa del panel) | todas las demás combinaciones | | |
+| Provisional (IC superpuesto) | superpone umbrales | superpone umbrales | superpone umbrales |
+| Ambiguo (revisión completa) | resto de combinaciones | | |
 
-Estos umbrales son ilustrativos y deben calibrarse con respecto a datos empíricos.
-distribuciones antes del despliegue operativo. Cuando los intervalos de confianza
-superponen varias filas, el caso debe tratarse como provisional y enviarse
-a una revisión cualitativa de panel completo.
+Los umbrales son ilustrativos y deben calibrarse con distribuciones empíricas
+por área y etapa de carrera. Si los intervalos de confianza cruzan varias
+clases, el caso se trata como provisional.
 
-## Paso 3: componer el comité
+## Paso 3: Componer el Comité
 
-**Procedimiento.** Investigador dado $r$ con vector de proporción de categoría $p_r$
-(la fracción de referencias en cada categoría):
+Dado un investigador $r$ con vector de proporciones por categoría $p_r$:
 
-1. Identificar las categorías principales: $K_r = \{i : p_{r,i} \geq \tau\}$,
-donde $\tau = 0.15$.
-2. Para cada categoría $i \in K_r$, incluya al menos un evaluador de
-disciplina $i$.
-3. Incluir al menos un evaluador con experiencia interdisciplinaria demostrada.
-experiencia ($\Delta > 0.40$).
-4. Tamaño del comité: $|K_r| + 1$ (disciplinas representadas más un
-cátedra interdisciplinaria).
-5. Si la clasificación del perfil es provisional (superposición de CI), agregue un método
-evaluador encargado de la revisión de incertidumbre y solidez.
+1. Definir categorías primarias: $K_r = \{i : p_{r,i} \geq \tau\}$, con
+   $\tau = 0.15$.
+2. Incluir al menos un evaluador por cada categoría en $K_r$.
+3. Incluir al menos un evaluador con experiencia interdisciplinaria
+   demostrada ($\Delta > 0.40$).
+4. Tamaño base del comité: $|K_r| + 1$.
+5. Si el caso es provisional por solapamiento de intervalos, añadir un
+   evaluador metodológico para revisión de robustez e incertidumbre.
 
-Por lo tanto, la composición del comité se basa en datos: refleja la capacidad del investigador.
-perfil disciplinario real en lugar de una asignación arbitraria.
+## Demostración con Perfiles Simulados
 
-## Demostración sobre perfiles simulados
-
-Ilustramos el protocolo con tres investigadores simulados, todos clasificados como
-"Interdisciplinario" por la agencia.
-
-| Investigador | $\Delta$ | [[MANTENER1]] | [[MANTENER2]] | Clasificación |
+| Investigador | $\Delta$ | $S$ | $E$ | Clasificación |
 |------------|---------|-------|-------|----------------|
-| Dr. A (integrador) | 0,558 | 0,733 | 0,600 | Integrador genuino |
-| Dr. B (erudito) | 0,562 | 0.000 | 0,063 | Erudito |
-| Dr. D (especialista) | 0,288 | 0,881 | 0,211 | Especialista (reclasificar) |
+| Dra. A (integradora) | 0.558 | 0.733 | 0.600 | Integradora genuina |
+| Dr. B (polímata) | 0.562 | 0.000 | 0.063 | Polímata |
+| Dra. D (especialista) | 0.288 | 0.881 | 0.211 | Especialista (reclasificar) |
 
-**Dr. A** publica sobre física de la materia condensada, química física,
-y biología molecular. Sus publicaciones comparten referencias en todas las categorías.
-límites ($S = 0.733$), y su trabajo se cita en todas las disciplinas
-([[MANTENER0]]). El panel la identifica correctamente como una auténtica integradora.
-Tenga en cuenta que el Dr. A y el Dr. B tienen puntuaciones de diversidad casi idénticas (0,558 vs.
-0,562), pero reciben clasificaciones opuestas: la diversidad por sí sola es insuficiente.
-El comité debe incluir evaluadores de sus tres campos principales más un
-Cátedra interdisciplinar (4 miembros).
+Dra. A y Dr. B muestran casi la misma diversidad, pero con coherencia y
+efecto transcampo opuestos. Esa diferencia es precisamente la que evita
+clasificaciones erróneas cuando se usa el panel completo.
 
-**Dr. B** ha publicado en cinco campos diferentes, pero cada publicación es un
-contribución de un solo campo sin referencias compartidas entre dominios
-([[MANTENER0]]). Su trabajo se cita casi exclusivamente dentro de cada
-campo propio de la publicación ($E = 0.063$). El panel lo identifica como un
-erudito. Debería ser reclasificado a su campo más fuerte o evaluado.
-por separado en cada campo: la etiqueta "Interdisciplinario" es engañosa.
+# Modos de Fallo y Salvaguardas
 
-**Dr. D** se concentra en física de la materia condensada y ciencia de materiales.
-($\Delta = 0.288$), campos vecinos con alta similitud mutua. Su
-La coherencia es alta porque todas las publicaciones se basan en el mismo conocimiento.
-base. El panel la identifica como una especialista mal clasificada que debería ser
-evaluado por un panel disciplinario estándar para física de la materia condensada.
+## F1: Premio a la amplitud sin profundidad
 
-# Modos de falla y salvaguardias
+**Riesgo:** recompensar $\Delta$ alta ignorando integración e impacto.
 
-Identificamos seis modos de fracaso que pueden surgir en la evaluación interdisciplinaria,
-incluso cuando se utiliza el panel.
+**Salvaguarda:** exigir simultáneamente umbrales de $S$ y $E$ para
+"integrador".
 
-## F1: recompensa de amplitud sin profundidad
+## F2: Penalización por revistas no estándar
 
-**Riesgo:** Un investigador con $\Delta$ alto es recompensado por su amplitud.
-independientemente de su coherencia o impacto.
+**Riesgo:** castigar publicación interdisciplinaria por usar revistas con
+métricas distintas a campos hiper-citados.
 
-**Protección:** Requiere $S \geq 0.30$ y $E \geq 0.30$ para "integrador"
-clasificación. La alta diversidad por sí sola no califica.
-
-## F2: Penalización por publicación no estándar
-
-**Riesgo:** Las revistas interdisciplinarias suelen tener factores de impacto más bajos.
-que las principales revistas disciplinarias. Investigadores que publican en dichos lugares.
-son penalizados en las evaluaciones basadas en el factor de impacto.
-
-**Protección:** Utilice indicadores de citas normalizados por campos. no comparar
-factores de impacto en todos los campos.
+**Salvaguarda:** normalización por campo; no comparar factores de impacto
+brutos entre disciplinas.
 
 ## F3: Normas de citación inconmensurables
 
-**Riesgo:** Las tasas de citas difieren en un orden de magnitud entre los campos.
-(por ejemplo, matemáticas versus biología molecular). Un integrador que une tales
-Los campos aparecerán con un rendimiento inferior al de las normas de alta citación.
+**Riesgo:** comparar campos con órdenes de magnitud de citación distintos.
+
+**Salvaguarda:** normalizar $E$ y métricas de citación por línea base de
 campo.
 
-**Protección:** Normalizar $E$ y el recuento de citas por campo específico
-líneas de base. El $E$ del panel ya es una fracción (no un recuento absoluto),
-lo que mitiga esto parcialmente.
+## F4: Persistencia de mala clasificación
 
-## F4: Persistencia de clasificación errónea
+**Riesgo:** especialistas permanecen en categoría interdisciplinaria por
+inercia administrativa.
 
-**Riesgo:** Un especialista entra en la categoría "Interdisciplinario" y
-permanece allí porque la reclasificación es burocráticamente difícil.
+**Salvaguarda:** disparador de reclasificación cuando $\Delta < 0.35$.
 
-**Protección:** Activador de reclasificación basado en panel: si $\Delta < 0.35$,
-recomendar la reclasificación al campo principal del investigador.
+## F5: Escasez de datos en etapas tempranas
 
-## F5: Escasez de datos al inicio de su carrera
+**Riesgo:** con pocas publicaciones, las estimaciones individuales son
+inestables (Nakhoda, Whigham y Zwanenburg, 2023).
 
-**Riesgo:** Los investigadores jóvenes tienen muy pocas publicaciones para un panel confiable
-valores. Nakhoda, Whigham y Zwanenburg (2023) demostraron que Rao-Stirling
-Los intervalos de confianza pueden abarcar hasta 0,6 puntos para muestras pequeñas. Incluso en
-Las estimaciones a nivel individual a mitad de carrera conllevan una mayor incertidumbre que
-medidas agregadas, lo que hace que la clasificación basada en umbrales sea inherentemente ruidosa.
+**Salvaguarda:** umbral mínimo de publicaciones (por ejemplo, $n \geq 15$),
+reporte de intervalos de confianza y clasificación provisional si los
+intervalos cruzan fronteras de clase.
 
-**Protección:** Umbral mínimo de publicación (por ejemplo, $n \geq 15$). Abajo
-este umbral, presentar valores de panel con intervalos de confianza, marcar
-considerarlos provisionales y aplazar la clasificación estricta a menos que se
-El intervalo se encuentra dentro de una región del perfil.
+## F6: Juego estratégico por coautoría
 
-## F6: Gaming a través de la coautoría estratégica
+**Riesgo:** inflar $\Delta$ con coautorías oportunistas sin integración real.
 
-**Riesgo:** Un investigador agrega coautores de campos distantes para inflar
-$\Delta$ sin integración genuina.
-
-**Protección:** Ponderación $\Delta$ únicamente por publicaciones del autor correspondiente.
-Verificación cruzada con $S$: la integración genuina produce una alta coherencia,
-mientras que la coautoría estratégica no.
+**Salvaguarda:** ponderar por publicaciones de autoría correspondiente y
+contrastar con $S$.
 
 # Discusión
 
-El protocolo aquí propuesto está diseñado para complementar el juicio de expertos, no
-reemplácelo. El panel proporciona evidencia estructurada sobre el tipo de
-interdisciplinariedad, y la regla de composición del comité garantiza que el
-la experiencia adecuada está presente. Pero la decisión de evaluación final queda en manos de
-el comité.
+El protocolo complementa, no reemplaza, juicio experto. Su valor principal es
+hacer explícita la estructura de evidencia y garantizar que la composición del
+comité refleje la cartera real del investigador.
 
-Cabe señalar varias limitaciones. Primero, los umbrales de clasificación.
-son ilustrativos y requieren calibración con distribuciones empíricas
-de valores del panel en todas las disciplinas y etapas profesionales. En segundo lugar, el protocolo.
-asume el acceso a los datos de citas, que pueden no estar disponibles para todos
-investigadores (particularmente en humanidades). En tercer lugar, los perfiles simulados utilizan
-datos simplificados; Las carteras de investigadores reales son más confusas.
-
-Rafols (2019) argumentó que los indicadores científicos deben contextualizarse,
-multidimensional y sujeto a la validación de las partes interesadas. el protocolo
-sigue este principio: es multidimensional (tres componentes),
-Depende del contexto (la composición del comité se adapta a las necesidades del investigador).
-perfil) y transparente (los umbrales y las reglas son explícitos y auditables).
-El panel debe seguir siendo evidencia con valor vectorial ($\Delta$, $S$, $E$), no un
-puntuación compuesta única.
-
-La idea fundamental es que "interdisciplinario" no es una única
-categoría. Abarca integradores, eruditos y clasificados erróneamente.
-especialistas: investigadores con perfiles cualitativamente diferentes que
-requieren enfoques de evaluación cualitativamente diferentes. El panel proporciona
-la resolución de hacer estas distinciones.
+El panel debe interpretarse como evidencia vectorial ($\Delta$, $S$, $E$), no
+como puntaje compuesto único. Esto reduce incentivos de manipulación estratégica y mejora la
+auditabilidad de decisiones.
 
 # Conclusiones
 
-Hemos propuesto un protocolo de evaluación para las agencias nacionales que evalúan
-investigadores clasificados como "Interdisciplinarios". El indicador de tres componentes.
-El panel ($\Delta$, $S$, $E$) proporciona la caracterización estructural necesaria.
-distinguir a los integradores de los eruditos y especialistas, componer
-comités de evaluación apropiados y protegerse contra seis fallas identificadas
-modos. El protocolo es transparente, auditable y diseñado para adaptarse.
-a contextos nacionales específicos. Calibración empírica de la clasificación.
-establecer umbrales frente a las distribuciones reales de investigadores es el siguiente paso natural.
+Proponemos un protocolo transparente y auditable para evaluación nacional de
+investigadores interdisciplinarios. El panel ($\Delta$, $S$, $E$) permite
+separar perfiles cualitativamente distintos, ajustar composición de comités y
+mitigar seis modos de fallo frecuentes. El siguiente paso natural es calibrar
+umbrales con distribuciones reales por área y etapa de carrera.
 
 # Referencias
 
