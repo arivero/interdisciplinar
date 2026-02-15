@@ -61,7 +61,8 @@ the indicator taxonomy. Section 4 defines our panel, demonstrates its
 discrimination power, and proves robustness results. Section 5 discusses
 implications for institutional and national-level evaluation. Section 6
 identifies open problems. Section 7 applies the panel to a department-level
-case study. Section 8 concludes.
+case study. Section 8 concludes. A companion cheatsheet collects every named
+display formula in the paper for quick reference.
 
 # Conceptual Foundations
 
