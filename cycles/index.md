@@ -62,8 +62,10 @@
 - `C06` (content): completed; Satellite 2 first draft (246 lines, 4 refs). Mock CVs, committee composition rule, 6 failure modes.
 - `Q06` (quality): completed; review of Sat2 draft. M1-m3 fixed, S1-S2 addressed. Guard checks pass.
 
+- `S04` (study): completed; institutional measurement witness in blackboards/3.md. Mock department (3 researchers), bibliometric panel + institutional indicators (CoAuth, CoSup, Grants). Key finding: institutional data reveals Farid's polymathy despite high grant diversity.
+
 **Priority order:**
 
-1. Commit Satellite 2.
-2. Satellite 1 (institutional measurement) — no blackboard work yet, needs S cycle first.
-3. Further work on main manuscript or Satellite 2 refinement as desired.
+1. D06: Satellite 1 structure design (based on S04 blackboard).
+2. C07: Write Satellite 1 first draft.
+3. Continue main manuscript refinement or satellite quality cycles as desired.
