@@ -60,12 +60,33 @@ outdir="$(dirname "$output")"
 mkdir -p "$outdir"
 
 tmp_header=""
+tmp_style=""
 cleanup() {
   if [[ -n "$tmp_header" && -f "$tmp_header" ]]; then
     rm -f "$tmp_header"
   fi
+  if [[ -n "$tmp_style" && -f "$tmp_style" ]]; then
+    rm -f "$tmp_style"
+  fi
 }
 trap cleanup EXIT
+
+tmp_style="$(mktemp -t md-html-style.XXXXXX)"
+cat > "$tmp_style" <<'STYLE'
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; font-size: 12pt; line-height: 1.5; max-width: 980px; margin: 0 auto; padding: 18px; color: #111; }
+  h1 { font-size: 16pt; }
+  h2 { font-size: 15pt; }
+  h3 { font-size: 14pt; }
+  h4, h5, h6 { font-size: 13pt; }
+  .title { margin-top: 0; }
+  pre, code { font-size: 11pt; }
+  table { border-collapse: collapse; }
+  th, td { border: 1px solid #ddd; padding: 4px 6px; }
+  blockquote { margin-left: 0; padding-left: 12px; border-left: 3px solid #ddd; color: #333; }
+  a { color: #0b5fff; }
+</style>
+STYLE
 
 if [[ -n "$title" ]]; then
   tmp_header="$(mktemp -t md-html-title.XXXXXX)"
@@ -75,6 +96,7 @@ if [[ -n "$title" ]]; then
     -s \
     --mathjax="$mathjax_url" \
     --metadata-file="$tmp_header" \
+    --include-in-header="$tmp_style" \
     "${inputs[@]}" \
     -o "$output"
 else
@@ -82,6 +104,7 @@ else
     -f markdown+tex_math_single_backslash \
     -s \
     --mathjax="$mathjax_url" \
+    --include-in-header="$tmp_style" \
     "${inputs[@]}" \
     -o "$output"
 fi
