@@ -64,8 +64,14 @@
 
 - `S04` (study): completed; institutional measurement witness in blackboards/3.md. Mock department (3 researchers), bibliometric panel + institutional indicators (CoAuth, CoSup, Grants). Key finding: institutional data reveals Farid's polymathy despite high grant diversity.
 
-**Priority order:**
+- `D06` (discovery): completed; Satellite 1 structure (6 sections, ~4-5pp target).
+- `C07` (content): completed; Satellite 1 first draft (257 lines, 4 refs). Operational guide for universities. S04 demo scenario. Implementation guidance. Workaround when citation data unavailable.
 
-1. D06: Satellite 1 structure design (based on S04 blackboard).
-2. C07: Write Satellite 1 first draft.
-3. Continue main manuscript refinement or satellite quality cycles as desired.
+**Session summary:**
+- Main manuscript: 580 lines, 18 refs, complete area review
+- Satellite 2: 246 lines, first draft complete
+- Satellite 1: 257 lines, first draft complete
+- Bibliography: 16/16 OK (all PENDING sources acquired)
+- Blackboards: 0-3 active (S00, S01, S02, S04)
+
+**Next:** Quality cycles on satellites if desired, or wrap session.
