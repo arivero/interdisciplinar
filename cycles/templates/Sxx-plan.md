@@ -19,7 +19,7 @@ Produce a concrete derivation/computation/check as a promotion candidate (no man
 ## Allowed files
 - `blackboards/`
 - `notebooks/`
-- `docs/research-log.gz`
+- `project-docs/research-log.gz`
 - `cycles/Sxx-*.md`
 
 ## Forbidden files

@@ -11,7 +11,7 @@ Divergent exploration: look for surprises, cross-thread connections, and framing
 - (Check for accumulated anomalies/surprises in recent cycle logs.)
 
 ## Cross-thread probe
-- Pick two threads from `docs/research-state.md` that "should" be related.
+- Pick two threads from `project-docs/research-state.md` that "should" be related.
 - State the expected connection in one sentence.
 - Can you write one equation or diagram that relates quantities from both threads?
 
@@ -25,9 +25,9 @@ Divergent exploration: look for surprises, cross-thread connections, and framing
 - If none: state explicitly "no new candidate this round" (this is fine).
 
 ## Allowed files
-- `docs/research-state.md` (principle evolution log, thread list)
-- `docs/motivations.md`
-- `docs/research-log.gz`
+- `project-docs/research-state.md` (principle evolution log, thread list)
+- `project-docs/motivations.md`
+- `project-docs/research-log.gz`
 - `cycles/DXxx-*.md`
 - `cycles/index.md`
 
@@ -42,5 +42,5 @@ Divergent exploration: look for surprises, cross-thread connections, and framing
 
 ## Acceptance criteria
 - All four sections above (surprise inventory, cross-thread probe, framing stress-test, candidate principle) are filled in — even if the answer is "nothing new."
-- `docs/research-state.md` is reviewed; updated if warranted.
+- `project-docs/research-state.md` is reviewed; updated if warranted.
 

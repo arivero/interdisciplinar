@@ -8,7 +8,7 @@ Conventions:
 - Only `Cnn` cycles may edit manuscripts (`paper/main.md`, `papers/*/main.md`).
 - `Qnn` cycles must name a parent `Cnn`.
 - Create cycle files by copying templates and renaming to the target ID.
-- Before any new `C`, the agent should query recent state directly (`cycles/index.md`, `docs/research-log.gz` tail) and apply the D/S gate policy from `cycles/README.md`.
+- Before any new `C`, the agent should query recent state directly (`cycles/index.md`, `project-docs/research-log.gz` tail) and apply the D/S gate policy from `cycles/README.md`.
 
 ## Template inventory
 

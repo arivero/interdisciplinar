@@ -19,8 +19,8 @@ Date: YYYY-MM-DD
 - <one sentence, or "no new candidate this round">
 
 ## Updates made
-- `docs/research-state.md`: <what changed>
-- `docs/research-log.gz`: <entry appended via scripts/log-entry.sh>
+- `project-docs/research-state.md`: <what changed>
+- `project-docs/research-log.gz`: <entry appended via scripts/log-entry.sh>
 
 ## Spawned cycles
 - <list, or "none — pure exploration round">

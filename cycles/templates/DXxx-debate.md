@@ -13,6 +13,6 @@ Date: YYYY-MM-DD
 - <a counterexample to the candidate principle>
 
 ## Relationship to the North Star
-- Does this debate touch the central thesis (see `docs/motivations.md`)?
+- Does this debate touch the central thesis (see `project-docs/motivations.md`)?
 - If so: which direction does the evidence point — reinforcing, refining, or undermining?
 

@@ -31,8 +31,8 @@ claim and specify the minimum witness needed, without editing manuscripts.
 ## Allowed files (edit/write)
 - `cycles/D01-*.md`
 - `cycles/index.md`
-- `docs/research-log.gz` (append via `scripts/log-entry.sh`)
-- `docs/research-state.md`
+- `project-docs/research-log.gz` (append via `scripts/log-entry.sh`)
+- `project-docs/research-state.md`
 
 ## Read-only references (if needed; never edit in D)
 - Manuscripts/notes: `paper/main.md`, `papers/*/main.md`

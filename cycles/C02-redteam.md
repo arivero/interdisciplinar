@@ -31,5 +31,5 @@ Date: 2026-02-15
 
 5. **Paper may now exceed target length for some venues**:
    517 lines is substantial for a letter but appropriate for a full review paper.
-   - Mitigation: This is intended to be a full review (per docs/motivations.md),
+   - Mitigation: This is intended to be a full review (per project-docs/motivations.md),
      not a short letter. Length is appropriate.

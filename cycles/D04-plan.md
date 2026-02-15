@@ -28,5 +28,5 @@ letter on this topic.
   Satellite 1 territory.
 
 ## Allowed files
-- `docs/research-state.md` (update threads)
+- `project-docs/research-state.md` (update threads)
 - `cycles/D04-*.md`

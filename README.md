@@ -28,7 +28,11 @@ cycles/             Planning/logging artifacts for structured research cycles
   README.md         Cycle types, hard rules, file restrictions
   templates/        Copy/rename templates for new cycles
 
-docs/               Project documentation
+docs/               Published HTML papers for GitHub Pages (public website)
+  index.html        Index of all papers with links and abstracts
+  *.html            HTML versions of all papers
+
+project-docs/       Project documentation (internal)
   motivations.md    Research goals, satellite paper definitions, open questions
   research-state.md Living working memory (thesis, threads, next actions)
   handoff.md        Session handoff notes
