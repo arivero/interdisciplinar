@@ -56,7 +56,6 @@ Default to:
 - Status: D01 complete; S02 witness needed.
 
 ## Immediate Next Actions
-1. C16: Produce Spanish translations for `paper/main.md` and both satellites.
-2. Q11: Run translation quality pass (terminology consistency + math fidelity).
-3. P00: Build/package EN+ES PDFs and include in commit artifacts.
-4. Resume bibliography hardening on remaining `PENDING` and `PENDING_LIBRARY` sources.
+1. Resume bibliography hardening on remaining `PENDING` and `PENDING_LIBRARY` sources.
+2. Calibrate threshold/CI policies on real institutional data (post-translation phase).
+3. Prepare venue-specific submission packages when target journals are selected.

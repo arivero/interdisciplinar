@@ -62,17 +62,25 @@
 - `C15` (content): completed; closure updates in main review + both satellites (+65/-4).
 - `Q10` (quality): completed; alignment/referee pass found no blocking issues.
 
+### Translation + packaging wave (C16/Q11/P00)
+- `C16` (content): completed; Spanish manuscripts created for main review + both satellites.
+- `Q11` (quality): completed; translation QA pass and terminology normalization.
+- `P00` (publication packaging): completed; EN+ES TeX/PDF artifacts built and prepared for repo.
+
 ## Next Action
 
 **Current status (2026-02-15):**
 - **Main manuscript**: 2,679 lines (post-C15 closure updates)
 - **Satellite 2**: 262 lines (post-C15 sync updates)
 - **Satellite 1**: 293 lines (post-C15 sync updates)
+- **Spanish review**: 500 lines (`papers/main-review-es/main.md`)
+- **Spanish satellite 1**: 242 lines (`papers/sat1-institutional-es/main.md`)
+- **Spanish satellite 2**: 168 lines (`papers/sat2-national-evaluation-es/main.md`)
 - **Bibliography**: 35 OK + 6 PENDING (Klein 2008, Leinster 2012, Stokols 2003, Choi 2006, Hammarfelt 2020, Borlaug 2025) + 2 PENDING_LIBRARY (OECD 1998, Stirling 2007)
 - **Blackboards**: 6 active (README, 0-3, 4-5, formulas)
 - **Notebooks**: 5 (panel-worked-example, panel-sensitivity, panel-interpretation, formula-catalog, idr-typology)
 
 **Next priorities:**
-1. `C16`: Spanish translations for main + both satellites.
-2. `Q11`: quality review and correction pass on translations.
-3. `P00`: build/package PDFs (EN + ES) and commit generated outputs.
+1. Bibliography hardening for remaining `PENDING`/`PENDING_LIBRARY` sources.
+2. Optional compactness pass if any target venue imposes strict page limits.
+3. Submission-target packaging cycle when venue selection is fixed.
