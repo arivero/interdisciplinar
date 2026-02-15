@@ -113,6 +113,24 @@ If `paper/main.md` changed:
 1. Cycle-tag leak check: `rg -n 'C[0-9]{2}' paper/main.md`
 2. No internal-path leaks: `rg -n 'blackboards/' paper/main.md`
 
+## Subagent Workspace Awareness (Mandatory)
+When spawning any subagent, the prompt **must** include the relevant workspace
+READMEs so the subagent writes to the correct locations instead of returning
+raw output to the orchestrator. Include these based on cycle type:
+
+| Cycle type | READMEs to include in prompt |
+|------------|------------------------------|
+| `S` (study) | `blackboards/README.md`, `notebooks/README.md` |
+| `D` (discovery) | `blackboards/README.md` |
+| `B` (bibliography) | `paper/bibliography.md` header (status codes and conventions) |
+| `Q` (quality) | `cycles/README.md` §3 (Q scope) |
+| `C` (content) | `cycles/README.md` §1-2 (manuscript rules) |
+
+**Anti-pattern:** A subagent that returns a wall of text to the orchestrator
+instead of writing to `blackboards/`, `notebooks/`, or `cycles/` files.
+The orchestrator should collect only a short summary (status, counts, issues found)
+— never the full content.
+
 ## Subagent Recipes (Optional)
 The recipes below describe how to delegate specific tasks to subagents. They are **optional**: if the agent does not support orchestration, skip these and perform the review in-context instead.
 

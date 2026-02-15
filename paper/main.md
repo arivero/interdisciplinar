@@ -103,6 +103,47 @@ for indicator design: should measurement target the breadth of disciplinary
 inputs (a multidisciplinary property) or the depth of their integration (an
 interdisciplinary or transdisciplinary property)?
 
+Wagner et al. (2011) elaborate these definitions in a comprehensive review
+of IDR measurement. Multidisciplinary research "juxtaposes disciplinary
+perspectives, adding breadth and available knowledge --- the product is no
+more and no less than the simple sum of its parts." Interdisciplinary research
+"integrates separate disciplinary data, methods, tools, concepts, and
+theories in order to create a holistic view" --- the product is "different
+from, and greater than, the sum of its parts." Transdisciplinary approaches
+"are comprehensive frameworks that transcend the narrow scope of disciplinary
+worldviews." They note that common usage "rarely distinguishes between the
+input and output directions of IDR" (Wagner et al., 2011, fn. 10), yet the
+distinction matters for measurement: a researcher may draw on multiple
+disciplines' methods in designing a study (input-side interdisciplinarity)
+while publishing exclusively in one field (output-side concentration), or
+conversely may publish across many fields without methodological integration.
+A fourth mode, *cross-disciplinary* research, involves referencing literature
+from another field without any attempt at integration (Aksnes, Karlstrøm, and
+Piro, 2026; Hammarfelt, 2020).
+
+Aksnes, Karlstrøm, and Piro (2026), surveying 1,498 publications with
+self-reported IDR ratings, found that 42 percent of papers were rated as
+*both* multidisciplinary and interdisciplinary, and a further 23 percent as
+partially both. This empirical overlap confirms that the multi/inter
+distinction is not a clean partition but a spectrum, and that single-scalar
+diversity indicators (which aggregate breadth without regard for integration)
+cannot distinguish between these modes. As Choi and Pak (2006) put it via
+Abramo, D'Angelo, and Zhang (2018), multi-, inter-, and transdisciplinarity
+form "a continuum of increasing levels of involvement by multiple
+disciplines." The directionality of knowledge flow matters as well. When the
+output of one discipline serves as input for another without synthesis, the
+literature terms this *sequential multidisciplinarity* (Stokols et al., 2003);
+when the borrowed input transforms the receiving discipline, it is
+*instrumental interdisciplinarity* (Klein, 2008). Bidirectional exchange
+constitutes *reciprocal interdisciplinarity*. Zhou, Guns, and Engels (2023)
+formalize the flow perspective through their interdisciplinary knowledge flow
+(IKF) framework, which characterizes exchanges along three dimensions:
+broadness, intensity, and homogeneity. These distinctions have direct
+implications for the panel introduced in Section 4: diversity ($\Delta$)
+captures breadth regardless of direction, coherence ($S$) distinguishes
+integration from juxtaposition, and the cross-field effect ($E$) measures
+diffusion beyond the home discipline.
+
 Empirical evidence on long-term trends sharpens this question. Porter and
 Rafols (2009) analyzed publication records across ten subject areas from 1975
 to 2005 and documented pervasive growth in surface-level markers of
@@ -527,7 +568,7 @@ Bornmann (2019) proposed a decomposed diversity measure (DIV) as the product
 of normalised variety, balance ($1 - \text{Gini}$), and disparity components,
 allowing each component to be inspected separately. Whether these components
 should be combined multiplicatively (Leydesdorff, Wagner, and Bornmann, 2019)
-or additively (Mutz, 2021) remains an open question that the definition of
+or additively (Mutz, 2022) remains an open question that the definition of
 IDR alone does not resolve (Zwanenburg, Nakhoda, and Whigham, 2022).
 
 ### Validity assessment: the Zwanenburg evaluation
@@ -1824,6 +1865,31 @@ fields, while a high-$\Delta$, low-$S$ profile may indicate a polymath who
 can be assessed field by field. The composition of the evaluation committee
 should reflect the structure revealed by the panel.
 
+A concrete example is Spain's national research evaluation system. In 2023,
+the Comisión Nacional Evaluadora de la Actividad Investigadora (CNEAI)
+created *Campo 0: Interdisciplinar y Multidisciplinar*, the first dedicated
+evaluation track for interdisciplinary researchers within the six-year
+productivity assessment (*sexenio*). Mandated by Article 11.7 of Ley
+Orgánica 2/2023, which requires positive valuation of "the results of
+multidisciplinary and interdisciplinary research" across all fields, Campo 0
+operationalizes precisely the multi/inter distinction discussed above. Its
+criteria define *interdisciplinary* contributions as those "designed or
+structured by applying perspectives, theories, or methods associated with
+different disciplines" — an input-oriented definition measuring the
+integration of diverse methods into research design (mappable to high
+reference diversity $\Delta$ combined with high coherence $S$). Separately,
+*multidisciplinary* trajectories are recognized when supported by "at least
+two contributions in different disciplinary fields" — an output-oriented
+definition measuring publication breadth across fields (mappable to
+high variety $N \geq 2$). Notably, *transdisciplinary* research is absent from
+the Campo 0 criteria in all three editions published to date (2023--2025),
+consistent with the bibliometric measurement gap: transdisciplinarity, which
+involves non-academic partners and transcends disciplinary epistemologies,
+lacks standard bibliometric indicators. The panel ($\Delta$, $S$, $E$)
+could operationalize the input-side measurement that ANECA's
+interdisciplinary track requires; publication field diversity would complement
+it for the output-side multidisciplinary criterion.
+
 ## Data Extraction Procedures
 
 The first practical step is to extract structured bibliographic records from
@@ -2151,6 +2217,25 @@ mechanically without contextual interpretation. The challenge lies in
 scaling participatory methods — which are labor-intensive and context-specific
 — to institutional and national evaluation frameworks while preserving their
 capacity to surface contested meanings of interdisciplinarity.
+
+Seventh, the measurement of *transdisciplinary* research remains an open
+frontier. The OECD tripartite typology and its elaboration by Wagner et al.
+(2011) distinguish transdisciplinarity from multi- and interdisciplinarity by
+its integration of disciplinary epistemologies and, increasingly, by its
+engagement with non-academic partners (Borlaug and Svartefoss, 2025).
+Yet no standard bibliometric indicator captures this dimension.
+Diversity indicators measure breadth of knowledge inputs; coherence
+indicators measure integration of the knowledge base; but neither detects
+whether research transcends academic boundaries to engage practitioner
+knowledge, policy contexts, or community stakeholders. This measurement gap
+has practical consequences: Spain's ANECA, in designing Campo 0 for
+interdisciplinary evaluation, explicitly covers "interdisciplinar y
+multidisciplinar" research but omits transdisciplinary criteria entirely
+(BOE-A-2023-25537 through BOE-A-2025-26118) — a pragmatic acknowledgment
+that what cannot be measured should not be required. Future work might
+explore hybrid approaches combining bibliometric panels with
+qualitative evidence of stakeholder engagement, along the lines of
+Marres and de Rijcke's (2020) participatory indicators, to bridge this gap.
 
 # Case Study: Department-Level Evaluation
 
@@ -2512,23 +2597,47 @@ natural next step.
 
 # References
 
-- Aksnes, D. W., Karlstrøm, H., and Piro, F. N. (2026). Self-reported and bibliometric interdisciplinarity measures rarely correspond: a survey-based comparative analysis of indicators and researcher perceptions. *Scientometrics*, 131:189–208.
 - Abramo, G., D'Angelo, C. A., and Zhang, L. (2018). A comparison of two approaches for measuring interdisciplinary research output: The disciplinary diversity of authors vs the disciplinary diversity of the reference list. *Journal of Informetrics*, 12(4):1182–1193.
+- Aksnes, D. W., Karlstrøm, H., and Piro, F. N. (2026). Self-reported and bibliometric interdisciplinarity measures rarely correspond: a survey-based comparative analysis of indicators and researcher perceptions. *Scientometrics*, 131:189–208.
+- Bollen, J., Van de Sompel, H., Hagberg, A., and Chute, R. (2009). A principal component analysis of 39 scientific impact measures. *PLoS ONE*, 4(6):e6022.
+- Borlaug, S. B. and Svartefoss, S. M. (2025). Evaluating transdisciplinary research quality. In Sivertsen, G. and Langfeldt, L. (eds.), *Challenges in Research Policy*, pp. 13–20. Springer, Cham.
+- Bornmann, L., Tekles, A., Zhang, H. H., and Ye, F. Y. (2019). Do we measure novelty when we analyze unusual combinations of cited references? A validation study of bibliometric novelty indicators based on F1000Prime data. *Journal of Informetrics*, 13(4):100979.
+- Boyack, K. W., Klavans, R., and Börner, K. (2005). Mapping the backbone of science. *Scientometrics*, 64(3):351–374.
 - Cantone, G. G. (2024). How to measure interdisciplinary research? A systemic design for the model of measurement. *Scientometrics*, 129:4937–4982.
 - Cantone, G. G. (2025). Estimation of disciplinary similarity with large language models. *Scientometrics*, 130(10):5345–5373.
+- Choi, B. C. K. and Pak, A. W. P. (2006). Multidisciplinarity, interdisciplinarity and transdisciplinarity in health research, services, education and policy: 1. Definitions, objectives, and evidence of effectiveness. *Clinical and Investigative Medicine*, 29(6):351–364.
+- Fontana, M., Iori, M., Montobbio, F., and Sinatra, R. (2020). New and atypical combinations: An assessment of novelty and interdisciplinarity. *Research Policy*, 49(7):104063.
+- Goyanes, M., Demeter, M., Grané, A., Albarrán-Lozano, I., and Gil de Zúñiga, H. (2020). A mathematical approach to assess research diversity: Operationalization and applicability in communication sciences, political science, and beyond. *Scientometrics*, 125(3):2299–2322.
+- Hammarfelt, B. (2020). Discipline. *Knowledge Organization*, 47(3):244–256.
+- Hill, M. O. (1973). Diversity and evenness: A unifying notation and its consequences. *Ecology*, 54(2):427–432.
+- Jensen, P. and Lutkouskaya, K. (2014). The many dimensions of laboratories' interdisciplinarity. *Scientometrics*, 98(1):619–631.
+- Jost, L. (2006). Entropy and diversity. *Oikos*, 113(2):363–375.
+- Jost, L. (2009). Mismeasuring biological diversity: Response to Hoffmann and Hoffmann (2008). *Ecological Economics*, 68(4):925–928.
+- Klein, J. T. (2008). Evaluation of interdisciplinary and transdisciplinary research: A literature review. *American Journal of Preventive Medicine*, 35(2S):S116–S123.
+- Larivière, V. and Gingras, Y. (2010). On the relationship between interdisciplinarity and scientific impact. *Journal of the American Society for Information Science and Technology*, 61(1):126–131.
+- Leinster, T. and Cobbold, C. A. (2012). Measuring diversity: the importance of species similarity. *Ecology*, 93(3):477–489.
+- Leydesdorff, L. (2006). Can scientific journals be classified in terms of aggregated journal–journal citation relations using the Journal Citation Reports? *Journal of the American Society for Information Science and Technology*, 57(5):601–613.
 - Leydesdorff, L. and Rafols, I. (2011). Indicators of the interdisciplinarity of journals: Diversity, centrality, and citations. *Journal of Informetrics*, 5(1):87–100.
 - Leydesdorff, L., Wagner, C. S., and Bornmann, L. (2019). Interdisciplinarity as diversity in citation patterns among journals: Rao-Stirling diversity, relative variety, and the Gini coefficient. *Journal of Informetrics*, 13(1):255–269.
 - Marres, N. and de Rijcke, S. (2020). From indicators to indicating interdisciplinarity: A participatory mapping methodology for research communities in-the-making. *Quantitative Science Studies*, 1(3):1041–1055.
 - Morillo, F., Bordons, M., and Gómez, I. (2001). An approach to interdisciplinarity through bibliometric indicators. *Scientometrics*, 51(1):203–222.
 - Morillo, F., Bordons, M., and Gómez, I. (2003). Interdisciplinarity in science: A tentative typology of disciplines and research areas. *Journal of the American Society for Information Science and Technology*, 54(13):1237–1249.
+- Moulton, R. and Jiang, Y. (2018). Maximally consistent sampling and the Jaccard index of probability distributions. In *Proceedings of the 2018 IEEE International Conference on Data Mining (ICDM)*, pages 347–356. IEEE.
+- Mutz, R. (2022). Diversity and interdisciplinarity: Should variety, balance and disparity be combined as a product or better as a sum? An information-theoretical and statistical estimation approach. *Scientometrics*, 127(12):7397–7414.
 - Nakhoda, M., Whigham, P., and Zwanenburg, S. (2023). Quantifying and addressing uncertainty in the measurement of interdisciplinarity. *Scientometrics*, 128:6107–6127.
-- National Academies (2005). *Facilitating Interdisciplinary Research*. Washington, DC: National Academies Press.
+- Noji, H., Yasuda, R., Yoshida, M., and Kinosita, K. (1997). Direct observation of the rotation of F1-ATPase. *Nature*, 386(6622):299–302.
+- OECD (1998). *Interdisciplinarity in Science and Technology*. Paris: OECD Directorate for Science, Technology and Industry.
 - Porter, A. L. and Rafols, I. (2009). Is science becoming more interdisciplinary? Measuring and mapping six research fields over time. *Scientometrics*, 81(3):719–745.
 - Rafols, I. (2019). S&T indicators in the wild: contextualization and participation for responsible metrics. *Research Evaluation*, 28(1):7–22.
 - Rafols, I. and Meyer, M. (2009). Diversity and network coherence as indicators of interdisciplinarity: case studies in bionanoscience. *Scientometrics*, 82(2):263–287.
 - Stirling, A. (2007). A general framework for analysing diversity in science, technology and society. *Journal of the Royal Society Interface*, 4(15):707–719.
+- Stokols, D., Fuqua, J., Gress, J., Harvey, R., Phillips, K., Baezconde-Garbanati, L., Unger, J., Palmer, P., Clark, M. A., Colby, S. M., Morgan, G., and Trochim, W. (2003). Evaluating transdisciplinary science. *Nicotine & Tobacco Research*, 5(Suppl 1):S21–S39.
+- Tomishige, M., Klopfenstein, D. R., and Vale, R. D. (2002). Conversion of Unc104/KIF1A kinesin into a processive motor after dimerization. *Science*, 297(5590):2263–2267.
+- Uzzi, B., Mukherjee, S., Stringer, M., and Jones, B. (2013). Atypical combinations and scientific impact. *Science*, 342(6157):468–472.
+- Wang, J., Veugelers, R., and Stephan, P. (2017). Bias against novelty in science: A cautionary tale for users of bibliometric indicators. *Research Policy*, 46(8):1416–1436.
+- Wagner, C. S., Roessner, J. D., Bobb, K., Klein, J. T., Boyack, K. W., Keyton, J., Rafols, I., and Börner, K. (2011). Approaches to understanding and measuring interdisciplinary scientific research (IDR): A review of the literature. *Journal of Informetrics*, 5(1):14–26.
 - Wang, Q. and Schneider, J. W. (2020). Consistency and validity of interdisciplinarity measures. *Quantitative Science Studies*, 1(1):239–263.
-- Zwanenburg, S., Nakhoda, M., and Whigham, P. (2022). Toward greater consistency and validity in measuring interdisciplinarity: a systematic and conceptual evaluation. *Scientometrics*, 127:3035–3065.
-- Zhang, L., Rousseau, R., and Glänzel, W. (2016). Diversity of references as an indicator of the interdisciplinarity of journals: Taking similarity between subject fields into account. *Journal of the Association for Information Science and Technology*, 67(5):1257–1265.
 - Xiang, S., Romero, D. M., and Teplitskiy, M. (2025). Evaluating interdisciplinary research: Disparate outcomes for topic and knowledge base. *Proceedings of the National Academy of Sciences*, 122(16):e2409752122.
+- Zhang, L., Rousseau, R., and Glänzel, W. (2016). Diversity of references as an indicator of the interdisciplinarity of journals: Taking similarity between subject fields into account. *Journal of the Association for Information Science and Technology*, 67(5):1257–1265.
 - Zhou, Q., Guns, R., and Engels, T. C. E. (2023). Towards indicating interdisciplinarity: Characterizing interdisciplinary knowledge flow. *Journal of the Association for Information Science and Technology*, 74(11):1325–1340.
+- Zwanenburg, S., Nakhoda, M., and Whigham, P. (2022). Toward greater consistency and validity in measuring interdisciplinarity: a systematic and conceptual evaluation. *Scientometrics*, 127:3035–3065.

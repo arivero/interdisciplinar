@@ -9,6 +9,15 @@ Produce an accurate, critical review of research on interdisciplinarity in
 university research, with special focus on the indicators used to measure it,
 and report the current state of knowledge with explicit source recency.
 
+## Completion Priority
+The primary completion goal is **statistics and mathematical formulae** — the
+formal indicator definitions, their properties, computational methods, and
+empirical validation. Policy discussion, evaluation reform narratives, and
+metadiscursive framing are secondary; they provide context but should not
+drive expansion decisions. When choosing what to develop next, always prefer
+deepening the mathematical and statistical content over adding political or
+institutional commentary.
+
 ## Foundational Goals
 1. Build a clear map of existing interdisciplinarity indicators and what each one
    actually measures.
@@ -44,7 +53,7 @@ failure modes must the agency guard against?
   for institutional internal use, leveraging complete project/article/staff/budget data.
 - Purpose: provide an operational, reproducible measurement recipe rather than a
   broad conceptual survey.
-- Status: not started.
+- Status: first draft complete, reviewed (Q07).
 
 ### Satellite 2: National Evaluation of Interdisciplinary Researchers
 - Planned short letter (max 6 compiled pages): how a national evaluation agency
@@ -62,7 +71,7 @@ failure modes must the agency guard against?
      external interdisciplinary reviewers, or hybrid?
   4. What are the failure modes (e.g., rewarding breadth without depth, penalizing
      non-standard publication patterns)?
-- Status: not started. Depends on main review and Satellite 1 stabilizing first.
+- Status: first draft complete, reviewed (Q06).
 
 ## Lifecycle Rule
 Every satellite paper must end in one of two states:

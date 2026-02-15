@@ -11,7 +11,7 @@ abstract: |
   The protocol combines a three-component bibliometric panel (diversity,
   coherence, cross-field effect) with institutional-only indicators
   (co-authorship diversity, co-supervision diversity, grant panel diversity).
-  Using a mock departmental scenario, we demonstrate how institutional data
+  Using a mock departmental scenario, we illustrate how institutional data
   reveals polymathic breadth versus genuine integration — a distinction
   invisible to external databases. We identify the main data obstacle
   (citation data for cross-field effect) and propose a two-component
@@ -77,10 +77,10 @@ addresses this with a two-component workaround.
 For each researcher, compute:
 
 **Diversity** ($\Delta$): The Rao-Stirling index over cited references:
-$$\Delta = 1 - \sum_{i,j} s_{ij} p_i p_j$$
-where $p_i$ is the proportion of references in category $i$ and $s_{ij}$ is
-the pairwise similarity between categories. This requires reference
-classification and a similarity matrix.
+$$\Delta = \sum_{i \neq j} d_{ij}\, p_i\, p_j, \qquad d_{ij} = 1 - s_{ij}$$
+where $p_i$ is the proportion of references in category $i$, $s_{ij}$ is
+the pairwise similarity between categories, and $d_{ij}$ is the corresponding
+distance. This requires reference classification and a similarity matrix.
 
 **Coherence** ($S$): The mean pairwise bibliographic coupling among publications:
 $$S = \frac{1}{\binom{n}{2}} \sum_{k < l} \cos(\mathbf{r}_k, \mathbf{r}_l)$$
@@ -125,22 +125,46 @@ Institutional data provides this discriminatory power.
 ## Demonstration: Mock Department
 
 A small Physics & Materials Science department with 3 researchers
-illustrates the protocol.
+illustrates the protocol. We use five Web of Science-style categories
+and an illustrative similarity matrix:
 
-**Dr. Emma** (10 years post-PhD):
+| ID | Category |
+|----|----------|
+| C1 | Physics, condensed matter |
+| C2 | Materials science |
+| C3 | Chemistry, physical |
+| C4 | Optics |
+| C5 | Engineering, electrical |
+
+| | C1 | C2 | C3 | C4 | C5 |
+|--|------:|------:|------:|------:|------:|
+| C1 | 1.00 | 0.60 | 0.40 | 0.35 | 0.30 |
+| C2 | 0.60 | 1.00 | 0.50 | 0.25 | 0.40 |
+| C3 | 0.40 | 0.50 | 1.00 | 0.30 | 0.20 |
+| C4 | 0.35 | 0.25 | 0.30 | 1.00 | 0.45 |
+| C5 | 0.30 | 0.40 | 0.20 | 0.45 | 1.00 |
+
+Similarity values are illustrative; in practice they would be derived from
+inter-category citation patterns or estimated via large language models
+(Cantone, 2025).
+
+All coherence values ($S$) below are illustrative; per-publication
+reference vectors are omitted for brevity.
+
+**Dr. Emma** (10 years post-PhD, $\mathbf{p}_E = (0.40, 0.30, 0.25, 0.03, 0.02)$):
 - Biblio panel: $\Delta = 0.42$, $S = 0.55$, $E = 0.22$
 - Institutional: CoAuth = 0.20, CoSup = 0.20, Grants = 2 panels
 - **Profile**: Integrator. Moderate bibliometric diversity reinforced by
   cross-departmental collaborations and co-supervisions.
 
-**Dr. Farid** (7 years post-PhD):
+**Dr. Farid** (7 years post-PhD, $\mathbf{p}_F = (0.25, 0.25, 0.25, 0.20, 0.05)$):
 - Biblio panel: $\Delta = 0.58$, $S = 0.05$, $E = 0.08$
 - Institutional: CoAuth = 0.00, CoSup = 0.00, Grants = 4 panels
 - **Profile**: Polymath. High diversity and grant breadth, but zero
   collaborative integration. Each paper is a disconnected single-field
   contribution.
 
-**Dr. Greta** (4 years post-PhD):
+**Dr. Greta** (4 years post-PhD, $\mathbf{p}_G = (0.70, 0.25, 0.03, 0.01, 0.01)$):
 - Biblio panel: $\Delta = 0.28$, $S = 0.75$, $E = 0.08$
 - Institutional: CoAuth = 0.00, CoSup = N/A, Grants = 1 panel
 - **Profile**: Early-career specialist. Focused research program; low $E$
@@ -210,7 +234,7 @@ If the institution lacks access to citation databases, compute a
 
 | Profile | Δ | S | CoAuth | CoSup | Interpretation |
 |---------|-------|-------|--------|-------|----------------|
-| Integrator | High | High | High | High | Integration via references AND processes |
+| Integrator | High | Moderate-high | High | High | Integration via references AND processes |
 | Polymath | High | Low | Low | Low | Broad but disconnected |
 | Specialist | Low | High | Low | Low | Focused, disciplinary |
 

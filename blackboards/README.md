@@ -54,8 +54,8 @@ active exploration, not archival memory (that's what notebooks and papers are fo
 | 1 | S01 sensitivity analysis (perturbation robustness) | Active — S01 |
 | 2 | S02 national evaluation scenario (mock CVs + protocol) | Active — S02 |
 | 3 | (empty) | Available |
-| 4 | (empty) | Available |
-| 5 | (empty) | Available |
+| 4 | Formula extractions (Hill numbers, novelty, co-citation IDR) | Active |
+| 5 | S06: Multi/inter/trans distinction (ANECA) | Active — S06 |
 | 6 | (empty) | Available |
 
 ## Before Choosing Next Task: Read All Blackboards
