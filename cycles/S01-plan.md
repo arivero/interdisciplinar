@@ -19,7 +19,7 @@ similarity matrix s_{ij} and researcher profiles. Without manuscript edits.
 ## Allowed files
 - `blackboards/`
 - `notebooks/`
-- `docs/research-log.gz`
+- `project-docs/research-log.gz`
 - `cycles/S01-*.md`
 
 ## Forbidden files

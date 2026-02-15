@@ -82,7 +82,7 @@ Track citation keys and their acquisition status here.
 
 ## Status Codes
 - `OK` — source acquired and ingested into `sources/`
-- `PENDING` — needs acquisition (see OA triage order in `docs/handoff.md`)
+- `PENDING` — needs acquisition (see OA triage order in `project-docs/handoff.md`)
 - `PENDING_LIBRARY` — requires institutional access or physical library visit
 
 ## Allowed Download Domains

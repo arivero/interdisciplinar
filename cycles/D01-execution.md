@@ -19,9 +19,9 @@ This claim is bounded to the evaluation of individual researchers who self-class
 
 ## Updates made
 - `cycles/index.md`: D01 added to active cycles
-- `docs/research-state.md`: thread on national evaluation added
-- `docs/motivations.md`: Satellite 2 and open question #4 added
-- `docs/research-log.gz`: entry appended
+- `project-docs/research-state.md`: thread on national evaluation added
+- `project-docs/motivations.md`: Satellite 2 and open question #4 added
+- `project-docs/research-log.gz`: entry appended
 
 ## Spawned cycles
 - `S02`: toy evaluation scenario in `blackboards/2.md`

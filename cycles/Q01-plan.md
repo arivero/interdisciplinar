@@ -3,7 +3,7 @@
 Date: 2026-02-15
 
 ## Goal
-Check whether paper/main.md aligns with docs/motivations.md goals and open
+Check whether paper/main.md aligns with project-docs/motivations.md goals and open
 questions. If misalignment found, spawn D/S cycles — do NOT patch the paper.
 
 ## Alignment signals to check

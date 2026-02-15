@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="A. Rivero" />
+  <meta name="dcterms.date" content="2026-01-01" />
+  <title>Panel-Based Evaluation of Interdisciplinary Researchers: A Protocol for National Agencies</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" type="text/javascript"></script>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Panel-Based Evaluation of Interdisciplinary Researchers: A Protocol for National Agencies</h1>
+<p class="author">A. Rivero</p>
+<p class="date">2026</p>
+</header>
+<h1 id="introduction">Introduction</h1>
+<p>National evaluation agencies periodically assess researchers for career advancement, funding eligibility, and institutional accreditation. These assessments typically rely on disciplinary panels: a committee of experts in the researcher’s field evaluates their publication record, citations, and broader contributions. This procedure works well when the researcher’s portfolio falls within a single recognized discipline.</p>
+<p>A problem arises when a researcher is classified in the science group “Interdisciplinary” — a category that exists in several national systems (e.g., Spain’s ANECA, Italy’s ANVUR) for researchers whose work does not fit any single disciplinary panel. Standard evaluation procedures assign reviewers from a single discipline, creating a structural mismatch: the committee lacks expertise in part of the researcher’s portfolio, or worse, applies disciplinary norms (publication venues, citation rates, methodological standards) that are inappropriate for cross-disciplinary work.</p>
+<p>This note proposes an evaluation protocol that uses a three-component indicator panel to characterize interdisciplinary researchers and inform committee composition. The panel, developed in a companion review (Rivero, 2026), combines disciplinary diversity (<span class="math inline">\(\Delta\)</span>), network coherence (<span class="math inline">\(S\)</span>), and cross-field effect (<span class="math inline">\(E\)</span>). We demonstrate the protocol on mock researcher profiles, identify failure modes, and propose safeguards.</p>
+<p>Operationally, we treat “interdisciplinary” as an integration claim, not just a breadth claim: high input diversity can represent either genuine integration or disconnected multidisciplinarity, and the protocol is built to distinguish these cases explicitly.</p>
+<h1 id="the-indicator-panel">The Indicator Panel</h1>
+<p>We briefly summarize the three panel components; formal definitions and validation appear in the companion review.</p>
+<p><strong>Diversity</strong> (<span class="math inline">\(\Delta\)</span>): The Rao-Stirling index measures the disciplinary spread of a researcher’s cited references, incorporating variety, balance, and disparity. High <span class="math inline">\(\Delta\)</span> indicates that the researcher draws on a broad range of fields.</p>
+<p><strong>Coherence</strong> (<span class="math inline">\(S\)</span>): The mean linkage strength measures the average pairwise bibliographic coupling between a researcher’s publications. High <span class="math inline">\(S\)</span> indicates that publications share references across category boundaries — the researcher’s diverse inputs are woven into a unified research program.</p>
+<p><strong>Cross-field effect</strong> (<span class="math inline">\(E\)</span>): The fraction of citations received from outside the researcher’s primary category. High <span class="math inline">\(E\)</span> indicates that the researcher’s work produces impact across disciplinary boundaries.</p>
+<p>The key insight is that no single component suffices. Diversity alone cannot distinguish a genuine integrator (<span class="math inline">\(\Delta\)</span> high, <span class="math inline">\(S\)</span> high, <span class="math inline">\(E\)</span> high) from a polymath who publishes in multiple unrelated fields (<span class="math inline">\(\Delta\)</span> high, <span class="math inline">\(S\)</span> near zero, <span class="math inline">\(E\)</span> low). The full triple is needed.</p>
+<h1 id="evaluation-protocol">Evaluation Protocol</h1>
+<h2 id="step-1-compute-the-panel">Step 1: Compute the Panel</h2>
+<p>For each researcher classified as “Interdisciplinary,” the agency computes (<span class="math inline">\(\Delta\)</span>, <span class="math inline">\(S\)</span>, <span class="math inline">\(E\)</span>) from publication and citation data. This requires:</p>
+<ul>
+<li>A disciplinary classification of cited references (e.g., Web of Science subject categories or Scopus ASJC codes).</li>
+<li>A pairwise similarity matrix between categories.</li>
+<li>Citation data for the cross-field effect.</li>
+</ul>
+<h2 id="step-2-classify-the-profile">Step 2: Classify the Profile</h2>
+<p>The panel values are compared against classification thresholds:</p>
+<table>
+<thead>
+<tr class="header">
+<th>Classification</th>
+<th><span class="math inline">\(\Delta\)</span></th>
+<th><span class="math inline">\(S\)</span></th>
+<th><span class="math inline">\(E\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Genuine integrator</td>
+<td><span class="math inline">\(\geq 0.40\)</span></td>
+<td><span class="math inline">\(\geq 0.30\)</span></td>
+<td><span class="math inline">\(\geq 0.30\)</span></td>
+</tr>
+<tr class="even">
+<td>Polymath (non-integrative)</td>
+<td><span class="math inline">\(\geq 0.40\)</span></td>
+<td><span class="math inline">\(&lt; 0.15\)</span></td>
+<td><span class="math inline">\(&lt; 0.15\)</span></td>
+</tr>
+<tr class="odd">
+<td>Specialist (reclassify)</td>
+<td><span class="math inline">\(&lt; 0.35\)</span></td>
+<td>any</td>
+<td>any</td>
+</tr>
+<tr class="even">
+<td>Provisional (CI overlap)</td>
+<td>boundary-overlap</td>
+<td>boundary-overlap</td>
+<td>boundary-overlap</td>
+</tr>
+<tr class="odd">
+<td>Ambiguous (requires full panel review)</td>
+<td>all other combinations</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>These thresholds are illustrative and should be calibrated against empirical distributions before operational deployment. When confidence intervals overlap multiple rows, the case should be treated as provisional and sent to full-panel qualitative review.</p>
+<h2 id="step-3-compose-the-committee">Step 3: Compose the Committee</h2>
+<p><strong>Procedure.</strong> Given researcher <span class="math inline">\(r\)</span> with category proportion vector <span class="math inline">\(p_r\)</span> (the fraction of references in each category):</p>
+<ol type="1">
+<li>Identify the primary categories: <span class="math inline">\(K_r = \{i : p_{r,i} \geq \tau\}\)</span>, where <span class="math inline">\(\tau = 0.15\)</span>.</li>
+<li>For each category <span class="math inline">\(i \in K_r\)</span>, include at least one evaluator from discipline <span class="math inline">\(i\)</span>.</li>
+<li>Include at least one evaluator with demonstrated cross-disciplinary expertise (<span class="math inline">\(\Delta &gt; 0.40\)</span>).</li>
+<li>Committee size: <span class="math inline">\(|K_r| + 1\)</span> (disciplines represented plus a cross-disciplinary chair).</li>
+<li>If profile classification is provisional (CI overlap), add one methods evaluator tasked with uncertainty and robustness review.</li>
+</ol>
+<p>The committee composition is thus data-driven: it reflects the researcher’s actual disciplinary profile rather than an arbitrary assignment.</p>
+<h2 id="demonstration-on-mock-profiles">Demonstration on Mock Profiles</h2>
+<p>We illustrate the protocol with three mock researchers, all classified as “Interdisciplinary” by the agency.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Researcher</th>
+<th><span class="math inline">\(\Delta\)</span></th>
+<th><span class="math inline">\(S\)</span></th>
+<th><span class="math inline">\(E\)</span></th>
+<th>Classification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Dr. A (integrator)</td>
+<td>0.558</td>
+<td>0.733</td>
+<td>0.600</td>
+<td>Genuine integrator</td>
+</tr>
+<tr class="even">
+<td>Dr. B (polymath)</td>
+<td>0.562</td>
+<td>0.000</td>
+<td>0.063</td>
+<td>Polymath</td>
+</tr>
+<tr class="odd">
+<td>Dr. D (specialist)</td>
+<td>0.288</td>
+<td>0.881</td>
+<td>0.211</td>
+<td>Specialist (reclassify)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Dr. A</strong> publishes across condensed matter physics, physical chemistry, and molecular biology. Her publications share references across category boundaries (<span class="math inline">\(S = 0.733\)</span>), and her work is cited across disciplines (<span class="math inline">\(E = 0.600\)</span>). The panel correctly identifies her as a genuine integrator. Note that Dr. A and Dr. B have nearly identical diversity scores (0.558 vs. 0.562), yet receive opposite classifications — diversity alone is insufficient. The committee should include evaluators from her three primary fields plus a cross-disciplinary chair (4 members).</p>
+<p><strong>Dr. B</strong> has published in five different fields, but each publication is a single-field contribution with no shared references across domains (<span class="math inline">\(S = 0.000\)</span>). His work is cited almost exclusively within each publication’s own field (<span class="math inline">\(E = 0.063\)</span>). The panel identifies him as a polymath. He should be reclassified to his strongest field or evaluated separately in each field — the “Interdisciplinary” label is misleading.</p>
+<p><strong>Dr. D</strong> concentrates in condensed matter physics and materials science (<span class="math inline">\(\Delta = 0.288\)</span>), neighboring fields with high mutual similarity. Her coherence is high because all publications draw on the same knowledge base. The panel identifies her as a misclassified specialist who should be evaluated by a standard disciplinary panel for condensed matter physics.</p>
+<h1 id="failure-modes-and-safeguards">Failure Modes and Safeguards</h1>
+<p>We identify six failure modes that can arise in interdisciplinary evaluation, even when using the panel.</p>
+<h2 id="f1-breadth-without-depth-reward">F1: Breadth-without-depth reward</h2>
+<p><strong>Risk:</strong> A researcher with high <span class="math inline">\(\Delta\)</span> is rewarded for breadth regardless of coherence or impact.</p>
+<p><strong>Safeguard:</strong> Require <span class="math inline">\(S \geq 0.30\)</span> and <span class="math inline">\(E \geq 0.30\)</span> for “integrator” classification. High diversity alone does not qualify.</p>
+<h2 id="f2-non-standard-publication-penalty">F2: Non-standard publication penalty</h2>
+<p><strong>Risk:</strong> Interdisciplinary journals typically have lower impact factors than top disciplinary journals. Researchers publishing in such venues are penalized in impact-factor-based assessments.</p>
+<p><strong>Safeguard:</strong> Use field-normalized citation indicators. Do not compare impact factors across fields.</p>
+<h2 id="f3-incommensurable-citation-norms">F3: Incommensurable citation norms</h2>
+<p><strong>Risk:</strong> Citation rates differ by an order of magnitude across fields (e.g., mathematics vs. molecular biology). An integrator bridging such fields will appear underperforming by the norms of the high-citation field.</p>
+<p><strong>Safeguard:</strong> Normalize <span class="math inline">\(E\)</span> and citation counts by field-specific baselines. The panel’s <span class="math inline">\(E\)</span> is already a fraction (not an absolute count), which mitigates this partially.</p>
+<h2 id="f4-misclassification-persistence">F4: Misclassification persistence</h2>
+<p><strong>Risk:</strong> A specialist enters the “Interdisciplinary” category and remains there because reclassification is bureaucratically difficult.</p>
+<p><strong>Safeguard:</strong> Panel-based reclassification trigger: if <span class="math inline">\(\Delta &lt; 0.35\)</span>, recommend reclassification to the researcher’s primary field.</p>
+<h2 id="f5-early-career-data-sparsity">F5: Early-career data sparsity</h2>
+<p><strong>Risk:</strong> Junior researchers have too few publications for reliable panel values. Nakhoda, Whigham, and Zwanenburg (2023) showed that Rao-Stirling confidence intervals can span up to 0.6 points for small samples. Even at mid-career, individual-level estimates carry wider uncertainty than aggregate measures, making threshold-based classification inherently noisy.</p>
+<p><strong>Safeguard:</strong> Minimum publication threshold (e.g., <span class="math inline">\(n \geq 15\)</span>). Below this threshold, present panel values with confidence intervals, flag them as provisional, and defer hard classification unless the full interval lies inside one profile region.</p>
+<h2 id="f6-gaming-via-strategic-co-authorship">F6: Gaming via strategic co-authorship</h2>
+<p><strong>Risk:</strong> A researcher adds co-authors from distant fields to inflate <span class="math inline">\(\Delta\)</span> without genuine integration.</p>
+<p><strong>Safeguard:</strong> Weight <span class="math inline">\(\Delta\)</span> by corresponding-author publications only. Cross-check against <span class="math inline">\(S\)</span>: genuine integration produces high coherence, while strategic co-authorship does not.</p>
+<h1 id="discussion">Discussion</h1>
+<p>The protocol proposed here is designed to complement expert judgment, not replace it. The panel provides structured evidence about the type of interdisciplinarity, and the committee composition rule ensures that the right expertise is present. But the final evaluation decision remains with the committee.</p>
+<p>Several limitations should be noted. First, the classification thresholds are illustrative and require calibration against empirical distributions of panel values across disciplines and career stages. Second, the protocol assumes access to citation data, which may not be available for all researchers (particularly in the humanities). Third, the mock profiles use simplified data; real researcher portfolios are messier.</p>
+<p>Rafols (2019) argued that science indicators should be contextualized, multidimensional, and subject to stakeholder validation. The protocol follows this principle: it is multidimensional (three components), context-dependent (committee composition adapts to the researcher’s profile), and transparent (thresholds and rules are explicit and auditable). The panel should remain vector-valued evidence (<span class="math inline">\(\Delta\)</span>, <span class="math inline">\(S\)</span>, <span class="math inline">\(E\)</span>), not a single composite score.</p>
+<p>The fundamental insight is that “Interdisciplinary” is not a single category. It encompasses integrators, polymaths, and misclassified specialists — researchers with qualitatively different profiles that require qualitatively different evaluation approaches. The panel provides the resolution to make these distinctions.</p>
+<h1 id="conclusions">Conclusions</h1>
+<p>We have proposed an evaluation protocol for national agencies assessing researchers classified as “Interdisciplinary.” The three-component indicator panel (<span class="math inline">\(\Delta\)</span>, <span class="math inline">\(S\)</span>, <span class="math inline">\(E\)</span>) provides the structural characterization needed to distinguish integrators from polymaths and specialists, compose appropriate evaluation committees, and guard against six identified failure modes. The protocol is transparent, auditable, and designed to be adapted to specific national contexts. Empirical calibration of the classification thresholds against real researcher distributions is the natural next step.</p>
+<h1 id="references">References</h1>
+<ul>
+<li>Nakhoda, M., Whigham, P., and Zwanenburg, S. (2023). Quantifying and addressing uncertainty in the measurement of interdisciplinarity. <em>Scientometrics</em>, 128:6107–6127.</li>
+<li>Rafols, I. (2019). S&amp;T indicators in the wild: contextualization and participation for responsible metrics. <em>Research Evaluation</em>, 28(1):7–22.</li>
+<li>Rivero, A. (2026). Measuring interdisciplinarity: A multi-component indicator panel for research evaluation. Manuscript.</li>
+<li>Xiang, S., Romero, D. M., and Teplitskiy, M. (2025). Evaluating interdisciplinary research: Disparate outcomes for topic and knowledge base. <em>Proceedings of the National Academy of Sciences</em>, 122(16):e2409752122.</li>
+</ul>
+</body>
+</html>

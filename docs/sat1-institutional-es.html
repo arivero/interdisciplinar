@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="A. Rivero" />
+  <meta name="dcterms.date" content="2026-01-01" />
+  <title>Medición de la Interdisciplinariedad con Datos Internos Universitarios: Guía Operativa</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" type="text/javascript"></script>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Medición de la Interdisciplinariedad con Datos Internos Universitarios: Guía Operativa</h1>
+<p class="author">A. Rivero</p>
+<p class="date">2026</p>
+</header>
+<h1 id="introducción">Introducción</h1>
+<p>Las universidades buscan cada vez más fomentar y evaluar investigación interdisciplinaria dentro de su planeación estratégica y sus sistemas de aseguramiento de calidad. Sin embargo, las bases bibliométricas comerciales (Web of Science, Scopus) ofrecen una visión parcial de la actividad investigadora y, además, sus costos de suscripción pueden ser altos. A esto se suma que esas bases no observan procesos institucionales clave — coautorías, codirecciones doctorales, colaboraciones en proyectos y adscripciones departamentales — que muestran cómo ocurre realmente la integración del conocimiento.</p>
+<p>Esta nota presenta una guía operativa para medir interdisciplinariedad con predominio de datos internos. El enfoque central combina un panel bibliométrico de tres componentes — diversidad (<span class="math inline">\(\Delta\)</span>), coherencia (<span class="math inline">\(S\)</span>) y efecto transcampo (<span class="math inline">\(E\)</span>), desarrollado en la revisión complementaria (Rivero, 2026) — con indicadores institucionales que capturan estructuras de colaboración. Mostramos el protocolo en un escenario departamental simulado y añadimos recomendaciones de extracción de datos, control de calidad e interpretación.</p>
+<h1 id="panorama-de-datos">Panorama de Datos</h1>
+<h2 id="qué-tiene-una-universidad">Qué Tiene una Universidad</h2>
+<p>La mayoría de universidades intensivas en investigación mantienen:</p>
+<ul>
+<li><strong>Repositorios de publicaciones</strong>: repositorios institucionales o CRIS (Current Research Information Systems) con metadatos de producción científica (autores, referencias, palabras clave).</li>
+<li><strong>Sistemas de personal</strong>: adscripción departamental de todo el personal académico.</li>
+<li><strong>Registros doctorales</strong>: información de dirección y codirección de tesis, incluyendo la afiliación de codirectores.</li>
+<li><strong>Bases de proyectos</strong>: registros de financiación con fuente, panel de evaluación y coinvestigadores.</li>
+</ul>
+<p>Estas fuentes son completas dentro de la institución, pero no están normalmente disponibles en servicios externos.</p>
+<h2 id="qué-suele-faltar">Qué Suele Faltar</h2>
+<ul>
+<li><strong>Clasificación disciplinar de referencias</strong>: asignación de referencias a categorías (por ejemplo, categorías Web of Science).</li>
+<li><strong>Matriz de similitud entre categorías</strong>: necesaria para computar diversidad Rao-Stirling. Puede derivarse de flujos de citación o estimarse con modelos de lenguaje (Cantone, 2025).</li>
+<li><strong>Datos de citación</strong>: quién cita cada publicación y desde qué campos, necesarios para <span class="math inline">\(E\)</span>.</li>
+</ul>
+<p>La principal brecha operativa es el acceso a citación para calcular <span class="math inline">\(E\)</span>. Por eso incluimos una alternativa de dos componentes.</p>
+<h1 id="protocolo-de-medición">Protocolo de Medición</h1>
+<h2 id="paso-1-panel-bibliométrico">Paso 1: Panel Bibliométrico</h2>
+<p>Para cada investigador, calcular:</p>
+<p><strong>Diversidad</strong> (<span class="math inline">\(\Delta\)</span>): índice Rao-Stirling sobre referencias: <span class="math display">\[\Delta = \sum_{i \neq j} d_{ij}\, p_i\, p_j, \qquad d_{ij} = 1 - s_{ij}\]</span> donde <span class="math inline">\(p_i\)</span> es la proporción de referencias en la categoría <span class="math inline">\(i\)</span>, <span class="math inline">\(s_{ij}\)</span> es la similitud entre categorías y <span class="math inline">\(d_{ij}\)</span> la distancia correspondiente.</p>
+<p><strong>Coherencia</strong> (<span class="math inline">\(S\)</span>): acoplamiento bibliográfico medio entre publicaciones: <span class="math display">\[S = \frac{1}{\binom{n}{2}} \sum_{k &lt; l} \cos(\mathbf{r}_k, \mathbf{r}_l)\]</span> donde <span class="math inline">\(\mathbf{r}_k\)</span> es el vector de referencias de la publicación <span class="math inline">\(k\)</span>.</p>
+<p><strong>Efecto transcampo</strong> (<span class="math inline">\(E\)</span>): fracción de citas recibidas desde fuera de la categoría principal del investigador.</p>
+<h2 id="paso-2-indicadores-solo-institucionales">Paso 2: Indicadores Solo Institucionales</h2>
+<p>Además del panel bibliométrico, calcular:</p>
+<p><strong>Diversidad de coautoría</strong>: <span class="math display">\[\text{CoAuth} = \frac{\text{publicaciones con coautores de otros departamentos}}{\text{publicaciones totales}}\]</span></p>
+<p><strong>Diversidad de codirección</strong>: <span class="math display">\[\text{CoSup} = \frac{\text{codirecciones interdepartamentales}}{\text{direcciones totales}}\]</span></p>
+<p><strong>Diversidad de paneles de financiación</strong>: número de paneles distintos en los que el investigador obtiene proyectos.</p>
+<h2 id="paso-3-interpretación">Paso 3: Interpretación</h2>
+<p>La combinación de indicadores bibliométricos e institucionales permite separar integración de amplitud polímata:</p>
+<table>
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 14%" />
+<col style="width: 12%" />
+<col style="width: 29%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Perfil</th>
+<th><span class="math inline">\(\Delta\)</span></th>
+<th>S</th>
+<th>CoAuth</th>
+<th>CoSup</th>
+<th>Interpretación</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Integrador</td>
+<td>Alta</td>
+<td>Moderada-alta</td>
+<td>Alta</td>
+<td>Alta</td>
+<td>Integración transversal en publicaciones y procesos</td>
+</tr>
+<tr class="even">
+<td>Polímata</td>
+<td>Alta</td>
+<td>Baja</td>
+<td>Baja</td>
+<td>Baja</td>
+<td>Amplitud de referencias sin integración colaborativa</td>
+</tr>
+<tr class="odd">
+<td>Especialista</td>
+<td>Baja</td>
+<td>Alta</td>
+<td>Baja</td>
+<td>Baja</td>
+<td>Trayectoria focalizada disciplinar</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Idea clave:</strong> una persona con <span class="math inline">\(\Delta\)</span> alta y gran diversidad de paneles de financiación puede parecer interdisciplinaria en datos externos, pero si CoAuth y CoSup son nulos, el patrón es amplitud sin integración.</p>
+<p>Esto coincide con la distinción entrada/salida de la revisión principal: la diversidad de insumos puede reflejar interdisciplinariedad integrativa o solo yuxtaposición multidisciplinaria; para distinguirlas se requieren coherencia e indicadores de proceso.</p>
+<h2 id="demostración-departamento-simulado">Demostración: Departamento Simulado</h2>
+<p>Consideramos un departamento pequeño de Física y Ciencia de Materiales con 3 investigadores. Usamos cinco categorías estilo Web of Science y una matriz de similitud ilustrativa.</p>
+<table>
+<thead>
+<tr class="header">
+<th>ID</th>
+<th>Categoría</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>C1</td>
+<td>Física de la materia condensada</td>
+</tr>
+<tr class="even">
+<td>C2</td>
+<td>Ciencia de materiales</td>
+</tr>
+<tr class="odd">
+<td>C3</td>
+<td>Química física</td>
+</tr>
+<tr class="even">
+<td>C4</td>
+<td>Óptica</td>
+</tr>
+<tr class="odd">
+<td>C5</td>
+<td>Ingeniería eléctrica</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr class="header">
+<th></th>
+<th style="text-align: right;">C1</th>
+<th style="text-align: right;">C2</th>
+<th style="text-align: right;">C3</th>
+<th style="text-align: right;">C4</th>
+<th style="text-align: right;">C5</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>C1</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">0.60</td>
+<td style="text-align: right;">0.40</td>
+<td style="text-align: right;">0.35</td>
+<td style="text-align: right;">0.30</td>
+</tr>
+<tr class="even">
+<td>C2</td>
+<td style="text-align: right;">0.60</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">0.50</td>
+<td style="text-align: right;">0.25</td>
+<td style="text-align: right;">0.40</td>
+</tr>
+<tr class="odd">
+<td>C3</td>
+<td style="text-align: right;">0.40</td>
+<td style="text-align: right;">0.50</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">0.30</td>
+<td style="text-align: right;">0.20</td>
+</tr>
+<tr class="even">
+<td>C4</td>
+<td style="text-align: right;">0.35</td>
+<td style="text-align: right;">0.25</td>
+<td style="text-align: right;">0.30</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">0.45</td>
+</tr>
+<tr class="odd">
+<td>C5</td>
+<td style="text-align: right;">0.30</td>
+<td style="text-align: right;">0.40</td>
+<td style="text-align: right;">0.20</td>
+<td style="text-align: right;">0.45</td>
+<td style="text-align: right;">1.00</td>
+</tr>
+</tbody>
+</table>
+<p>Los valores son ilustrativos; en práctica deben estimarse con datos reales.</p>
+<p><strong>Dra. Emma</strong> (<span class="math inline">\(\mathbf{p}_E = (0.40, 0.30, 0.25, 0.03, 0.02)\)</span>): - Panel: <span class="math inline">\(\Delta = 0.42\)</span>, <span class="math inline">\(S = 0.55\)</span>, <span class="math inline">\(E = 0.22\)</span> - Institucional: CoAuth = 0.20, CoSup = 0.20, Paneles = 2 - <strong>Perfil</strong>: Integradora.</p>
+<p><strong>Dr. Farid</strong> (<span class="math inline">\(\mathbf{p}_F = (0.25, 0.25, 0.25, 0.20, 0.05)\)</span>): - Panel: <span class="math inline">\(\Delta = 0.58\)</span>, <span class="math inline">\(S = 0.05\)</span>, <span class="math inline">\(E = 0.08\)</span> - Institucional: CoAuth = 0.00, CoSup = 0.00, Paneles = 4 - <strong>Perfil</strong>: Polímata no integrativo.</p>
+<p><strong>Dra. Greta</strong> (<span class="math inline">\(\mathbf{p}_G = (0.70, 0.25, 0.03, 0.01, 0.01)\)</span>): - Panel: <span class="math inline">\(\Delta = 0.28\)</span>, <span class="math inline">\(S = 0.75\)</span>, <span class="math inline">\(E = 0.08\)</span> - Institucional: CoAuth = 0.00, CoSup = N/A, Paneles = 1 - <strong>Perfil</strong>: Especialista en etapa temprana.</p>
+<h1 id="guía-de-implementación">Guía de Implementación</h1>
+<h2 id="extracción-de-datos">Extracción de Datos</h2>
+<ol type="1">
+<li><strong>Publicaciones</strong>: exportar del repositorio/CRIS con referencias completas.</li>
+<li><strong>Afiliaciones de coautores</strong>: integrar con sistema de RR. HH.</li>
+<li><strong>Codirecciones doctorales</strong>: integrar con registros de posgrado.</li>
+<li><strong>Proyectos</strong>: mapear proyectos a taxonomías de paneles.</li>
+<li><strong>Citación</strong>: si existe, importar desde OpenAlex, WoS o Scopus para <span class="math inline">\(E\)</span>.</li>
+</ol>
+<h2 id="controles-de-calidad">Controles de Calidad</h2>
+<ul>
+<li><strong>Cobertura de categorías en referencias</strong>: si falta &gt;25%, <span class="math inline">\(\Delta\)</span> será inestable (Nakhoda et al., 2023).</li>
+<li><strong>Carreras tempranas</strong>: para &lt;5 años pos-PhD o &lt;10 publicaciones, reportar intervalos de confianza junto con estimaciones puntuales.</li>
+<li><strong>Calibración y ambigüedad</strong>: umbrales ilustrativos deben calibrarse con distribuciones locales; si un intervalo cruza fronteras de perfil, clasificar como “ambiguo” y solicitar revisión cualitativa.</li>
+<li><strong>Cambios de afiliación</strong>: estratificar por periodo para evitar inflar CoAuth artificialmente.</li>
+</ul>
+<h2 id="reporte">Reporte</h2>
+<p>Reportar en tres niveles:</p>
+<ol type="1">
+<li><strong>Individual</strong>: perfil por investigador (<span class="math inline">\(\Delta\)</span>, S, E, CoAuth, CoSup, Paneles).</li>
+<li><strong>Departamental</strong>: distribuciones y medianas.</li>
+<li><strong>Institucional</strong>: agregados comparativos entre áreas.</li>
+</ol>
+<p><strong>No usar ranking compuesto único.</strong> El panel es multidimensional y debe interpretarse como vector de evidencia (Rafols, 2019).</p>
+<h2 id="alternativa-sin-datos-de-citación">Alternativa sin Datos de Citación</h2>
+<p>Si no hay datos de citación, usar panel interno de dos componentes (<span class="math inline">\(\Delta\)</span>, S) + indicadores institucionales (CoAuth, CoSup, Paneles):</p>
+<table>
+<thead>
+<tr class="header">
+<th>Perfil</th>
+<th><span class="math inline">\(\Delta\)</span></th>
+<th>S</th>
+<th>CoAuth</th>
+<th>CoSup</th>
+<th>Interpretación</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Integrador</td>
+<td>Alta</td>
+<td>Moderada-alta</td>
+<td>Alta</td>
+<td>Alta</td>
+<td>Integración en insumos y procesos</td>
+</tr>
+<tr class="even">
+<td>Polímata</td>
+<td>Alta</td>
+<td>Baja</td>
+<td>Baja</td>
+<td>Baja</td>
+<td>Amplitud desconectada</td>
+</tr>
+<tr class="odd">
+<td>Especialista</td>
+<td>Baja</td>
+<td>Alta</td>
+<td>Baja</td>
+<td>Baja</td>
+<td>Foco disciplinar</td>
+</tr>
+</tbody>
+</table>
+<p>Se pierde capacidad para medir impacto transcampo (<span class="math inline">\(E\)</span>), pero se mantiene capacidad para identificar integración.</p>
+<h1 id="limitaciones-y-extensiones">Limitaciones y Extensiones</h1>
+<p>Primero, el protocolo asume datos limpios y estructurados; muchas instituciones aún no los tienen. Segundo, caracteriza tipo de interdisciplinariedad, no calidad intrínseca de resultados. Tercero, los umbrales son orientativos y deben calibrarse empíricamente. Cuarto, en portafolios pequeños la incertidumbre puede ser grande; por tanto, las reglas de clasificación deben ser sensibles a intervalos y no solo a valores puntuales.</p>
+<p>Entre las extensiones posibles: indicadores semánticos (título/resumen), indicadores docentes (docencia interdepartamental) y análisis temporal de trayectorias.</p>
+<h1 id="conclusiones">Conclusiones</h1>
+<p>Las universidades pueden medir interdisciplinariedad con mayor resolución si combinan panel bibliométrico y datos internos de colaboración. El protocolo propuesto distingue integración genuina de amplitud polímata, evita la reducción a un único número y permite decisiones más auditables. El principal cuello de botella sigue siendo la citación para <span class="math inline">\(E\)</span>, pero la alternativa interna (<span class="math inline">\(\Delta\)</span>, S + indicadores institucionales) ofrece una base sólida para uso operativo.</p>
+<h1 id="referencias">Referencias</h1>
+<ul>
+<li>Cantone, G. G. (2025). Estimation of disciplinary similarity with large language models. <em>Scientometrics</em>, 130(10):5345–5373.</li>
+<li>Nakhoda, M., Whigham, P., and Zwanenburg, S. (2023). Quantifying and addressing uncertainty in the measurement of interdisciplinarity. <em>Scientometrics</em>, 128:6107–6127.</li>
+<li>Rafols, I. (2019). S&amp;T indicators in the wild: contextualization and participation for responsible metrics. <em>Research Evaluation</em>, 28(1):7–22.</li>
+<li>Rivero, A. (2026). Measuring interdisciplinarity: A multi-component indicator panel for research evaluation. Manuscript.</li>
+</ul>
+</body>
+</html>

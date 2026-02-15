@@ -23,7 +23,7 @@ without manuscript edits.
 ## Allowed files
 - `blackboards/`
 - `notebooks/`
-- `docs/research-log.gz`
+- `project-docs/research-log.gz`
 - `cycles/S00-*.md`
 
 ## Forbidden files

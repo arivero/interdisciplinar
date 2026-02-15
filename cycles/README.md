@@ -36,7 +36,7 @@ Avoid opening a `C` cycle for tiny edits; bundle them into the next promotion wa
   or argumentative issues. It may propose fixes but does not edit manuscripts directly.
 
 - **Alignment mode**: checks whether the manuscript aligns with the goals and
-  open questions in `docs/motivations.md`. An alignment `Q` does **not** patch
+  open questions in `project-docs/motivations.md`. An alignment `Q` does **not** patch
   the paper directly. Instead, if misalignment is found, it spawns `Dnn` (to
   investigate the gap) and/or `Snn` (to develop missing content) cycles that
   aim to close the alignment gap. These spawned cycles then feed into a future
@@ -46,7 +46,7 @@ Avoid opening a `C` cycle for tiny edits; bundle them into the next promotion wa
   - Acquired sources in `paper/bibliography.md` that are not cited in the
     manuscript — a strong indicator that the review is not covering the area
     adequately.
-  - Open questions in `docs/motivations.md` with no corresponding manuscript
+  - Open questions in `project-docs/motivations.md` with no corresponding manuscript
     section or discussion.
   - Satellite paper topics with no treatment in the main review.
 
@@ -128,9 +128,9 @@ These tracks are designed to be *interleaved*, but under the strict rule that on
 
 | Cycle | Allowed edits | Forbidden edits |
 |---|---|---|
-| `Dnn` (triage) | `docs/research-state.md`, `docs/research-log.gz`, `cycles/Dnn-*.md` | Manuscripts, bibliography, `sources/` |
-| `DXnn` (explore) | `docs/research-state.md`, `docs/research-log.gz`, `cycles/DXnn-*.md` | Manuscripts, bibliography, `sources/` |
-| `Snn` | `blackboards/*.md`, `paper/notes/*.md`, `notebooks/*.md`, `docs/research-log.gz`, `cycles/Snn-*.md` | Manuscripts, bibliography |
+| `Dnn` (triage) | `project-docs/research-state.md`, `project-docs/research-log.gz`, `cycles/Dnn-*.md` | Manuscripts, bibliography, `sources/` |
+| `DXnn` (explore) | `project-docs/research-state.md`, `project-docs/research-log.gz`, `cycles/DXnn-*.md` | Manuscripts, bibliography, `sources/` |
+| `Snn` | `blackboards/*.md`, `paper/notes/*.md`, `notebooks/*.md`, `project-docs/research-log.gz`, `cycles/Snn-*.md` | Manuscripts, bibliography |
 | `Bnn` | `paper/bibliography.md`, `sources/*`, `cycles/Bnn-*.md` | Manuscripts, blackboards/notes/notebooks |
 | `Cnn` | Manuscripts (`paper/main.md`, `papers/*/main.md`) + `cycles/Cnn-*.md` | `blackboards/`, `paper/notes/`, bibliography, `sources/` |
 | `Qnn` | `cycles/Qnn-*.md` only | Everything else |

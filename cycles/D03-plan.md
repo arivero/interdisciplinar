@@ -32,5 +32,5 @@ Key questions:
   E (diffusion) sufficiently addresses OQ1.
 
 ## Allowed files
-- `docs/research-state.md` (update threads)
+- `project-docs/research-state.md` (update threads)
 - `cycles/D03-*.md`

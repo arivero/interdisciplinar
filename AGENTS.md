@@ -11,9 +11,9 @@ This file applies to the entire repository.
 ## Session Startup (Read Order)
 At session start, read these in order:
 1. `AGENTS.md`
-2. `docs/motivations.md`
-3. `docs/handoff.md`
-4. `docs/research-state.md`
+2. `project-docs/motivations.md`
+3. `project-docs/handoff.md`
+4. `project-docs/research-state.md`
 5. `cycles/index.md`
 6. `cycles/README.md`
 
@@ -25,12 +25,12 @@ Startup is not complete unless all six files above are read, including
 2. Completed cycle files live in **git history only** (removed from the working
    tree via `git rm` after commit). To retrieve one, use `git show`; never
    bulk-recover archived cycles into the working tree.
-3. `docs/research-log.gz` is a write-only compressed log. **Never read it** during normal operation. Append via `scripts/log-entry.sh`.
+3. `project-docs/research-log.gz` is a write-only compressed log. **Never read it** during normal operation. Append via `scripts/log-entry.sh`.
 4. Read only blackboard slots relevant to the current cycle.
 
 ## Context Poisoning Guardrails
 1. Default-deny for high-volume history files: do not read full contents of:
-   - `docs/research-log.gz` (binary log — never read)
+   - `project-docs/research-log.gz` (binary log — never read)
    - git-archived cycle files (recovered via `git show`)
    - session transcripts or continuation dumps
 2. Read archived or log files only with an explicit reason tied to the active cycle, and only the minimal slice needed.
@@ -39,7 +39,7 @@ Startup is not complete unless all six files above are read, including
    - Read policy/state files listed in Session Startup.
    - For logs, read only a short tail (for example last 30-60 lines).
    - For archived cycles, use `git show <commit>:<path>` for a single named file only when required.
-5. If accidental ingestion happens, state it in the cycle execution log and immediately re-anchor on canonical state files (`AGENTS.md`, `docs/research-state.md`, `cycles/index.md`) before proceeding.
+5. If accidental ingestion happens, state it in the cycle execution log and immediately re-anchor on canonical state files (`AGENTS.md`, `project-docs/research-state.md`, `cycles/index.md`) before proceeding.
 
 ## Manuscript Policy
 1. Cycle labels (e.g. `C01`, `S05`) are planning-only metadata.
@@ -81,7 +81,7 @@ either compact references, trim body, or reclassify as a longer article (~8-15pp
 3. **Two-commit rule (per batch):**
    - **First commit:** manuscript source files — `.md` in `paper/` and
      `papers/*/`, `.tex`, `.bib`, `paper/bibliography.md`.
-   - **Second commit:** everything else — `cycles/`, `docs/`, `blackboards/`,
+   - **Second commit:** everything else — `cycles/`, `project-docs/`, `blackboards/`,
      `paper/notes/`, `notebooks/`, config files.
    - If no manuscripts changed, only the second commit is needed.
 4. **Commit metadata (required in every commit message):**
@@ -99,7 +99,7 @@ either compact references, trim body, or reclassify as a longer article (~8-15pp
    - `cycles/<ID>-debate.md`
    - `cycles/<ID>-redteam.md`
 3. Update both:
-   - `docs/research-log.gz` (append via `scripts/log-entry.sh`)
+   - `project-docs/research-log.gz` (append via `scripts/log-entry.sh`)
    - `cycles/index.md` (status + next actions)
 
 ## Content Cycle Diffstat Requirement
@@ -152,7 +152,7 @@ The recipes below describe how to delegate specific tasks to subagents. They are
 - **Hostile referee**: actively looks for reasons to reject; stress-tests every claim.
 
 ## Editable Documentation
-- `docs/motivations.md` — agents may edit this file if they discover new
+- `project-docs/motivations.md` — agents may edit this file if they discover new
   motivations, research connections, or open questions during study cycles.
 
 ## Sources Policy

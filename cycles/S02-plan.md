@@ -24,7 +24,7 @@ Without manuscript edits.
 - `cycles/S02-*.md` remain concise logs/summaries.
 
 ## Allowed files
-- `blackboards/`, `notebooks/`, `docs/research-log.gz`, `cycles/S02-*.md`
+- `blackboards/`, `notebooks/`, `project-docs/research-log.gz`, `cycles/S02-*.md`
 
 ## Forbidden files
 - Manuscripts, `paper/notes/`, bibliography ledger, `sources/`

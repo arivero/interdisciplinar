@@ -21,8 +21,8 @@ Choose and define a novelty target (without editing manuscripts), then spawn the
 ## Allowed files (edit/write)
 - `cycles/Dxx-*.md`
 - `cycles/index.md`
-- `docs/research-log.gz` (append via `scripts/log-entry.sh`)
-- `docs/research-state.md`
+- `project-docs/research-log.gz` (append via `scripts/log-entry.sh`)
+- `project-docs/research-state.md`
 
 ## Read-only references (if needed; never edit in D)
 - Manuscripts/notes: `paper/main.md`, `papers/*/main.md`, `paper/notes/`, `papers/*/notes/`

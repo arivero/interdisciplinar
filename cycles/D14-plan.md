@@ -11,7 +11,7 @@ Choose a bounded closure target that satisfies: (i) quality/alignment audit, (ii
 
 ## Decision criteria
 - Must reduce residual review risk (math claims and qualification scope).
-- Must align with `docs/motivations.md` open questions and completion priority.
+- Must align with `project-docs/motivations.md` open questions and completion priority.
 - Must preserve short-letter constraints for satellites.
 - Must produce a concrete publish-ready bilingual artifact set.
 
@@ -28,8 +28,8 @@ Choose a bounded closure target that satisfies: (i) quality/alignment audit, (ii
 ## Allowed files (edit/write)
 - `cycles/D14-*.md`
 - `cycles/index.md`
-- `docs/research-log.gz` (append via `scripts/log-entry.sh`)
-- `docs/research-state.md`
+- `project-docs/research-log.gz` (append via `scripts/log-entry.sh`)
+- `project-docs/research-state.md`
 
 ## Forbidden files (do not edit)
 - Manuscripts and bibliography in this cycle

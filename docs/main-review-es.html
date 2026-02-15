@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="A. Rivero" />
+  <meta name="dcterms.date" content="2026-01-01" />
+  <title>Medición de la Interdisciplinariedad: Un Panel de Indicadores Multicomponente para la Evaluación de la Investigación</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" type="text/javascript"></script>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Medición de la Interdisciplinariedad: Un Panel de Indicadores Multicomponente para la Evaluación de la Investigación</h1>
+<p class="author">A. Rivero</p>
+<p class="date">2026</p>
+</header>
+<h1 id="introducción">Introducción</h1>
+<p>La investigación interdisciplinaria (IDR) se considera estratégica para problemas científicos y sociales complejos. Sin embargo, medirla sigue siendo difícil. La literatura bibliométrica acumula décadas de propuestas, pero no convergió en un indicador único robusto.</p>
+<p>Wang y Schneider (2020), al contrastar 23 medidas en cuatro familias metodológicas, encontraron baja correlación incluso entre medidas diseñadas para capturar dimensiones similares. Leydesdorff, Wagner y Bornmann (2019) mostraron que el índice Rao-Stirling puede verse dominado por su componente de disparidad, con baja potencia discriminante en algunos contextos. Cantone (2024) sostiene que la interdisciplinariedad es un constructo polisémico imposible de comprimir fielmente en un solo número.</p>
+<p>Este trabajo aporta dos contribuciones. Primero, una revisión estructurada del área mediante una taxonomía de cuatro dimensiones (diversidad, coherencia, difusión, novedad) y cuatro familias metodológicas (referencias, citación, semántica textual, red). Segundo, un panel operativo de tres componentes — diversidad, coherencia y efecto transcampo — con análisis de discriminación, robustez y aplicabilidad evaluativa.</p>
+<h1 id="fundamentos-conceptuales">Fundamentos Conceptuales</h1>
+<h2 id="marco-de-diversidad-de-stirling">Marco de Diversidad de Stirling</h2>
+<p>El problema de medir interdisciplinariedad es, en su núcleo, un problema de medición de diversidad. Stirling (2007) distingue tres propiedades: <em>variedad</em>, <em>balance</em> y <em>disparidad</em>. Índices clásicos como Shannon o Herfindahl capturan sobre todo variedad y balance, pero no distancia cognitiva entre categorías.</p>
+<p>La formulación Rao-Stirling integra explícitamente esas tres dimensiones:</p>
+<p><span class="math display">\[\Delta = \sum_{i \neq j} d_{ij} p_i p_j, \qquad d_{ij}=1-s_{ij}.\]</span></p>
+<p>Aquí <span class="math inline">\(p_i\)</span> es la proporción en categoría <span class="math inline">\(i\)</span> y <span class="math inline">\(s_{ij}\)</span> la similitud entre categorías <span class="math inline">\(i,j\)</span>.</p>
+<h2 id="evolución-histórica">Evolución Histórica</h2>
+<p>La formalización moderna de IDR acelera tras la tipología OECD (1998) y los trabajos de Morillo, Bordons y Gómez (2001, 2003). Esa tradición separa multidisciplinariedad (yuxtaposición), interdisciplinariedad (integración) y transdisciplinariedad (marcos que trascienden fronteras).</p>
+<p>Wagner et al. (2011) subrayan además que en la práctica suele confundirse la dirección de entrada (insumos disciplinares del diseño de investigación) con la de salida (distribución disciplinar de publicaciones e impacto).</p>
+<h2 id="problema-de-polisemia">Problema de Polisemia</h2>
+<p>Interdisciplinariedad no es un concepto único. Puede describir diversidad de insumos cognitivos, estructura social de colaboración o hibridación semántica del contenido textual. Estas dimensiones no necesariamente se mueven juntas, lo que explica discordancias entre autoidentificación y métricas bibliométricas (Zwanenburg, 2022; Aksnes, Karlstrøm y Piro, 2026).</p>
+<h2 id="desafíos-epistemológicos">Desafíos Epistemológicos</h2>
+<p>Los indicadores no solo miden, también performan: redefinen qué se considera “buena” investigación en contextos evaluativos (Rafols, 2019). Por tanto, el diseño de indicadores debe explicitar supuestos y límites de validez, no solo optimizar facilidad computacional.</p>
+<h2 id="validez-conceptual-vs-empírica">Validez Conceptual vs Empírica</h2>
+<p>Un indicador puede ser matemáticamente elegante y, aun así, mal anclado al constructo de interés. En IDR esto ocurre cuando una métrica premia amplitud sin integración o mezcla señales conceptualmente distintas en un único valor.</p>
+<h2 id="pluralismo-metodológico">Pluralismo Metodológico</h2>
+<p>El campo requiere pluralismo disciplinado: diferentes herramientas para preguntas distintas, con fronteras interpretativas claras y protocolos de calibración explícitos.</p>
+<h1 id="taxonomía-de-indicadores-de-interdisciplinariedad">Taxonomía de Indicadores de Interdisciplinariedad</h1>
+<h2 id="indicadores-de-diversidad">Indicadores de Diversidad</h2>
+<h3 id="marco-triádico-de-stirling">Marco triádico de Stirling</h3>
+<p>La tríada variedad-balance-disparidad organiza la mayor parte de la bibliometría de IDR.</p>
+<h3 id="medidas-de-variedad-y-balance">Medidas de variedad y balance</h3>
+<p>Shannon: <span class="math display">\[H = -\sum_i p_i \log p_i\]</span></p>
+<p>Simpson/Herfindahl complementario: <span class="math display">\[D_{\mathrm{Sim}} = 1-\sum_i p_i^2\]</span></p>
+<p>Son útiles, pero no incorporan distancia cognitiva explícita.</p>
+<h3 id="índice-rao-stirling">Índice Rao-Stirling</h3>
+<p><span class="math display">\[\Delta = \sum_{i \neq j} d_{ij} p_i p_j\]</span></p>
+<p>Integra variedad, balance y disparidad, pero su comportamiento depende de la matriz de similitud, la taxonomía y la transformación distancia/similitud.</p>
+<h3 id="diversidad-verdadera-tipo-hill">Diversidad verdadera tipo Hill</h3>
+<p>Hill (1973), Jost (2006, 2009) y Leinster-Cobbold (2012) enfatizan la escala de números efectivos:</p>
+<p><span class="math display">\[^qD = \left(\sum_i p_i^q\right)^{1/(1-q)}\]</span></p>
+<p>Esta familia facilita comparaciones interpretables y satisface propiedades de replicación que no siempre cumplen las entropías crudas.</p>
+<h3 id="multi-asignación-y-tipologías-tempranas">Multi-asignación y tipologías tempranas</h3>
+<p>Morillo et al. (2001, 2003) mostraron que la multi-asignación de revistas captura señales útiles de hibridación de áreas, aunque con resolución limitada para distinguir integración profunda.</p>
+<h3 id="estimación-de-matriz-de-similitud">Estimación de matriz de similitud</h3>
+<p>La construcción clásica usa flujos de citación y cosenos (Wang y Schneider, 2020), en línea con tradiciones de mapeo JCR (Leydesdorff, 2006). Decisiones como Salton vs Ochiai o <span class="math inline">\(d_{ij}=1-s_{ij}\)</span> vs <span class="math inline">\(d_{ij}=1/s_{ij}\)</span> (Jensen y Lutkouskaya, 2014) cambian fuertemente resultados.</p>
+<h3 id="normalización-calibración-y-granularidad">Normalización, calibración y granularidad</h3>
+<p>Una misma cartera puede cambiar de clasificación al pasar de esquemas gruesos a finos (por ejemplo, 40 vs 250 categorías). Esto obliga a reportar sensibilidad y no tratar valores puntuales como invariantes.</p>
+<h3 id="evaluación-de-validez-marco-zwanenburg">Evaluación de validez (marco Zwanenburg)</h3>
+<p>Zwanenburg, Nakhoda y Whigham (2022) proponen criterios explícitos de consistencia y validez. Su lectura principal: no existe una medida única que satisfaga simultáneamente todos los criterios relevantes para IDR.</p>
+<h3 id="diversidad-de-autor-vs-diversidad-de-referencias">Diversidad de autor vs diversidad de referencias</h3>
+<p>Abramo, D’Angelo y Zhang (2018) muestran que la diversidad del equipo autoral y la diversidad de base referencial capturan capas distintas del fenómeno.</p>
+<h3 id="resumen">Resumen</h3>
+<p>Diversidad es indispensable, pero por sí sola no distingue integración interdisciplinaria de amplitud polímata.</p>
+<h2 id="indicadores-de-coherencia">Indicadores de Coherencia</h2>
+<h3 id="operacionalización-por-acoplamiento-bibliográfico">Operacionalización por acoplamiento bibliográfico</h3>
+<p>Rafols y Meyer (2009) introducen coherencia como conectividad interna de la cartera:</p>
+<p><span class="math display">\[S = \frac{1}{\binom{n}{2}}\sum_{k&lt;l}\cos(\mathbf r_k,\mathbf r_l).\]</span></p>
+<h3 id="evidencia-de-ortogonalidad-respecto-a-diversidad">Evidencia de ortogonalidad respecto a diversidad</h3>
+<p>La literatura encuentra que diversidad y coherencia no son redundantes. Perfiles con <span class="math inline">\(\Delta\)</span> alta pueden tener <span class="math inline">\(S\)</span> muy baja (polímatas), mientras integradores muestran simultáneamente amplitud y conectividad.</p>
+<h3 id="marco-diversidad-coherencia">Marco diversidad-coherencia</h3>
+<p>La lectura conjunta (<span class="math inline">\(\Delta\)</span>, <span class="math inline">\(S\)</span>) permite separar amplitud de integración, mejorando interpretabilidad frente a escalares únicos.</p>
+<h3 id="alternativas">Alternativas</h3>
+<p>Se han explorado centralidades (betweenness), clustering y otros rasgos de red; suelen requerir controles de tamaño y normalización para no confundir posición estructural con interdisciplinariedad sustantiva.</p>
+<h3 id="consideraciones-computacionales">Consideraciones computacionales</h3>
+<p>Carteras grandes incrementan costo cuadrático en comparaciones par-a-par; la implementación debe contemplar eficiencia y reproducibilidad.</p>
+<h3 id="resumen-1">Resumen</h3>
+<p>Coherencia aporta la dimensión integrativa ausente en gran parte de métricas de diversidad.</p>
+<h2 id="indicadores-de-difusión">Indicadores de Difusión</h2>
+<h3 id="fundamentos-conceptuales-1">Fundamentos conceptuales</h3>
+<p>Difusión evalúa si la producción impacta fuera del campo principal. Es una propiedad de salida y no reemplaza diversidad de insumos.</p>
+<h3 id="definición-operacional">Definición operacional</h3>
+<p>Usamos:</p>
+<p><span class="math display">\[E = \frac{\text{citas recibidas fuera de la categoría principal}}{\text{citas totales recibidas}}.\]</span></p>
+<h3 id="dinámica-temporal">Dinámica temporal</h3>
+<p>Ventanas cortas de citación sesgan resultados; la comparación entre etapas de carrera exige normalización temporal.</p>
+<h3 id="patrones-empíricos">Patrones empíricos</h3>
+<p>Resultados recientes (incluyendo Xiang, Romero y Teplitskiy, 2025) muestran que amplitud temática e impacto transcampo no siempre se mueven juntos.</p>
+<h3 id="distinción-con-interdisciplinariedad-temática">Distinción con interdisciplinariedad temática</h3>
+<p>Una cartera puede ser temáticamente amplia pero con difusión limitada fuera de sus comunidades de publicación.</p>
+<h3 id="relación-con-integración">Relación con integración</h3>
+<p>Difusión complementa diversidad y coherencia; no las sustituye.</p>
+<h3 id="validez-y-cautelas">Validez y cautelas</h3>
+<p>Diferencias de cultura de citación entre campos obligan a normalizar por área.</p>
+<h3 id="guía-práctica">Guía práctica</h3>
+<p>Reportar difusión junto con incertidumbre y contexto disciplinar.</p>
+<h2 id="indicadores-de-novedad">Indicadores de Novedad</h2>
+<h3 id="fundamento">Fundamento</h3>
+<p>Novedad captura combinaciones atípicas o aparición temprana de enlaces entre campos.</p>
+<h3 id="enfoques-por-divergencia-estadística">Enfoques por divergencia estadística</h3>
+<p>Familias tipo Uzzi (2013) usan comparación observado-vs-esperado en pares de revistas/referencias.</p>
+<h3 id="método-de-permutación">Método de permutación</h3>
+<p>Los modelos nulos son sensibles a supuestos estructurales y a cobertura de red.</p>
+<h3 id="novedad-temporal">Novedad temporal</h3>
+<p>Wang et al. (2017) premian combinaciones tempranas, pero su interpretación puede confundir innovación con rareza transitoria.</p>
+<h3 id="dependencia-de-la-referencia-base">Dependencia de la referencia base</h3>
+<p>La elección de referencia esperada (uniforme, permutada, jerárquica) cambia el significado de la métrica.</p>
+<h3 id="exclusión-del-panel-operativo">Exclusión del panel operativo</h3>
+<p>Aunque conceptualmente relevante, la novedad se excluye del panel principal por fragilidad de validación externa y alta dependencia de infraestructura (Bornmann, 2019; Fontana et al., 2020).</p>
+<h2 id="mapa-de-cobertura-matemática-y-cualificación">Mapa de Cobertura Matemática y Cualificación</h2>
+<p>Para cierre de revisión, explicitamos familias matemáticas y sus límites de uso:</p>
+<table>
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 44%" />
+<col style="width: 41%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Familia</th>
+<th>Referencias principales</th>
+<th>Cualificación aplicada</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Rao-Stirling</td>
+<td>Porter-Rafols 2009; Rafols-Meyer 2009; Leydesdorff-Rafols 2011</td>
+<td>Sensible a taxonomía y matriz de similitud.</td>
+</tr>
+<tr class="even">
+<td>Diversidad verdadera</td>
+<td>Hill 1973; Jost 2006/2009; Leinster-Cobbold 2012</td>
+<td>Requiere interpretación en escala de números efectivos.</td>
+</tr>
+<tr class="odd">
+<td>Variedad-balance</td>
+<td>Shannon/Simpson/Gini; Mutz 2022</td>
+<td>No capturan disparidad por sí solos.</td>
+</tr>
+<tr class="even">
+<td>Coherencia <span class="math inline">\(S\)</span></td>
+<td>Rafols-Meyer 2009; Jensen 2014</td>
+<td>Depende de decisiones de acoplamiento y umbral.</td>
+</tr>
+<tr class="odd">
+<td>Novedad</td>
+<td>Uzzi 2013; Wang 2017; Bornmann 2019; Fontana 2020</td>
+<td>Sensible a modelo nulo; validación limitada para política.</td>
+</tr>
+<tr class="even">
+<td>Incertidumbre</td>
+<td>Zwanenburg 2022; Nakhoda 2023</td>
+<td>Estimación individual requiere intervalos de confianza.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="más-allá-de-escalares-enfoques-distribucionales">Más allá de escalares: enfoques distribucionales</h2>
+<p>Zhou, Guns y Engels (2023) proponen descomponer flujo interdisciplinario en triple <span class="math inline">\((B,I,H)\)</span>: <em>broadness</em>, <em>intensity</em>, <em>homogeneity</em>. El resultado es más rico que un escalar único, pero menos compacto para decisiones operativas.</p>
+<h2 id="resumen-de-taxonomía">Resumen de Taxonomía</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Dimensión</th>
+<th>Referencias</th>
+<th>Citación</th>
+<th>Texto</th>
+<th>Red</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Diversidad</td>
+<td>Rao-Stirling, Shannon, Simpson, Hill</td>
+<td>—</td>
+<td>similitud semántica</td>
+<td>—</td>
+</tr>
+<tr class="even">
+<td>Coherencia</td>
+<td>acoplamiento bibliográfico</td>
+<td>—</td>
+<td>—</td>
+<td>centralidad, clustering</td>
+</tr>
+<tr class="odd">
+<td>Difusión</td>
+<td>—</td>
+<td>citas transcampo</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr class="even">
+<td>Novedad</td>
+<td>—</td>
+<td>recombinación atípica</td>
+<td>parcialmente</td>
+<td>modelos nulos</td>
+</tr>
+</tbody>
+</table>
+<p>Observación central: la celda diversidad/referencias está sobrerrepresentada frente a coherencia, difusión y validación de novedad.</p>
+<h1 id="panel-multicomponente">Panel Multicomponente</h1>
+<h2 id="definición-del-panel">Definición del panel</h2>
+<p>Trabajamos con el vector:</p>
+<p><span class="math display">\[\mathbf P = (\Delta, S, E).\]</span></p>
+<p>No se propone una puntuación compuesta única.</p>
+<h3 id="diversidad-rao-stirling">Diversidad Rao-Stirling</h3>
+<p><span class="math display">\[\Delta = \sum_{i \neq j}(1-s_{ij})p_ip_j.\]</span></p>
+<h3 id="coherencia-de-red">Coherencia de red</h3>
+<p><span class="math display">\[S = \frac{1}{\binom{n}{2}}\sum_{k&lt;l}\cos(\mathbf r_k,\mathbf r_l).\]</span></p>
+<h3 id="proxy-de-efecto-transcampo">Proxy de efecto transcampo</h3>
+<p><span class="math display">\[E = \frac{C_{\text{fuera}}}{C_{\text{total}}}.\]</span></p>
+<h2 id="discriminación-en-datos-de-juguete">Discriminación en datos de juguete</h2>
+<p>En el conjunto simulado, integrador y polímata tienen <span class="math inline">\(\Delta\)</span> similar pero se separan por <span class="math inline">\(S\)</span> y <span class="math inline">\(E\)</span>. Especialistas muestran <span class="math inline">\(\Delta\)</span> baja y <span class="math inline">\(S\)</span> alta.</p>
+<h2 id="sensibilidad-y-robustez">Sensibilidad y robustez</h2>
+<p>Para perturbación uniforme de similitud (<span class="math inline">\(s_{ij}\to s_{ij}+\varepsilon\)</span>):</p>
+<p><span class="math display">\[\Delta_{\text{new}} = \Delta_{\text{old}} - \varepsilon(1-H), \qquad H=\sum_i p_i^2.\]</span></p>
+<p>La discriminación entre perfiles se conserva para perturbaciones moderadas; la conclusión no depende de un ajuste fino único de parámetros.</p>
+<h2 id="marco-de-interpretación">Marco de interpretación</h2>
+<p>Patrones típicos:</p>
+<ul>
+<li><strong>Integrador</strong>: <span class="math inline">\(\Delta\)</span> alta, <span class="math inline">\(S\)</span> alta, <span class="math inline">\(E\)</span> alta.</li>
+<li><strong>Polímata</strong>: <span class="math inline">\(\Delta\)</span> alta, <span class="math inline">\(S\)</span> baja, <span class="math inline">\(E\)</span> baja.</li>
+<li><strong>Especialista puente</strong>: <span class="math inline">\(\Delta\)</span> media, <span class="math inline">\(S\)</span> alta, <span class="math inline">\(E\)</span> media.</li>
+<li><strong>Especialista disciplinar</strong>: <span class="math inline">\(\Delta\)</span> baja, <span class="math inline">\(S\)</span> alta, <span class="math inline">\(E\)</span> baja.</li>
+</ul>
+<p>Las fronteras numéricas deben calibrarse por contexto y reportarse con incertidumbre.</p>
+<h1 id="medición-en-la-práctica">Medición en la Práctica</h1>
+<h2 id="autoevaluación-institucional">Autoevaluación institucional</h2>
+<p>Las instituciones con CRIS completo pueden computar <span class="math inline">\(\Delta\)</span> y <span class="math inline">\(S\)</span> con datos internos; <span class="math inline">\(E\)</span> requiere citación externa (OpenAlex/WoS/Scopus).</p>
+<h2 id="agencias-nacionales-de-evaluación">Agencias nacionales de evaluación</h2>
+<p>Para categorías como “Interdisciplinario”, se recomienda composición de comité guiada por perfil disciplinar observado y no por adscripción administrativa fija.</p>
+<h2 id="extracción-de-datos">Extracción de datos</h2>
+<p>Requisitos mínimos: referencias estructuradas, clasificación disciplinar, mapeo de afiliaciones y trazabilidad de citación.</p>
+<h2 id="protocolos-de-mapeo-de-categorías">Protocolos de mapeo de categorías</h2>
+<p>La elección de taxonomía debe documentarse (granularidad, reglas de multi-asignación, resolución de ambigüedad).</p>
+<h2 id="construcción-de-matriz-de-similitud">Construcción de matriz de similitud</h2>
+<p>Opciones: citación histórica, embeddings semánticos o enfoques híbridos. Cualquier opción exige auditoría de sensibilidad.</p>
+<h2 id="control-de-calidad">Control de calidad</h2>
+<ul>
+<li>Cobertura de referencias categorizadas.</li>
+<li>Estabilidad frente a cambios de taxonomía.</li>
+<li>Intervalos de confianza en nivel individual.</li>
+</ul>
+<h2 id="implementación-software">Implementación software</h2>
+<p>La implementación debe ser reproducible, con separación clara entre preprocesamiento, cálculo de indicadores y generación de reportes.</p>
+<h1 id="problemas-abiertos-y-líneas-futuras">Problemas Abiertos y Líneas Futuras</h1>
+<ol type="1">
+<li><strong>Calibración de umbrales por campo y etapa de carrera</strong>.</li>
+<li><strong>Modelado de incertidumbre individual</strong> en carteras pequeñas.</li>
+<li><strong>Integración de señales semánticas</strong> sin perder interpretabilidad.</li>
+<li><strong>Medición operativa de transdisciplinariedad</strong> (incluyendo impacto no académico y coproducción con actores externos).</li>
+<li><strong>Validación externa de indicadores de novedad</strong> para uso evaluativo.</li>
+<li><strong>Riesgos performativos y manipulación estratégica</strong> bajo regímenes de evaluación.</li>
+</ol>
+<h1 id="estudio-de-caso-evaluación-a-nivel-departamental">Estudio de Caso: Evaluación a Nivel Departamental</h1>
+<h2 id="contexto-y-datos">Contexto y datos</h2>
+<p>Aplicamos el panel a un departamento con siete perfiles simulados, representando integradores, polímatas, especialistas y casos frontera.</p>
+<h2 id="cómputo-del-panel">Cómputo del panel</h2>
+<p>Cada perfil recibe vector (<span class="math inline">\(\Delta\)</span>, <span class="math inline">\(S\)</span>, <span class="math inline">\(E\)</span>) bajo una taxonomía común y matriz de similitud auditada.</p>
+<h2 id="interpretación-y-clasificación">Interpretación y clasificación</h2>
+<p>El panel identifica:</p>
+<ul>
+<li>Integradores genuinos (amplitud + integración + difusión).</li>
+<li>Polímatas no integrativos (amplitud sin coherencia).</li>
+<li>Especialistas mal clasificados como interdisciplinarios.</li>
+<li>Casos ambiguos que requieren revisión experta cualitativa.</li>
+</ul>
+<h2 id="comparación-con-enfoques-monoindicador">Comparación con enfoques monoindicador</h2>
+<p>Métricas únicas (Shannon, Simpson o <span class="math inline">\(\Delta\)</span> aislada) no discriminan consistentemente perfiles con implicaciones evaluativas distintas.</p>
+<h2 id="limitaciones">Limitaciones</h2>
+<p>Caso ilustrativo, no inferencia poblacional. Las conclusiones deben validarse con datos institucionales reales y protocolos de calibración externa.</p>
+<h1 id="conclusiones">Conclusiones</h1>
+<p>La medición bibliométrica de IDR sigue siendo un problema abierto, pero la revisión muestra una conclusión robusta: ninguna métrica única es suficiente. El panel multicomponente (<span class="math inline">\(\Delta\)</span>, <span class="math inline">\(S\)</span>, <span class="math inline">\(E\)</span>) ofrece una estructura más fiel al fenómeno, mejora capacidad discriminante y permite decisiones más transparentes.</p>
+<p>Este resultado se alinea con las cuatro motivaciones del proyecto: evaluar impacto/calidad más allá de amplitud superficial, construir esquemas computables con datos institucionales, distinguir integración de polimatía y apoyar evaluación justa en agencias nacionales.</p>
+<p>La siguiente etapa natural es validación con datos reales, calibración por campo y formalización de reglas de incertidumbre para despliegue operativo responsable.</p>
+<h1 id="referencias">Referencias</h1>
+<ul>
+<li>Abramo, G., D’Angelo, C. A., and Zhang, L. (2018). A comparison of two approaches for measuring interdisciplinary research output: The disciplinary diversity of authors vs the disciplinary diversity of the reference list. <em>Journal of Informetrics</em>, 12(4):1182–1193.</li>
+<li>Aksnes, D. W., Karlstrøm, H., and Piro, F. N. (2026). Self-reported and bibliometric interdisciplinarity measures rarely correspond: a survey-based comparative analysis of indicators and researcher perceptions. <em>Scientometrics</em>, 131:189–208.</li>
+<li>Bollen, J., Van de Sompel, H., Hagberg, A., and Chute, R. (2009). A principal component analysis of 39 scientific impact measures. <em>PLoS ONE</em>, 4(6):e6022.</li>
+<li>Borlaug, S. B. and Svartefoss, S. M. (2025). Evaluating transdisciplinary research quality. In Sivertsen, G. and Langfeldt, L. (eds.), <em>Challenges in Research Policy</em>, pp. 13–20. Springer, Cham.</li>
+<li>Bornmann, L., Tekles, A., Zhang, H. H., and Ye, F. Y. (2019). Do we measure novelty when we analyze unusual combinations of cited references? A validation study of bibliometric novelty indicators based on F1000Prime data. <em>Journal of Informetrics</em>, 13(4):100979.</li>
+<li>Boyack, K. W., Klavans, R., and Börner, K. (2005). Mapping the backbone of science. <em>Scientometrics</em>, 64(3):351–374.</li>
+<li>Cantone, G. G. (2024). How to measure interdisciplinary research? A systemic design for the model of measurement. <em>Scientometrics</em>, 129:4937–4982.</li>
+<li>Cantone, G. G. (2025). Estimation of disciplinary similarity with large language models. <em>Scientometrics</em>, 130(10):5345–5373.</li>
+<li>Choi, B. C. K. and Pak, A. W. P. (2006). Multidisciplinarity, interdisciplinarity and transdisciplinarity in health research, services, education and policy: 1. Definitions, objectives, and evidence of effectiveness. <em>Clinical and Investigative Medicine</em>, 29(6):351–364.</li>
+<li>Fontana, M., Iori, M., Montobbio, F., and Sinatra, R. (2020). New and atypical combinations: An assessment of novelty and interdisciplinarity. <em>Research Policy</em>, 49(7):104063.</li>
+<li>Goyanes, M., Demeter, M., Grané, A., Albarrán-Lozano, I., and Gil de Zúñiga, H. (2020). A mathematical approach to assess research diversity: Operationalization and applicability in communication sciences, political science, and beyond. <em>Scientometrics</em>, 125(3):2299–2322.</li>
+<li>Hammarfelt, B. (2020). Discipline. <em>Knowledge Organization</em>, 47(3):244–256.</li>
+<li>Hill, M. O. (1973). Diversity and evenness: A unifying notation and its consequences. <em>Ecology</em>, 54(2):427–432.</li>
+<li>Jensen, P. and Lutkouskaya, K. (2014). The many dimensions of laboratories’ interdisciplinarity. <em>Scientometrics</em>, 98(1):619–631.</li>
+<li>Jost, L. (2006). Entropy and diversity. <em>Oikos</em>, 113(2):363–375.</li>
+<li>Jost, L. (2009). Mismeasuring biological diversity: Response to Hoffmann and Hoffmann (2008). <em>Ecological Economics</em>, 68(4):925–928.</li>
+<li>Klein, J. T. (2008). Evaluation of interdisciplinary and transdisciplinary research: A literature review. <em>American Journal of Preventive Medicine</em>, 35(2S):S116–S123.</li>
+<li>Larivière, V. and Gingras, Y. (2010). On the relationship between interdisciplinarity and scientific impact. <em>Journal of the American Society for Information Science and Technology</em>, 61(1):126–131.</li>
+<li>Leinster, T. and Cobbold, C. A. (2012). Measuring diversity: the importance of species similarity. <em>Ecology</em>, 93(3):477–489.</li>
+<li>Leydesdorff, L. (2006). Can scientific journals be classified in terms of aggregated journal–journal citation relations using the Journal Citation Reports? <em>Journal of the American Society for Information Science and Technology</em>, 57(5):601–613.</li>
+<li>Leydesdorff, L. and Rafols, I. (2011). Indicators of the interdisciplinarity of journals: Diversity, centrality, and citations. <em>Journal of Informetrics</em>, 5(1):87–100.</li>
+<li>Leydesdorff, L., Wagner, C. S., and Bornmann, L. (2019). Interdisciplinarity as diversity in citation patterns among journals: Rao-Stirling diversity, relative variety, and the Gini coefficient. <em>Journal of Informetrics</em>, 13(1):255–269.</li>
+<li>Marres, N. and de Rijcke, S. (2020). From indicators to indicating interdisciplinarity: A participatory mapping methodology for research communities in-the-making. <em>Quantitative Science Studies</em>, 1(3):1041–1055.</li>
+<li>Morillo, F., Bordons, M., and Gómez, I. (2001). An approach to interdisciplinarity through bibliometric indicators. <em>Scientometrics</em>, 51(1):203–222.</li>
+<li>Morillo, F., Bordons, M., and Gómez, I. (2003). Interdisciplinarity in science: A tentative typology of disciplines and research areas. <em>Journal of the American Society for Information Science and Technology</em>, 54(13):1237–1249.</li>
+<li>Moulton, R. and Jiang, Y. (2018). Maximally consistent sampling and the Jaccard index of probability distributions. In <em>Proceedings of the 2018 IEEE International Conference on Data Mining (ICDM)</em>, pages 347–356. IEEE.</li>
+<li>Mutz, R. (2022). Diversity and interdisciplinarity: Should variety, balance and disparity be combined as a product or better as a sum? An information-theoretical and statistical estimation approach. <em>Scientometrics</em>, 127(12):7397–7414.</li>
+<li>Nakhoda, M., Whigham, P., and Zwanenburg, S. (2023). Quantifying and addressing uncertainty in the measurement of interdisciplinarity. <em>Scientometrics</em>, 128:6107–6127.</li>
+<li>Noji, H., Yasuda, R., Yoshida, M., and Kinosita, K. (1997). Direct observation of the rotation of F1-ATPase. <em>Nature</em>, 386(6622):299–302.</li>
+<li>OECD (1998). <em>Interdisciplinarity in Science and Technology</em>. Paris: OECD Directorate for Science, Technology and Industry.</li>
+<li>Porter, A. L. and Rafols, I. (2009). Is science becoming more interdisciplinary? Measuring and mapping six research fields over time. <em>Scientometrics</em>, 81(3):719–745.</li>
+<li>Rafols, I. (2019). S&amp;T indicators in the wild: contextualization and participation for responsible metrics. <em>Research Evaluation</em>, 28(1):7–22.</li>
+<li>Rafols, I. and Meyer, M. (2009). Diversity and network coherence as indicators of interdisciplinarity: case studies in bionanoscience. <em>Scientometrics</em>, 82(2):263–287.</li>
+<li>Stirling, A. (2007). A general framework for analysing diversity in science, technology and society. <em>Journal of the Royal Society Interface</em>, 4(15):707–719.</li>
+<li>Stokols, D., Fuqua, J., Gress, J., Harvey, R., Phillips, K., Baezconde-Garbanati, L., Unger, J., Palmer, P., Clark, M. A., Colby, S. M., Morgan, G., and Trochim, W. (2003). Evaluating transdisciplinary science. <em>Nicotine &amp; Tobacco Research</em>, 5(Suppl 1):S21–S39.</li>
+<li>Tomishige, M., Klopfenstein, D. R., and Vale, R. D. (2002). Conversion of Unc104/KIF1A kinesin into a processive motor after dimerization. <em>Science</em>, 297(5590):2263–2267.</li>
+<li>Uzzi, B., Mukherjee, S., Stringer, M., and Jones, B. (2013). Atypical combinations and scientific impact. <em>Science</em>, 342(6157):468–472.</li>
+<li>Wang, J., Veugelers, R., and Stephan, P. (2017). Bias against novelty in science: A cautionary tale for users of bibliometric indicators. <em>Research Policy</em>, 46(8):1416–1436.</li>
+<li>Wagner, C. S., Roessner, J. D., Bobb, K., Klein, J. T., Boyack, K. W., Keyton, J., Rafols, I., and Börner, K. (2011). Approaches to understanding and measuring interdisciplinary scientific research (IDR): A review of the literature. <em>Journal of Informetrics</em>, 5(1):14–26.</li>
+<li>Wang, Q. and Schneider, J. W. (2020). Consistency and validity of interdisciplinarity measures. <em>Quantitative Science Studies</em>, 1(1):239–263.</li>
+<li>Xiang, S., Romero, D. M., and Teplitskiy, M. (2025). Evaluating interdisciplinary research: Disparate outcomes for topic and knowledge base. <em>Proceedings of the National Academy of Sciences</em>, 122(16):e2409752122.</li>
+<li>Zhang, L., Rousseau, R., and Glänzel, W. (2016). Diversity of references as an indicator of the interdisciplinarity of journals: Taking similarity between subject fields into account. <em>Journal of the Association for Information Science and Technology</em>, 67(5):1257–1265.</li>
+<li>Zhou, Q., Guns, R., and Engels, T. C. E. (2023). Towards indicating interdisciplinarity: Characterizing interdisciplinary knowledge flow. <em>Journal of the Association for Information Science and Technology</em>, 74(11):1325–1340.</li>
+<li>Zwanenburg, S., Nakhoda, M., and Whigham, P. (2022). Toward greater consistency and validity in measuring interdisciplinarity: a systematic and conceptual evaluation. <em>Scientometrics</em>, 127:3035–3065.</li>
+</ul>
+</body>
+</html>

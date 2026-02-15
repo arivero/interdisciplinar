@@ -18,8 +18,8 @@ Date: YYYY-MM-DD
 
 ## Updates made
 - `cycles/index.md`: <queued/spawn notes>
-- `docs/research-state.md`: <what changed, if anything>
-- `docs/research-log.gz`: <entry appended via scripts/log-entry.sh>
+- `project-docs/research-state.md`: <what changed, if anything>
+- `project-docs/research-log.gz`: <entry appended via scripts/log-entry.sh>
 
 ## Spawned cycles
 - `Sxx`: <title>

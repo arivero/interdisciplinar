@@ -1,5 +1,5 @@
 #!/bin/bash
-# Append a dated entry to docs/research-log.gz
+# Append a dated entry to project-docs/research-log.gz
 #
 # The research log is a gzip-concatenated binary file.
 # Each call appends one gzip segment — this is valid gzip
@@ -11,15 +11,15 @@
 #   echo "multi-line entry" | scripts/log-entry.sh
 #
 # To read (emergency/audit only — agents should never do this):
-#   gzcat docs/research-log.gz            # macOS
-#   zcat docs/research-log.gz             # Linux
-#   gunzip -c docs/research-log.gz        # portable
-#   gzcat docs/research-log.gz | tail -30
+#   gzcat project-docs/research-log.gz            # macOS
+#   zcat project-docs/research-log.gz             # Linux
+#   gunzip -c project-docs/research-log.gz        # portable
+#   gzcat project-docs/research-log.gz | tail -30
 
 set -euo pipefail
 
 REPO_ROOT="$(cd "$(dirname "$0")/.." && pwd)"
-LOG="$REPO_ROOT/docs/research-log.gz"
+LOG="$REPO_ROOT/project-docs/research-log.gz"
 
 DATE=$(date +%Y-%m-%d)
 TIME=$(date +%H:%M)

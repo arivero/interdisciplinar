@@ -31,5 +31,5 @@ Q01 alignment check found the manuscript lacks:
 - Clear mapping of acquired sources to review sections.
 
 ## Allowed files
-- `docs/research-state.md` (update thesis/threads)
+- `project-docs/research-state.md` (update thesis/threads)
 - `cycles/D02-*.md`

@@ -23,8 +23,8 @@ Design and add a reusable repo skill that converts one or more Markdown files in
 ## Allowed files (edit/write)
 - `cycles/D15-*.md`
 - `cycles/index.md`
-- `docs/research-state.md`
-- `docs/research-log.gz`
+- `project-docs/research-state.md`
+- `project-docs/research-log.gz`
 
 ## Forbidden files (do not edit)
 - Manuscript content (no scientific content changes in this cycle)
