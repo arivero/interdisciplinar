@@ -45,7 +45,7 @@ interpretación.
 
 ## Qué Tiene una Universidad
 
-La mayoría de universidades intensivas en investigación mantienen:
+La mayoría de las universidades intensivas en investigación mantienen:
 
 - **Repositorios de publicaciones**: repositorios institucionales o CRIS
   (Current Research Information Systems) con metadatos de producción
@@ -70,7 +70,7 @@ normalmente disponibles en servicios externos.
 - **Datos de citación**: quién cita cada publicación y desde qué campos,
   necesarios para $E$.
 
-La principal brecha operativa es el acceso a citación para calcular $E$.
+La principal brecha operativa es el acceso a datos de citación para calcular $E$.
 Por eso incluimos una alternativa de dos componentes.
 
 # Protocolo de Medición
@@ -109,7 +109,7 @@ los que el investigador obtiene proyectos.
 La combinación de indicadores bibliométricos e institucionales permite
 separar integración de amplitud polímata:
 
-| Perfil | $\Delta$ | S | CoAuth | CoSup | Interpretación |
+| Perfil | $\Delta$ | $S$ | CoAuth | CoSup | Interpretación |
 |---------|-------|-------|--------|-------|----------------|
 | Integrador | Alta | Moderada-alta | Alta | Alta | Integración transversal en publicaciones y procesos |
 | Polímata | Alta | Baja | Baja | Baja | Amplitud de referencias sin integración colaborativa |
@@ -119,7 +119,7 @@ separar integración de amplitud polímata:
 financiación puede parecer interdisciplinaria en datos externos, pero si
 CoAuth y CoSup son nulos, el patrón es amplitud sin integración.
 
-Esto coincide con la distinción entrada/salida de la revisión principal:
+Esto coincide con la distinción entre entrada y salida en la revisión principal:
 la diversidad de insumos puede reflejar interdisciplinariedad integrativa o
 solo yuxtaposición multidisciplinaria; para distinguirlas se requieren
 coherencia e indicadores de proceso.
@@ -146,7 +146,6 @@ de similitud ilustrativa.
 | C4 | 0.35 | 0.25 | 0.30 | 1.00 | 0.45 |
 | C5 | 0.30 | 0.40 | 0.20 | 0.45 | 1.00 |
 
-Los valores son ilustrativos; en práctica deben estimarse con datos reales.
 Los valores son ilustrativos; en la práctica deben estimarse con datos reales.
 
 **Dra. Emma** ($\mathbf{p}_E = (0.40, 0.30, 0.25, 0.03, 0.02)$):
@@ -178,9 +177,9 @@ Los valores son ilustrativos; en la práctica deben estimarse con datos reales.
 
 - **Cobertura de categorías en referencias**: si falta >25%, $\Delta$ será
   inestable (Nakhoda et al., 2023).
-- **Carreras tempranas**: para <5 años pos-PhD o <10 publicaciones, reportar
+- **Carreras tempranas**: para <5 años tras el doctorado o <10 publicaciones, reportar
   intervalos de confianza junto con estimaciones puntuales.
-- **Calibración y ambigüedad**: umbrales ilustrativos deben calibrarse con
+- **Calibración y ambigüedad**: los umbrales ilustrativos deben calibrarse con
   distribuciones locales; si un intervalo cruza fronteras de perfil, clasificar
   como "ambiguo" y solicitar revisión cualitativa.
 - **Cambios de afiliación**: estratificar por periodo para evitar inflar
@@ -199,10 +198,10 @@ interpretarse como vector de evidencia (Rafols, 2019).
 
 ## Alternativa sin Datos de Citación
 
-Si no hay datos de citación, usar panel interno de dos componentes ($\Delta$, S)
+Si no hay datos de citación, usar panel interno de dos componentes ($\Delta$, $S$)
 + indicadores institucionales (CoAuth, CoSup, Paneles):
 
-| Perfil | $\Delta$ | S | CoAuth | CoSup | Interpretación |
+| Perfil | $\Delta$ | $S$ | CoAuth | CoSup | Interpretación |
 |---------|-------|-------|--------|-------|----------------|
 | Integrador | Alta | Moderada-alta | Alta | Alta | Integración en insumos y procesos |
 | Polímata | Alta | Baja | Baja | Baja | Amplitud desconectada |
@@ -232,7 +231,7 @@ combinan panel bibliométrico y datos internos de colaboración. El protocolo
 propuesto distingue integración genuina de amplitud polímata, evita la
 reducción a un único número y permite decisiones más auditables. El principal
 cuello de botella sigue siendo la citación para $E$, pero la alternativa
-interna ($\Delta$, S + indicadores institucionales) ofrece una base sólida para uso
+interna ($\Delta$, $S$) + indicadores institucionales ofrece una base sólida para uso
 operativo.
 
 # Referencias

@@ -23,12 +23,12 @@ monodisciplinares, adecuado cuando la cartera del investigador se ubica en un
 
 El problema aparece con investigadores clasificados en el grupo
 "Interdisciplinario" (por ejemplo en esquemas como ANECA o ANVUR): asignar
-un panel único crea desajuste estructural entre la pericia del comité y
+un panel único crea desajuste estructural entre la pericia del comité y la
 trayectoria evaluada.
 
 Este protocolo usa un panel de tres componentes — diversidad ($\Delta$),
 coherencia ($S$), efecto transcampo ($E$) — para caracterizar perfiles y
-diseñar comité. Operativamente tratamos "interdisciplinario" como reclamo de
+diseñar el comité. Operativamente tratamos "interdisciplinario" como reclamo de
 integración, no solo de amplitud: diversidad alta puede reflejar integración
 o yuxtaposición multidisciplinaria desconectada.
 
@@ -149,8 +149,8 @@ hacer explícita la estructura de evidencia y garantizar que la composición del
 comité refleje la cartera real del investigador.
 
 El panel debe interpretarse como evidencia vectorial ($\Delta$, $S$, $E$), no
-como puntaje compuesto único. Esto reduce incentivos de manipulación estratégica y mejora la
-auditabilidad de decisiones.
+como puntaje compuesto único. Esto reduce los incentivos de manipulación
+estratégica y mejora la auditabilidad de las decisiones.
 
 # Conclusiones
 
