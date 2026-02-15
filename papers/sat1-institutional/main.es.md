@@ -77,7 +77,7 @@ Por eso incluimos una alternativa de dos componentes.
 
 ## Paso 1: Panel Bibliométrico
 
-Para cada investigador, calcular:
+Para cada investigador, se debe calcular:
 
 **Diversidad** ($\Delta$): índice Rao-Stirling sobre referencias:
 $$\Delta = \sum_{i \neq j} d_{ij}\, p_i\, p_j, \qquad d_{ij} = 1 - s_{ij}$$
@@ -93,7 +93,7 @@ categoría principal del investigador.
 
 ## Paso 2: Indicadores Solo Institucionales
 
-Además del panel bibliométrico, calcular:
+Además del panel bibliométrico, se debe calcular:
 
 **Diversidad de coautoría**:
 $$\text{CoAuth} = \frac{\text{publicaciones con coautores de otros departamentos}}{\text{publicaciones totales}}$$
@@ -187,18 +187,18 @@ Los valores son ilustrativos; en la práctica deben estimarse con datos reales.
 
 ## Reporte
 
-Reportar en tres niveles:
+Se debe reportar en tres niveles:
 
 1. **Individual**: perfil por investigador ($\Delta$, S, E, CoAuth, CoSup, Paneles).
 2. **Departamental**: distribuciones y medianas.
 3. **Institucional**: agregados comparativos entre áreas.
 
-**No usar ranking compuesto único.** El panel es multidimensional y debe
+**No se debe usar un ranking compuesto único.** El panel es multidimensional y debe
 interpretarse como vector de evidencia (Rafols, 2019).
 
 ## Alternativa sin Datos de Citación
 
-Si no hay datos de citación, usar panel interno de dos componentes ($\Delta$, $S$)
+Si no hay datos de citación, se debe usar un panel interno de dos componentes ($\Delta$, $S$)
 + indicadores institucionales (CoAuth, CoSup, Paneles):
 
 | Perfil | $\Delta$ | $S$ | CoAuth | CoSup | Interpretación |
