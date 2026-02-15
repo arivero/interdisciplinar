@@ -104,8 +104,8 @@ de la medición de la IDR. La investigación multidisciplinaria "yuxtapone
 perspectivas disciplinarias, agregando amplitud y conocimiento disponible --- el producto no es
 más y nada menos que la simple suma de sus partes". La investigación interdisciplinaria
 "integra datos disciplinarios separados, métodos, herramientas, conceptos y
-teorías para crear una visión holística" --- el producto es "diferente
-diferente de y más que la suma de sus partes". Los enfoques transdisciplinarios
+teorías para crear una visión holística" --- el producto es "diferente de, y más que,
+la suma de sus partes". Los enfoques transdisciplinarios
 "son marcos integradores que trascienden las visiones del mundo estrechamente
 disciplinarias". Señalan que el uso común "rara vez distingue entre las
 direcciones de entrada y salida de IDR" (Wagner et al., 2011, nota 10), sin embargo,
@@ -113,7 +113,7 @@ la distinción es importante para la medición: un investigador puede recurrir a
 métodos de distintas disciplinas al diseñar un estudio (interdisciplinariedad del lado de entrada)
 mientras se publica exclusivamente en un campo (concentración del lado de la producción), o
 por el contrario, puede publicar en muchos campos sin integración metodológica.
-Un cuarto modo, la investigación *cross-disciplinary*, consiste en citar
+Un cuarto modo, la investigación *cross-disciplinary* (entre disciplinas, sin integración), consiste en citar
 literatura de otro campo sin ningún intento de integración (Aksnes, Karlstrøm y
 Piro, 2026; Hammarfelt, 2020).
 
@@ -730,8 +730,7 @@ artículo de revisión. Esta baja coherencia marcó un acto fundamental de integ
 en el que se estaban incorporando dos líneas de investigación previamente separadas
 contacto por primera vez. En el otro extremo, Tomishige (2002)
 exhibió $S = 0.113$: se basó en lo que para entonces se había convertido en un
-especialidad interdisciplinaria, y sus referentes formaron una densa, internamente
-Clúster conectado.
+especialidad interdisciplinaria, y sus referencias formaron un clúster denso y conectado internamente.
 
 Wang y Schneider (2020) confirmaron el hallazgo de ortogonalidad a un nivel mucho más alto.
 escala mayor, computando 16 medidas de interdisciplinariedad para 224 Web de
@@ -2568,48 +2567,39 @@ refleje en la superposición de referencias.
 
 # Conclusiones
 
-La medición bibliométrica de la investigación interdisciplinaria sigue siendo una
-problema sin resolver. Nuestra revisión del panorama de indicadores revela un campo
-fuertemente concentrado en medidas de diversidad, particularmente Rao-Stirling y
-sus variantes, mientras que las dimensiones de coherencia, difusión y novedad reciben
-relativamente poca atención. La evidencia empírica, especialmente Wang y
-El hallazgo de Schneider (2020) de baja consistencia en 23 medidas y
-La demostración de Leydesdorff et al. (2019) de un poder discriminatorio limitado,
-sugiere firmemente que ningún indicador por sí solo es adecuado.
+La medición bibliométrica de la investigación interdisciplinaria sigue siendo un problema no resuelto.
+Nuestra revisión del panorama de indicadores revela un campo fuertemente concentrado en medidas de
+diversidad --- en particular Rao-Stirling y sus variantes --- mientras que las dimensiones de coherencia,
+difusión y novedad reciben relativamente poca atención. La evidencia empírica, en especial el hallazgo
+de Wang y Schneider (2020) de baja consistencia entre 23 medidas y la demostración de Leydesdorff et al.
+(2019) de un poder discriminatorio limitado, sugiere firmemente que ningún indicador por sí solo es adecuado.
 
 Este marco se alinea con las cuatro preguntas motivadoras planteadas para este
 proyecto. El panel está diseñado para separar la evidencia de impacto/calidad de
-reclamaciones de amplitud simple (OQ1), para seguir siendo computables con datos institucionales
-además de dependencias externas claramente establecidas (OQ2), para distinguir
-integración interdisciplinaria desde la acumulación polimática (OQ3), y a
-apoyar protocolos de evaluación auditables a nivel de agencia a través de
-evidencia multidimensional en lugar de clasificación de puntuación única (OQ4).
+reclamaciones de amplitud simple (OQ1), para seguir siendo computable con datos institucionales más
+dependencias externas claramente establecidas (OQ2), para distinguir la integración *cross-disciplinary*
+de la acumulación polimática (OQ3) y para apoyar protocolos de evaluación auditables a nivel de agencia
+a través de evidencia multidimensional explícita en lugar de un ranking de una sola puntuación (OQ4).
 
-El panel de tres componentes que proponemos: diversidad ($\Delta$), coherencia ($S$),
-y efecto transcampo ($E$): aborda esta insuficiencia al abarcar tres
-dimensiones ortogonales. Nuestra demostración de datos de juguete muestra que el panel
-caracteriza de manera única a integradores, polímatas y especialistas donde cualquier
-falla un solo componente. El estudio de caso a nivel departamental de la Sección 7
-confirma este poder discriminatorio a escala realista: el panel correctamente
-identifica a Al-Rahman como un polímata a pesar de tener la mayor diversidad
-puntaje, señala el papel de especialista en puentes de Romero para revisión de expertos y confirma
-El estatus de integrador de Nguyen en las tres dimensiones: clasificaciones que
-ningún indicador lo logra por sí solo. El resultado de la solidez analítica: que el
-La discriminación basada en la diversidad se preserva bajo perturbaciones de hasta
-35% de la matriz de similitud: proporciona confianza de que el enfoque no es
-un artefacto de ajuste de parámetros.
+El panel de tres componentes que proponemos --- diversidad ($\Delta$), coherencia ($S$) y efecto
+transcampo ($E$) --- aborda esta insuficiencia al abarcar tres dimensiones ortogonales. Nuestra
+demostración con datos de juguete muestra que el panel caracteriza de manera única a integradores,
+polímatas y especialistas allí donde cualquier componente por sí solo falla. El estudio de caso a nivel
+departamental de la Sección 7 confirma este poder discriminatorio a escala realista: el panel identifica
+correctamente a Al-Rahman como un polímata a pesar de tener el puntaje de diversidad más alto, señala el
+papel de especialista-puente de Romero para revisión experta y confirma el estatus de integrador de Nguyen
+en las tres dimensiones --- clasificaciones que ningún indicador logra por sí solo. El resultado de solidez
+analítica --- que la discriminación basada en la diversidad se preserva bajo perturbaciones de hasta el 35%
+de la matriz de similitud --- proporciona confianza en que el enfoque no es un artefacto de ajuste de parámetros.
 
-Rafols (2019) ha argumentado de manera convincente que los indicadores de ciencia y tecnología
-debe ser contextualizado, multidimensional y sujeto a la influencia de las partes interesadas.
-validación. Nuestro panel está diseñado con este espíritu: presenta tres
-dimensiones en lugar de colapsarlas en una sola partitura, y su
-La interpretación depende del contexto de evaluación. El despliegue práctico
-de dichos paneles, ya sea para una autoevaluación institucional o para
-revisión de la agencia: requiere atención a las opciones metodológicas encuestadas en
-Sección 5, los problemas abiertos identificados en la Sección 6 y los aspectos prácticos.
-lecciones ilustradas en la Sección 7. Validación empírica en universidades reales
-datos, basándose en el estudio de caso ilustrativo presentado aquí, es el
-siguiente paso natural.
+Rafols (2019) ha argumentado de manera convincente que los indicadores de ciencia y tecnología deben
+contextualizarse, ser multidimensionales y someterse a validación con participación de las partes interesadas.
+Nuestro panel está diseñado con ese espíritu: presenta tres dimensiones en lugar de colapsarlas en un único
+puntaje, y su interpretación depende del contexto de evaluación. El despliegue práctico de dichos paneles,
+ya sea para una autoevaluación institucional o para una revisión de agencia, requiere atención a las opciones
+metodológicas reseñadas en la Sección 5, a los problemas abiertos identificados en la Sección 6 y a las lecciones
+prácticas ilustradas en la Sección 7. La validación empírica con datos de universidades reales, basándose en el
+estudio de caso ilustrativo presentado aquí, es el siguiente paso natural.
 
 # Referencias
 
