@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
 <head>
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
@@ -146,25 +146,40 @@
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     ul.task-list{list-style: none;}
   </style>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" type="text/javascript"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
   <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
   <![endif]-->
   <style>
-    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; font-size: 12pt; line-height: 1.5; max-width: 980px; margin: 0 auto; padding: 18px; color: #111; }
-    h1 { font-size: 16pt; }
-    h2 { font-size: 15pt; }
-    h3 { font-size: 14pt; }
-    h4, h5, h6 { font-size: 13pt; }
-    .title { margin-top: 0; }
-    pre, code { font-size: 11pt; }
-    table { border-collapse: collapse; }
-    th, td { border: 1px solid #ddd; padding: 4px 6px; }
-    blockquote { margin-left: 0; padding-left: 12px; border-left: 3px solid #ddd; color: #333; }
-    a { color: #0b5fff; }
+  html {
+    font-size: 16px !important;
+    line-height: 1.6;
+    font-family: Georgia, Palatino, "Times New Roman", serif;
+    color: #1a1a1a;
+    background-color: #fdfdfd;
+  }
+  body {
+    margin: 0 auto;
+    max-width: 42em;
+    padding: 2em;
+    font-size: 16px !important;
+  }
+  h1 { font-size: 1.8em; margin-top: 1em; }
+  h2 { font-size: 1.4em; margin-top: 1.5em; }
+  h3 { font-size: 1.2em; margin-top: 1.2em; }
+  @media (max-width: 600px) {
+    body { font-size: 14px !important; padding: 1em; }
+  }
+  @media print {
+    body { background-color: white; color: black; font-size: 12pt !important; }
+  }
   </style>
 </head>
 <body>
+<div style="background: #f0f0f0; padding: 1em; margin-bottom: 2em; border-left: 4px solid #333; border-radius: 4px;">
+  <strong>📄 Descargar PDF:</strong> <a href="sat1-institutional.es.pdf" style="color: #0066cc; text-decoration: none; font-weight: bold;">sat1-institutional.es.pdf</a> | 
+  <strong>🌐 English:</strong> <a href="sat1-institutional.html" style="color: #0066cc;">HTML</a> | <a href="sat1-institutional.pdf" style="color: #0066cc;">PDF</a>
+</div>
 <header id="title-block-header">
 <h1 class="title">Medición de la Interdisciplinariedad con Datos Internos Universitarios: Guía Operativa</h1>
 <p class="author">A. Rivero and A.I. Scaffold</p>
@@ -192,12 +207,12 @@
 <p>La principal brecha operativa es el acceso a datos de citación para calcular <span class="math inline">\(E\)</span>. Por eso incluimos una alternativa de dos componentes.</p>
 <h1 id="protocolo-de-medición">Protocolo de Medición</h1>
 <h2 id="paso-1-panel-bibliométrico">Paso 1: Panel Bibliométrico</h2>
-<p>Para cada investigador, calcular:</p>
+<p>Para cada investigador, se debe calcular:</p>
 <p><strong>Diversidad</strong> (<span class="math inline">\(\Delta\)</span>): índice Rao-Stirling sobre referencias: <span class="math display">\[\Delta = \sum_{i \neq j} d_{ij}\, p_i\, p_j, \qquad d_{ij} = 1 - s_{ij}\]</span> donde <span class="math inline">\(p_i\)</span> es la proporción de referencias en la categoría <span class="math inline">\(i\)</span>, <span class="math inline">\(s_{ij}\)</span> es la similitud entre categorías y <span class="math inline">\(d_{ij}\)</span> la distancia correspondiente.</p>
 <p><strong>Coherencia</strong> (<span class="math inline">\(S\)</span>): acoplamiento bibliográfico medio entre publicaciones: <span class="math display">\[S = \frac{1}{\binom{n}{2}} \sum_{k &lt; l} \cos(\mathbf{r}_k, \mathbf{r}_l)\]</span> donde <span class="math inline">\(\mathbf{r}_k\)</span> es el vector de referencias de la publicación <span class="math inline">\(k\)</span>.</p>
 <p><strong>Efecto transcampo</strong> (<span class="math inline">\(E\)</span>): fracción de citas recibidas desde fuera de la categoría principal del investigador.</p>
 <h2 id="paso-2-indicadores-solo-institucionales">Paso 2: Indicadores Solo Institucionales</h2>
-<p>Además del panel bibliométrico, calcular:</p>
+<p>Además del panel bibliométrico, se debe calcular:</p>
 <p><strong>Diversidad de coautoría</strong>: <span class="math display">\[\text{CoAuth} = \frac{\text{publicaciones con coautores de otros departamentos}}{\text{publicaciones totales}}\]</span></p>
 <p><strong>Diversidad de codirección</strong>: <span class="math display">\[\text{CoSup} = \frac{\text{codirecciones interdepartamentales}}{\text{direcciones totales}}\]</span></p>
 <p><strong>Diversidad de paneles de financiación</strong>: número de paneles distintos en los que el investigador obtiene proyectos.</p>
@@ -358,15 +373,15 @@
 <li><strong>Cambios de afiliación</strong>: estratificar por periodo para evitar inflar CoAuth artificialmente.</li>
 </ul>
 <h2 id="reporte">Reporte</h2>
-<p>Reportar en tres niveles:</p>
+<p>Se debe reportar en tres niveles:</p>
 <ol type="1">
 <li><strong>Individual</strong>: perfil por investigador (<span class="math inline">\(\Delta\)</span>, S, E, CoAuth, CoSup, Paneles).</li>
 <li><strong>Departamental</strong>: distribuciones y medianas.</li>
 <li><strong>Institucional</strong>: agregados comparativos entre áreas.</li>
 </ol>
-<p><strong>No usar ranking compuesto único.</strong> El panel es multidimensional y debe interpretarse como vector de evidencia (Rafols, 2019).</p>
+<p><strong>No se debe usar un ranking compuesto único.</strong> El panel es multidimensional y debe interpretarse como vector de evidencia (Rafols, 2019).</p>
 <h2 id="alternativa-sin-datos-de-citación">Alternativa sin Datos de Citación</h2>
-<p>Si no hay datos de citación, usar panel interno de dos componentes (<span class="math inline">\(\Delta\)</span>, <span class="math inline">\(S\)</span>) + indicadores institucionales (CoAuth, CoSup, Paneles):</p>
+<p>Si no hay datos de citación, se debe usar un panel interno de dos componentes (<span class="math inline">\(\Delta\)</span>, <span class="math inline">\(S\)</span>) + indicadores institucionales (CoAuth, CoSup, Paneles):</p>
 <table>
 <thead>
 <tr class="header">

@@ -1,0 +1,327 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={Evaluación Basada en Panel de Investigadores Interdisciplinarios: Protocolo para Agencias Nacionales},
+  pdfauthor={A. Rivero and A.I. Scaffold},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+
+\title{Evaluación Basada en Panel de Investigadores Interdisciplinarios:
+Protocolo para Agencias Nacionales}
+\author{A. Rivero and A.I. Scaffold}
+\date{2026}
+
+\begin{document}
+\maketitle
+\begin{abstract}
+Las agencias nacionales de evaluación enfrentan un problema estructural
+cuando deben valorar investigadores clasificados como
+``Interdisciplinarios'': los paneles monodisciplinares no evalúan de
+manera justa trayectorias que abarcan varios campos. Proponemos un
+protocolo basado en un panel de tres componentes --- diversidad
+disciplinar, coherencia de red y efecto transcampo --- para caracterizar
+el tipo y grado de cruce de fronteras disciplinares. Con perfiles
+simulados mostramos cómo el panel orienta la composición del comité y
+distingue integradores genuinos, polímatas y especialistas mal
+clasificados. Identificamos seis modos de fallo y proponemos
+salvaguardas.
+\end{abstract}
+
+\hypertarget{introducciuxf3n}{%
+\section{Introducción}\label{introducciuxf3n}}
+
+Las agencias nacionales evalúan investigadores para promoción,
+financiación y acreditación institucional. El procedimiento estándar usa
+paneles monodisciplinares, adecuado cuando la cartera del investigador
+se ubica en un único campo reconocido.
+
+El problema aparece con investigadores clasificados en el grupo
+``Interdisciplinario'' (por ejemplo en esquemas como ANECA o ANVUR):
+asignar un panel único crea desajuste estructural entre la pericia del
+comité y la trayectoria evaluada.
+
+Este protocolo usa un panel de tres componentes --- diversidad
+(\(\Delta\)), coherencia (\(S\)), efecto transcampo (\(E\)) --- para
+caracterizar perfiles y diseñar el comité. Operativamente tratamos
+``interdisciplinario'' como reclamo de integración, no solo de amplitud:
+diversidad alta puede reflejar integración o yuxtaposición
+multidisciplinaria desconectada.
+
+\hypertarget{el-panel-indicador}{%
+\section{El Panel Indicador}\label{el-panel-indicador}}
+
+\textbf{Diversidad} (\(\Delta\)): índice Rao-Stirling sobre referencias
+citadas.
+
+\textbf{Coherencia} (\(S\)): fuerza media de acoplamiento bibliográfico
+entre publicaciones del investigador.
+
+\textbf{Efecto transcampo} (\(E\)): fracción de citas recibidas fuera
+del campo principal.
+
+La idea central es que ningún componente por sí solo basta. Solo el
+triple (\(\Delta\), \(S\), \(E\)) separa integrador, polímata y
+especialista.
+
+\hypertarget{protocolo-de-evaluaciuxf3n}{%
+\section{Protocolo de Evaluación}\label{protocolo-de-evaluaciuxf3n}}
+
+\hypertarget{paso-1-calcular-el-panel}{%
+\subsection{Paso 1: Calcular el Panel}\label{paso-1-calcular-el-panel}}
+
+Para cada investigador en la categoría ``Interdisciplinario'', calcular
+(\(\Delta\), \(S\), \(E\)) con datos de publicaciones y citas.
+Requisitos mínimos:
+
+\begin{itemize}
+\tightlist
+\item
+  Clasificación disciplinar de referencias.
+\item
+  Matriz de similitud entre categorías.
+\item
+  Datos de citación para \(E\).
+\end{itemize}
+
+\hypertarget{paso-2-clasificar-el-perfil}{%
+\subsection{Paso 2: Clasificar el
+Perfil}\label{paso-2-clasificar-el-perfil}}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.3721}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2093}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2093}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2093}}@{}}
+\toprule
+\begin{minipage}[b]{\linewidth}\raggedright
+Clasificación
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\(\Delta\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\(S\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\(E\)
+\end{minipage} \\
+\midrule
+\endhead
+Integrador genuino & \(\geq 0.40\) & \(\geq 0.30\) & \(\geq 0.30\) \\
+Polímata (no integrativo) & \(\geq 0.40\) & \(< 0.15\) & \(< 0.15\) \\
+Especialista (reclasificar) & \(< 0.35\) & cualquiera & cualquiera \\
+Provisional (IC superpuesto) & superpone umbrales & superpone umbrales &
+superpone umbrales \\
+Ambiguo (revisión completa) & resto de combinaciones & & \\
+\bottomrule
+\end{longtable}
+
+Los umbrales son ilustrativos y deben calibrarse con distribuciones
+empíricas por área y etapa de carrera. Si los intervalos de confianza
+cruzan varias clases, el caso se trata como provisional.
+
+\hypertarget{paso-3-componer-el-comituxe9}{%
+\subsection{Paso 3: Componer el
+Comité}\label{paso-3-componer-el-comituxe9}}
+
+Dado un investigador \(r\) con vector de proporciones por categoría
+\(p_r\):
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Definir categorías primarias: \(K_r = \{i : p_{r,i} \geq \tau\}\), con
+  \(\tau = 0.15\).
+\item
+  Incluir al menos un evaluador por cada categoría en \(K_r\).
+\item
+  Incluir al menos un evaluador con experiencia interdisciplinaria
+  demostrada (\(\Delta > 0.40\)).
+\item
+  Tamaño base del comité: \(|K_r| + 1\).
+\item
+  Si el caso es provisional por solapamiento de intervalos, añadir un
+  evaluador metodológico para revisión de robustez e incertidumbre.
+\end{enumerate}
+
+\hypertarget{demostraciuxf3n-con-perfiles-simulados}{%
+\subsection{Demostración con Perfiles
+Simulados}\label{demostraciuxf3n-con-perfiles-simulados}}
+
+\begin{longtable}[]{@{}lllll@{}}
+\toprule
+Investigador & \(\Delta\) & \(S\) & \(E\) & Clasificación \\
+\midrule
+\endhead
+Dra. A (integradora) & 0.558 & 0.733 & 0.600 & Integradora genuina \\
+Dr.~B (polímata) & 0.562 & 0.000 & 0.063 & Polímata \\
+Dra. D (especialista) & 0.288 & 0.881 & 0.211 & Especialista
+(reclasificar) \\
+\bottomrule
+\end{longtable}
+
+Dra. A y Dr.~B muestran casi la misma diversidad, pero con coherencia y
+efecto transcampo opuestos. Esa diferencia es precisamente la que evita
+clasificaciones erróneas cuando se usa el panel completo.
+
+\hypertarget{modos-de-fallo-y-salvaguardas}{%
+\section{Modos de Fallo y
+Salvaguardas}\label{modos-de-fallo-y-salvaguardas}}
+
+\hypertarget{f1-premio-a-la-amplitud-sin-profundidad}{%
+\subsection{F1: Premio a la amplitud sin
+profundidad}\label{f1-premio-a-la-amplitud-sin-profundidad}}
+
+\textbf{Riesgo:} recompensar \(\Delta\) alta ignorando integración e
+impacto.
+
+\textbf{Salvaguarda:} exigir simultáneamente umbrales de \(S\) y \(E\)
+para ``integrador''.
+
+\hypertarget{f2-penalizaciuxf3n-por-revistas-no-estuxe1ndar}{%
+\subsection{F2: Penalización por revistas no
+estándar}\label{f2-penalizaciuxf3n-por-revistas-no-estuxe1ndar}}
+
+\textbf{Riesgo:} castigar publicación interdisciplinaria por usar
+revistas con métricas distintas a campos hiper-citados.
+
+\textbf{Salvaguarda:} normalización por campo; no comparar factores de
+impacto brutos entre disciplinas.
+
+\hypertarget{f3-normas-de-citaciuxf3n-inconmensurables}{%
+\subsection{F3: Normas de citación
+inconmensurables}\label{f3-normas-de-citaciuxf3n-inconmensurables}}
+
+\textbf{Riesgo:} comparar campos con órdenes de magnitud de citación
+distintos.
+
+\textbf{Salvaguarda:} normalizar \(E\) y métricas de citación por línea
+base de campo.
+
+\hypertarget{f4-persistencia-de-mala-clasificaciuxf3n}{%
+\subsection{F4: Persistencia de mala
+clasificación}\label{f4-persistencia-de-mala-clasificaciuxf3n}}
+
+\textbf{Riesgo:} especialistas permanecen en categoría
+interdisciplinaria por inercia administrativa.
+
+\textbf{Salvaguarda:} disparador de reclasificación cuando
+\(\Delta < 0.35\).
+
+\hypertarget{f5-escasez-de-datos-en-etapas-tempranas}{%
+\subsection{F5: Escasez de datos en etapas
+tempranas}\label{f5-escasez-de-datos-en-etapas-tempranas}}
+
+\textbf{Riesgo:} con pocas publicaciones, las estimaciones individuales
+son inestables (Nakhoda, Whigham y Zwanenburg, 2023).
+
+\textbf{Salvaguarda:} umbral mínimo de publicaciones (por ejemplo,
+\(n \geq 15\)), reporte de intervalos de confianza y clasificación
+provisional si los intervalos cruzan fronteras de clase.
+
+\hypertarget{f6-juego-estratuxe9gico-por-coautoruxeda}{%
+\subsection{F6: Juego estratégico por
+coautoría}\label{f6-juego-estratuxe9gico-por-coautoruxeda}}
+
+\textbf{Riesgo:} inflar \(\Delta\) con coautorías oportunistas sin
+integración real.
+
+\textbf{Salvaguarda:} ponderar por publicaciones de autoría
+correspondiente y contrastar con \(S\).
+
+\hypertarget{discusiuxf3n}{%
+\section{Discusión}\label{discusiuxf3n}}
+
+El protocolo complementa, no reemplaza, juicio experto. Su valor
+principal es hacer explícita la estructura de evidencia y garantizar que
+la composición del comité refleje la cartera real del investigador.
+
+El panel debe interpretarse como evidencia vectorial (\(\Delta\), \(S\),
+\(E\)), no como puntaje compuesto único. Esto reduce los incentivos de
+manipulación estratégica y mejora la auditabilidad de las decisiones.
+
+\hypertarget{conclusiones}{%
+\section{Conclusiones}\label{conclusiones}}
+
+Proponemos un protocolo transparente y auditable para evaluación
+nacional de investigadores interdisciplinarios. El panel (\(\Delta\),
+\(S\), \(E\)) permite separar perfiles cualitativamente distintos,
+ajustar composición de comités y mitigar seis modos de fallo frecuentes.
+El siguiente paso natural es calibrar umbrales con distribuciones reales
+por área y etapa de carrera.
+
+\hypertarget{referencias}{%
+\section{Referencias}\label{referencias}}
+
+\begin{itemize}
+\tightlist
+\item
+  Nakhoda, M., Whigham, P., and Zwanenburg, S. (2023). Quantifying and
+  addressing uncertainty in the measurement of interdisciplinarity.
+  \emph{Scientometrics}, 128:6107--6127.
+\item
+  Rafols, I. (2019). S\&T indicators in the wild: contextualization and
+  participation for responsible metrics. \emph{Research Evaluation},
+  28(1):7--22.
+\item
+  Rivero, A. (2026). Measuring interdisciplinarity: A multi-component
+  indicator panel for research evaluation. Manuscript.
+\item
+  Xiang, S., Romero, D. M., and Teplitskiy, M. (2025). Evaluating
+  interdisciplinary research: Disparate outcomes for topic and knowledge
+  base. \emph{Proceedings of the National Academy of Sciences},
+  122(16):e2409752122.
+\end{itemize}
+
+\end{document}
