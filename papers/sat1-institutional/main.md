@@ -122,6 +122,11 @@ might appear interdisciplinary from external data, but zero co-authorship
 and co-supervision diversity reveal polymathic breadth without integration.
 Institutional data provides this discriminatory power.
 
+This distinction mirrors the input/output separation emphasized in the
+companion review: high diversity of inputs ($\Delta$) can indicate either
+multidisciplinary breadth or integrative interdisciplinarity, and only
+coherence/process indicators can separate the two reliably.
+
 ## Demonstration: Mock Department
 
 A small Physics & Materials Science department with 3 researchers
@@ -205,6 +210,10 @@ cannot.
 - **Early-career N/A values**: Researchers with <5 years post-PhD or
   <10 publications should have confidence intervals reported alongside
   point estimates.
+- **Threshold calibration and ambiguity**: The profile cutoffs used in this
+  note are illustrative. Institutions should calibrate them to local
+  distributions and mark cases whose confidence intervals cross category
+  boundaries as "ambiguous, needs qualitative review."
 - **Departmental affiliation changes**: Researchers who have changed
   departments mid-career may have artificially inflated co-authorship
   diversity. Stratify by time period if needed.
@@ -251,7 +260,10 @@ interdisciplinarity, not whether it is good. Quality assessment requires
 independent evaluation (peer review, citation percentiles, etc.). Third, the
 classification thresholds (e.g., "high" $\Delta \geq 0.40$) are illustrative
 and should be calibrated against the institution's empirical distributions
-before operational use.
+before operational use. Fourth, confidence intervals can be wide for
+individual-level profiles when publication counts are small; operational
+classification should therefore use interval-aware rules rather than
+point estimates alone.
 
 Extensions could include text-based indicators (semantic similarity of
 titles/abstracts across a researcher's portfolio), teaching-based indicators

@@ -509,6 +509,8 @@ All disparity-sensitive measures depend on a matrix $\mathbf{S}$ (or its
 complement $\mathbf{D} = \mathbf{1} - \mathbf{S}$) encoding pairwise
 relationships among classification categories. The standard approach constructs
 $\mathbf{S}$ from inter-category citation flows using a cosine similarity.
+Historically, this construction extends journal-journal citation mapping
+methods developed for JCR-scale classification work (Leydesdorff, 2006).
 Wang and Schneider (2020) distinguished two variants: the Salton vector cosine
 $SC(i,j) = \sum_k c_{ik}\, c_{jk} / \sqrt{\sum_k c_{ik}^2 \cdot \sum_k c_{jk}^2}$,
 which compares the citing profiles of two categories, and the Ochiai scalar
@@ -1259,6 +1261,32 @@ of interdisciplinarity, and future work on validated operationalizations
 may warrant its inclusion; for now, the panel focuses on dimensions ---
 diversity, coherence, and diffusion --- for which measurement tools have
 stronger empirical grounding.
+
+## Mathematical Coverage and Qualification Map
+
+To make the mathematical scope of the reviewed indicators explicit, the table below
+maps the principal formula-bearing references used in this review to their
+qualification conditions. This is a claim-hygiene device: each formula family
+is tied to at least one boundary condition that constrains interpretation.
+
+| Formula family | Primary references | Qualification condition used in this review |
+|----------------|--------------------|---------------------------------------------|
+| Rao-Stirling / integration (`\Delta = \sum d_{ij} p_i p_j`) | Porter and Rafols (2009); Rafols and Meyer (2009); Leydesdorff and Rafols (2011) | Values are not invariant to taxonomy granularity, similarity-matrix construction, or distance metric choice. |
+| Similarity-based true diversity (`{}^qD^S`, `{}^2D^S`) | Zhang, Rousseau, and Glanzel (2016); Hill (1973); Jost (2006, 2009); Leinster and Cobbold (2012) | Entropy-like quantities must be interpreted on an effective-number scale; similarity-based and disparity-based variants are not numerically interchangeable. |
+| Variety-balance indices (Shannon, Simpson, Herfindahl, Gini) | Porter and Rafols (2009); Leydesdorff, Wagner, and Bornmann (2019); Mutz (2022) | These indices cannot, by themselves, identify cognitive distance; aggregation operator choice (additive vs multiplicative) changes rankings. |
+| Coherence (`S`) via bibliographic coupling | Rafols and Meyer (2009); Jensen and Lutkouskaya (2014) | Coherence estimates depend on coupling thresholding/binarization and network-construction conventions. |
+| Centrality-based alternatives | Leydesdorff and Rafols (2011); Bollen et al. (2009) | Betweenness and related graph indicators mix interdisciplinarity with size/position effects unless normalized carefully. |
+| Diffusion / cross-field effect (`E`) | Leydesdorff, Wagner, and Bornmann (2019); Xiang, Romero, and Teplitskiy (2025); Lariviere and Gingras (2010) | Cross-field uptake must be field-normalized; diffusion should be treated as distinct from input diversity. |
+| Knowledge-flow decomposition `(B, I, H)` | Zhou, Guns, and Engels (2023) | Distributional flow vectors answer directional exchange questions but are not drop-in replacements for scalar panel components. |
+| Novelty via atypical combinations / timed emergence | Uzzi et al. (2013); Wang et al. (2017); Bornmann (2019); Fontana et al. (2020) | Novelty indicators capture atypicality under explicit null-model assumptions; external validation remains limited for policy use. |
+| Near-zero overlap stabilization | Moulton and Jiang (2018) | Probabilistic Jaccard variants improve zero-overlap behavior but still require complementary disparity modeling for interdisciplinarity claims. |
+| Uncertainty quantification and validity diagnostics | Zwanenburg, Nakhoda, and Whigham (2022); Nakhoda, Whigham, and Zwanenburg (2023) | Individual-level estimates require interval reporting; point-estimate thresholding alone is decision-fragile. |
+| Empirical coherence benchmark corpus | Noji et al. (1997); Tomishige et al. (2002) | These are benchmark test cases for indicator behavior, not normative formulas for interdisciplinarity quality. |
+| Transdisciplinary quality framing | Stokols et al. (2003); Klein (2008); Borlaug and Svartefoss (2025) | Quality judgments require explicit evaluative criteria beyond bibliometric panel values. |
+
+This map does not claim that every cited paper contributes a novel formula.
+Rather, it makes explicit how the mathematics that *is* used in the review is
+qualified before being translated into evaluation guidance.
 
 ## Beyond Scalars: Distribution-Based Approaches
 
@@ -2568,6 +2596,14 @@ comparatively little attention. The empirical evidence, especially Wang and
 Schneider's (2020) finding of low consistency across 23 measures and
 Leydesdorff et al.'s (2019) demonstration of limited discriminatory power,
 strongly suggests that no single indicator is adequate.
+
+This framing aligns with the four motivating questions stated for this
+project. The panel is designed to separate impact/quality evidence from
+simple breadth claims (OQ1), to remain computable with institutional data
+plus clearly stated external dependencies (OQ2), to distinguish
+cross-disciplinary integration from polymathic accumulation (OQ3), and to
+support auditable agency-level evaluation protocols through explicit
+multidimensional evidence rather than single-score ranking (OQ4).
 
 The three-component panel we propose — diversity ($\Delta$), coherence ($S$),
 and cross-field effect ($E$) — addresses this inadequacy by spanning three

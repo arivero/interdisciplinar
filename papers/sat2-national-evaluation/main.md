@@ -41,6 +41,11 @@ committee composition. The panel, developed in a companion review (Rivero,
 and cross-field effect ($E$). We demonstrate the protocol on mock researcher
 profiles, identify failure modes, and propose safeguards.
 
+Operationally, we treat "interdisciplinary" as an integration claim, not
+just a breadth claim: high input diversity can represent either genuine
+integration or disconnected multidisciplinarity, and the protocol is built
+to distinguish these cases explicitly.
+
 # The Indicator Panel
 
 We briefly summarize the three panel components; formal definitions and
@@ -86,10 +91,13 @@ The panel values are compared against classification thresholds:
 | Genuine integrator | $\geq 0.40$ | $\geq 0.30$ | $\geq 0.30$ |
 | Polymath (non-integrative) | $\geq 0.40$ | $< 0.15$ | $< 0.15$ |
 | Specialist (reclassify) | $< 0.35$ | any | any |
+| Provisional (CI overlap) | boundary-overlap | boundary-overlap | boundary-overlap |
 | Ambiguous (requires full panel review) | all other combinations | | |
 
 These thresholds are illustrative and should be calibrated against empirical
-distributions before operational deployment.
+distributions before operational deployment. When confidence intervals
+overlap multiple rows, the case should be treated as provisional and sent
+to full-panel qualitative review.
 
 ## Step 3: Compose the Committee
 
@@ -104,6 +112,8 @@ distributions before operational deployment.
    expertise ($\Delta > 0.40$).
 4. Committee size: $|K_r| + 1$ (disciplines represented plus a
    cross-disciplinary chair).
+5. If profile classification is provisional (CI overlap), add one methods
+   evaluator tasked with uncertainty and robustness review.
 
 The committee composition is thus data-driven: it reflects the researcher's
 actual disciplinary profile rather than an arbitrary assignment.
@@ -191,8 +201,9 @@ mid-career, individual-level estimates carry wider uncertainty than
 aggregate measures, making threshold-based classification inherently noisy.
 
 **Safeguard:** Minimum publication threshold (e.g., $n \geq 15$). Below
-this threshold, present panel values with confidence intervals and flag
-them as provisional.
+this threshold, present panel values with confidence intervals, flag
+them as provisional, and defer hard classification unless the full
+interval lies inside one profile region.
 
 ## F6: Gaming via strategic co-authorship
 
@@ -223,6 +234,8 @@ multidimensional, and subject to stakeholder validation. The protocol
 follows this principle: it is multidimensional (three components),
 context-dependent (committee composition adapts to the researcher's
 profile), and transparent (thresholds and rules are explicit and auditable).
+The panel should remain vector-valued evidence ($\Delta$, $S$, $E$), not a
+single composite score.
 
 The fundamental insight is that "Interdisciplinary" is not a single
 category. It encompasses integrators, polymaths, and misclassified
