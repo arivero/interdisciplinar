@@ -78,7 +78,7 @@
 - **Main manuscript**: 2,679 lines (post-C15 closure updates)
 - **Satellite 2**: 262 lines (post-C15 sync updates)
 - **Satellite 1**: 293 lines (post-C15 sync updates)
-- **Spanish review**: 500 lines (`papers/main-review-es/main.md`)
+- **Spanish review**: 2,675 lines (`paper/main.es.md`)
 - **Spanish satellite 1**: 242 lines (`papers/sat1-institutional/main.es.md`)
 - **Spanish satellite 2**: 168 lines (`papers/sat2-national-evaluation/main.es.md`)
 - **HTML outputs**: 6 single-page files (EN+ES review/satellites)
