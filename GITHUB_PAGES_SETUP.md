@@ -22,7 +22,20 @@ Since the gh CLI authentication has limitations in the CI environment, please co
 4. Optionally, add the GitHub Pages URL once it's active: `https://arivero.github.io/interdisciplinar`
 5. Click "Save changes"
 
-### 3. Using the gh CLI (Alternative)
+### 3. Using the Automated Script (Recommended)
+
+If you have gh CLI authenticated locally, you can run the automated setup script:
+
+```bash
+./scripts/setup-github-pages.sh
+```
+
+This script will:
+- Enable GitHub Pages from the `/docs` folder
+- Update the repository description with "ankink"
+- Set the homepage URL to the GitHub Pages site
+
+### 4. Using the gh CLI Manually (Alternative)
 
 If you have gh CLI authenticated locally, you can run:
 
