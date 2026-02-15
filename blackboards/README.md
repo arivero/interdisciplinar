@@ -50,9 +50,9 @@ active exploration, not archival memory (that's what notebooks and papers are fo
 ## Slot Index (update when overwriting)
 | Slot | Topic | Status |
 |------|-------|--------|
-| 0 | (empty) | Available |
-| 1 | (empty) | Available |
-| 2 | (empty) | Available |
+| 0 | Indicator panel witness (Δ, S, E) on toy data | Active — S00 |
+| 1 | S01 sensitivity analysis (perturbation robustness) | Active — S01 |
+| 2 | S02 national evaluation scenario (mock CVs + protocol) | Active — S02 |
 | 3 | (empty) | Available |
 | 4 | (empty) | Available |
 | 5 | (empty) | Available |

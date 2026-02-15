@@ -31,12 +31,38 @@ decision-relevant?
 Working hypothesis: cross-disciplinarity is not merely being conversant in many
 topics; it is producing work that substantively affects multiple research areas.
 
-## Satellite Paper Status and Aims
+### 4. How can a national evaluation agency fairly assess an "Interdisciplinar" researcher?
+When a researcher's official science group is "Interdisciplinar," their portfolio
+does not fit a single disciplinary panel. What combination of indicators,
+committee design, and evidence standards enables fair evaluation? What specific
+failure modes must the agency guard against?
+
+## Satellite Papers
+
+### Satellite 1: Internal Institutional Measurement
 - Planned short letter (max 6 compiled pages): methods and concrete measurements
   for institutional internal use, leveraging complete project/article/staff/budget data.
 - Purpose: provide an operational, reproducible measurement recipe rather than a
   broad conceptual survey.
 - Status: not started.
+
+### Satellite 2: National Evaluation of Interdisciplinary Researchers
+- Planned short letter (max 6 compiled pages): how a national evaluation agency
+  can assess a researcher classified in the science group "Interdisciplinar."
+- Core problem: standard evaluation panels are discipline-based; a researcher whose
+  portfolio spans multiple fields cannot be fairly assessed by a single-discipline
+  committee. What evaluation protocol, indicator panel, and committee composition
+  allow fair assessment of researchers whose primary identity is interdisciplinary?
+- Key questions:
+  1. What evidence should a researcher in the "Interdisciplinar" group present
+     that differs from standard disciplinary CVs?
+  2. Which indicators (diversity, coherence, cross-field effect) are meaningful
+     at the individual-career level for an evaluation agency?
+  3. How should the evaluation committee be composed — multi-panel representation,
+     external interdisciplinary reviewers, or hybrid?
+  4. What are the failure modes (e.g., rewarding breadth without depth, penalizing
+     non-standard publication patterns)?
+- Status: not started. Depends on main review and Satellite 1 stabilizing first.
 
 ## Lifecycle Rule
 Every satellite paper must end in one of two states:

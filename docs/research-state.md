@@ -3,11 +3,11 @@
 This file is the durable "working memory" for continuing research across context resets.
 It is **not** a citable source.
 
-Date: (update at each session)
+Date: 2026-02-15
 
 ## North Star (Current Paper)
 - Manuscript: `paper/main.md` (publishable artifact).
-- Thesis: (to be defined)
+- Thesis: A structured indicator panel (diversity, coherence, cross-field effect) is required to measure interdisciplinary research quality at the university level; no single scalar captures the distinction between cross-disciplinary integration and polymathic breadth.
 
 ## Hard Guardrails
 1. Do not put cycle IDs in rendered manuscript content.
@@ -30,13 +30,25 @@ Default to:
 6. **Content-cycle accountability:** for every `Cnn` cycle, record the diffstat.
 
 ## Active Threads (Pick One)
-<!-- List your active research threads here. -->
 
-### 1) (First thread)
-- Goal: (to be defined)
-- Typical deliverable: (to be defined)
+### 1) Indicator Panel Design and Validation
+- Goal: Define, compute, and validate a three-component indicator panel (Rao-Stirling diversity, mean linkage coherence, cross-field effect proxy) that discriminates cross-disciplinary integration from polymathic breadth.
+- Typical deliverable: blackboard derivations with toy-data witnesses; promotion to manuscript via C-cycles.
+- Key sources: Porter-Rafols 2009, Rafols-Meyer 2009, Leydesdorff-Rafols 2010.
+
+### 2) Institutional Measurement Feasibility
+- Goal: Determine which indicators are computable with full internal university data (projects, publications, staffing, budgets).
+- Typical deliverable: mapping of indicators to data requirements; gap analysis.
+- Status: not started (depends on thread 1 stabilizing).
+
+### 3) National Evaluation of Interdisciplinary Researchers (Satellite 2)
+- Goal: Design an evaluation protocol for national agencies assessing researchers in the "Interdisciplinar" science group.
+- Typical deliverable: indicator-panel evaluation protocol + committee composition rule + failure-mode taxonomy.
+- Key question: How can (Δ, S, E) serve as evidence framework for individual researcher evaluation?
+- Status: D01 complete; S02 witness needed.
 
 ## Immediate Next Actions
-1. Append a log entry via `scripts/log-entry.sh` at the start of each session.
-2. Fill in `docs/motivations.md` with research goals.
-3. Run a `D00` discovery cycle to scope the first novelty target.
+1. S01: sensitivity analysis on S00 toy computation (perturb s_{ij}, test robustness).
+2. S02: toy evaluation scenario for Satellite 2 in `blackboards/2.md`.
+3. Acquire PENDING bibliography sources (wang-schneider-2020, leydesdorff-wagner-bornmann-2019).
+4. After sufficient D+S cycles, spawn C00 to begin main manuscript writing.

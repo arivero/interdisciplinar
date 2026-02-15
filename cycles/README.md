@@ -28,8 +28,29 @@ Preference: treat `Cnn` as a **promotion wave**. A single C cycle may:
 
 Avoid opening a `C` cycle for tiny edits; bundle them into the next promotion wave.
 
-### 3) `Qnn` answers `Cnn` only
-`Qnn` cycles are referee-style responses to a specific `Cnn` diff (the parent cycle). `Q` is not used to review `D/S/B` outputs directly.
+### 3) `Qnn` review scope
+`Qnn` cycles have two modes:
+
+- **Referee mode** (default): referee-style response to a specific `Cnn` diff.
+  The `Q` cycle reviews the manuscript changes and flags mathematical, notational,
+  or argumentative issues. It may propose fixes but does not edit manuscripts directly.
+
+- **Alignment mode**: checks whether the manuscript aligns with the goals and
+  open questions in `docs/motivations.md`. An alignment `Q` does **not** patch
+  the paper directly. Instead, if misalignment is found, it spawns `Dnn` (to
+  investigate the gap) and/or `Snn` (to develop missing content) cycles that
+  aim to close the alignment gap. These spawned cycles then feed into a future
+  `Cnn` promotion.
+
+  **Alignment signals** (non-exhaustive):
+  - Acquired sources in `paper/bibliography.md` that are not cited in the
+    manuscript — a strong indicator that the review is not covering the area
+    adequately.
+  - Open questions in `docs/motivations.md` with no corresponding manuscript
+    section or discussion.
+  - Satellite paper topics with no treatment in the main review.
+
+`Q` is not used to review `D/S/B` outputs directly.
 
 ### 4) Paper-quality boundary (hard)
 Manuscripts must contain publishable paper content only.

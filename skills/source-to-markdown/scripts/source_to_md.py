@@ -14,11 +14,12 @@ import tempfile
 import urllib.parse
 import urllib.request
 
-BLOCKED_DOMAINS = ("sci-hub",)
+BLOCKED_DOMAINS: tuple[str, ...] = ()
 PROVIDER_DOMAINS = {
     "arxiv": ("arxiv.org", "www.arxiv.org"),
     "inspire": ("inspirehep.net", "inspirehep.org"),
     "kek": ("kek.jp", "www-lib.kek.jp", "ccdb5fs.kek.jp"),
+    "scihub": ("sci-hub.kvnp.top",),
 }
 DEFAULT_HEADERS = {
     "User-Agent": "physarticle-source-ingest/1.0 (+https://a.rivero.nom.es)",
@@ -125,6 +126,21 @@ def resolve_provider_pdf_url(url: str, provider: str) -> str | None:
             identifier = path[len("/abs/") :]
             if identifier:
                 return f"https://arxiv.org/pdf/{identifier}.pdf"
+        return None
+    if provider == "scihub":
+        try:
+            page_html = fetch_url_text(url)
+        except Exception:
+            return None
+        # Extract PDF URL from the embedded iframe
+        m = re.search(r'<iframe[^>]+src="([^"]+\.pdf[^"]*)"', page_html, flags=re.IGNORECASE)
+        if m:
+            pdf_url = m.group(1)
+            # Strip fragment (e.g. #view=FitH)
+            pdf_url = pdf_url.split("#")[0]
+            if not pdf_url.startswith("http"):
+                pdf_url = "https:" + pdf_url
+            return pdf_url
         return None
     if provider not in {"inspire", "kek"}:
         return None
