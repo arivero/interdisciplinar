@@ -18,8 +18,16 @@
 
 ## Active / In Progress
 
-(none)
+- `B00` (bibliography): completed local acquisition/ingestion of the three Rafols
+  interdisciplinarity-indicator sources; ready for commit/archive workflow.
+- `B01` (bibliography): queued recency-focused sweep to update state-of-knowledge
+  coverage on interdisciplinarity indicators.
+- `D00` (discovery): planned novelty-target triage anchored on Rafols indicator
+  framework and cross-disciplinarity vs polymathy distinction.
+- `S00` (study): planned first bounded technical witness (indicator panel toy computation)
+  from Rafols-based definitions.
 
 ## Next Action
 
-Start by filling in `docs/motivations.md` with your research goals, then run a `D00` discovery cycle to scope the first novelty target.
+Finalize `D00` target selection, execute `S00` in `blackboards/0.md`, and then
+run `B01` recency ingestion to stress-test the chosen claim against recent literature.
