@@ -67,6 +67,11 @@
 - `Q11` (quality): completed; translation QA pass and terminology normalization.
 - `P00` (publication packaging): completed; EN+ES TeX/PDF artifacts built and prepared for repo.
 
+### HTML skill + web packaging wave (D15/Q12/P01)
+- `D15` (discovery): completed; created reusable skill for Markdown -> single-page HTML with math.
+- `Q12` (quality): completed; found/fixed mktemp portability issue in skill script.
+- `P01` (publication packaging): completed; generated HTML pages for all EN+ES paper variants.
+
 ## Next Action
 
 **Current status (2026-02-15):**
@@ -76,6 +81,7 @@
 - **Spanish review**: 500 lines (`papers/main-review-es/main.md`)
 - **Spanish satellite 1**: 242 lines (`papers/sat1-institutional-es/main.md`)
 - **Spanish satellite 2**: 168 lines (`papers/sat2-national-evaluation-es/main.md`)
+- **HTML outputs**: 6 single-page files (EN+ES review/satellites)
 - **Bibliography**: 35 OK + 6 PENDING (Klein 2008, Leinster 2012, Stokols 2003, Choi 2006, Hammarfelt 2020, Borlaug 2025) + 2 PENDING_LIBRARY (OECD 1998, Stirling 2007)
 - **Blackboards**: 6 active (README, 0-3, 4-5, formulas)
 - **Notebooks**: 5 (panel-worked-example, panel-sensitivity, panel-interpretation, formula-catalog, idr-typology)
