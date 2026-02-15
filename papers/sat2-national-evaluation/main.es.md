@@ -1,6 +1,6 @@
 ---
 title: "Evaluación Basada en Panel de Investigadores Interdisciplinarios: Protocolo para Agencias Nacionales"
-author: "A. Rivero"
+author: "A. Rivero and A.I. Scaffold"
 date: "2026"
 abstract: |
   Las agencias nacionales de evaluación enfrentan un problema estructural

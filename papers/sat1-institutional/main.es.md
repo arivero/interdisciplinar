@@ -1,6 +1,6 @@
 ---
 title: "Medición de la Interdisciplinariedad con Datos Internos Universitarios: Guía Operativa"
-author: "A. Rivero"
+author: "A. Rivero and A.I. Scaffold"
 date: "2026"
 abstract: |
   Las universidades poseen datos internos ricos — repositorios de

@@ -1,6 +1,6 @@
 ---
 title: "Panel-Based Evaluation of Interdisciplinary Researchers: A Protocol for National Agencies"
-author: "A. Rivero"
+author: "A. Rivero and A.I. Scaffold"
 date: "2026"
 abstract: |
   National evaluation agencies face a structural challenge when assessing

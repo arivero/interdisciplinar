@@ -1,6 +1,6 @@
 ---
 title: "Measuring Interdisciplinarity with Internal University Data: An Operational Guide"
-author: "A. Rivero"
+author: "A. Rivero and A.I. Scaffold"
 date: "2026"
 abstract: |
   Universities possess rich internal data — publication repositories,
