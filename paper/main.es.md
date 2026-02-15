@@ -1152,9 +1152,9 @@ par $(i,j)$, se calcula una puntuación z frente a un modelo nulo aleatorio:
 $$\nabla_{\mathrm{Uzzi}}(p_{i,j},\, x) = \frac{p_{i,j}(x) - e_{i,j}(x)}
 {\sigma\!\bigl[e_{i,j}(x)\bigr]}, \quad p_{i,j}(x) > 0,$$
 
-donde $e_{i,j}(x)$ y $\sigma[e_{i,j}(x)]$ son ​​la media y el estándar
-desviación de la frecuencia del par en redes de citas permutadas que
-preservar los recuentos de referencia. El método produce una *distribución* de
+donde $e_{i,j}(x)$ y $\sigma[e_{i,j}(x)]$ son la media y la desviación estándar
+de la frecuencia del par en redes de citas permutadas que preservan los recuentos de referencia.
+El método produce una *distribución* de
 puntuaciones de atipicidad dentro de $x$, de las cuales Uzzi et al. derivan dos
 Estadísticas resumidas no paramétricas que capturan la conformidad y la novedad.
 
