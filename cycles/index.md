@@ -53,8 +53,13 @@
 - `Q03` (quality, alignment): completed; FG1-3 and OQ2-3 ADDRESSED. FG4 and OQ1,OQ4 PARTIALLY (by design — satellites). 4 uncited sources flagged.
 - `C04` (content): completed; integrated Abramo 2018, Zhang 2016, Morillo 2001/2003 into §3 Diversity. 4 new references added. Manuscript now 558 lines.
 
+- `B05` (bibliography): completed; Xiang 2025 (PNAS) acquired from user-provided PDF. Self-reported IDR 2026 (Scientometrics) acquired from Springer OA link. Both integrated into manuscript §6.
+
+- `C05` (content): completed; integrated Zwanenburg 2022 and Nakhoda 2023 into §3 and §6 (+10 lines, 2 new references). Aksnes 2026 integrated into §6. Manuscript 580 lines, 18 references.
+- `B06` (bibliography): completed; all sources now acquired (16 OK, 0 PENDING). Zwanenburg and Nakhoda from DNB OA. Marres-de Rijcke from user-provided watermark URL.
+
 **Priority order:**
 
-1. Commit work (manuscripts + cycle artifacts).
-2. Remaining PENDING sources: marres-derijcke-2020, zwanenburg-2022, nakhoda-2023, xiang-2025, self-reported-idr-2026.
-3. Future cycles: Satellite papers (S1 institutional, S2 national evaluation).
+1. Commit work.
+2. Satellite papers: S1 (institutional measurement), S2 (national evaluation — S02 in blackboards/2.md ready for promotion).
+3. Further quality refinement of main manuscript (additional Q cycles if desired).

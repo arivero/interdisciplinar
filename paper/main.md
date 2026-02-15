@@ -140,7 +140,12 @@ A key empirical finding is that diversity indicators cluster into two groups:
 those incorporating pairwise dissimilarity matrices (Rao-Stirling variants,
 Hill-type measures) and those that do not (Shannon, Simpson, multi-classification
 counts). Inter-group correlations are weak, suggesting these groups measure
-genuinely different aspects of diversity. A further dimension is the choice
+genuinely different aspects of diversity. Zwanenburg, Nakhoda, and Whigham
+(2022) evaluated 21 measures against eight validity criteria derived from a
+synthesis of 25 definitions of interdisciplinarity, finding that only six
+measures provide evidence of actual knowledge integration; the rest capture
+surface-level distributional properties without validating that integration
+has occurred. A further dimension is the choice
 of what to diversify: references or authors. Abramo, D'Angelo, and Zhang
 (2018) compared author-field diversity against reference-list diversity,
 finding general convergence but notable individual exceptions — particularly
@@ -464,10 +469,15 @@ choice is essential for reproducibility.
 Several important questions remain unresolved and merit further investigation.
 
 First, the relationship between self-reported and bibliometric
-interdisciplinarity is poorly understood. Researchers' own assessments of
-their interdisciplinary engagement may diverge substantially from what
-citation-based indicators reveal, raising questions about construct validity
-from both directions.
+interdisciplinarity is poorly understood. Aksnes, Karlstrøm, and Piro (2026),
+surveying over 3,000 publications across all fields, found that
+self-reported and bibliometric interdisciplinarity measures "rarely
+correspond" — correlations range from 0.13 to 0.18, explaining only 2–3% of
+variance. Researchers assess interdisciplinarity based on collaboration
+dynamics and methodological integration, not reference patterns. This raises
+fundamental questions about construct validity: if bibliometric indicators
+do not capture what researchers themselves mean by interdisciplinarity, the
+gap must be acknowledged in any evaluation framework.
 
 Second, the estimation of disciplinary similarity matrices — a critical input
 to Rao-Stirling diversity and related measures — has traditionally relied on
@@ -482,7 +492,13 @@ Third, uncertainty quantification for interdisciplinarity measures is largely
 absent from the literature. Point estimates of diversity or coherence are
 reported without confidence intervals, making it difficult to assess whether
 observed differences between researchers or institutions are statistically
-meaningful.
+meaningful. Nakhoda, Whigham, and Zwanenburg (2023) identified three sources
+of uncertainty in citation-based measures — arbitrary referencing behavior,
+uncategorized references, and invalid journal-to-paper category inheritance —
+and proposed a bootstrapping method to estimate confidence intervals for the
+Rao-Stirling index. Their finding that confidence intervals can span up to
+0.6 points underscores the risk of over-interpreting small differences in
+diversity scores.
 
 Fourth, the relationship between interdisciplinarity and research quality
 remains contested. Citation-based quality measures appear to penalize
@@ -543,6 +559,7 @@ validation on real university data is the natural next step.
 
 # References
 
+- Aksnes, D. W., Karlstrøm, H., and Piro, F. N. (2026). Self-reported and bibliometric interdisciplinarity measures rarely correspond: a survey-based comparative analysis of indicators and researcher perceptions. *Scientometrics*, 131:189–208.
 - Abramo, G., D'Angelo, C. A., and Zhang, L. (2018). A comparison of two approaches for measuring interdisciplinary research output: The disciplinary diversity of authors vs the disciplinary diversity of the reference list. *Journal of Informetrics*, 12(4):1182–1193.
 - Cantone, G. G. (2024). How to measure interdisciplinary research? A systemic design for the model of measurement. *Scientometrics*, 129:4937–4982.
 - Cantone, G. G. (2025). Estimation of disciplinary similarity with large language models. *Scientometrics*, 130(10):5345–5373.
@@ -550,12 +567,14 @@ validation on real university data is the natural next step.
 - Leydesdorff, L., Wagner, C. S., and Bornmann, L. (2019). Interdisciplinarity as diversity in citation patterns among journals: Rao-Stirling diversity, relative variety, and the Gini coefficient. *Journal of Informetrics*, 13(1):255–269.
 - Morillo, F., Bordons, M., and Gómez, I. (2001). An approach to interdisciplinarity through bibliometric indicators. *Scientometrics*, 51(1):203–222.
 - Morillo, F., Bordons, M., and Gómez, I. (2003). Interdisciplinarity in science: A tentative typology of disciplines and research areas. *Journal of the American Society for Information Science and Technology*, 54(13):1237–1249.
+- Nakhoda, M., Whigham, P., and Zwanenburg, S. (2023). Quantifying and addressing uncertainty in the measurement of interdisciplinarity. *Scientometrics*, 128:6107–6127.
 - National Academies (2005). *Facilitating Interdisciplinary Research*. Washington, DC: National Academies Press.
 - Porter, A. L. and Rafols, I. (2009). Is science becoming more interdisciplinary? Measuring and mapping six research fields over time. *Scientometrics*, 81(3):719–745.
 - Rafols, I. (2019). S&T indicators in the wild: contextualization and participation for responsible metrics. *Research Evaluation*, 28(1):7–22.
 - Rafols, I. and Meyer, M. (2009). Diversity and network coherence as indicators of interdisciplinarity: case studies in bionanoscience. *Scientometrics*, 82(2):263–287.
 - Stirling, A. (2007). A general framework for analysing diversity in science, technology and society. *Journal of the Royal Society Interface*, 4(15):707–719.
 - Wang, Q. and Schneider, J. W. (2020). Consistency and validity of interdisciplinarity measures. *Quantitative Science Studies*, 1(1):239–263.
+- Zwanenburg, S., Nakhoda, M., and Whigham, P. (2022). Toward greater consistency and validity in measuring interdisciplinarity: a systematic and conceptual evaluation. *Scientometrics*, 127:3035–3065.
 - Zhang, L., Rousseau, R., and Glänzel, W. (2016). Diversity of references as an indicator of the interdisciplinarity of journals: Taking similarity between subject fields into account. *Journal of the Association for Information Science and Technology*, 67(5):1257–1265.
 - Xiang, S., Romero, D. M., and Teplitskiy, M. (2025). Evaluating interdisciplinary research: Disparate outcomes for topic and knowledge base. *Proceedings of the National Academy of Sciences*, 122(16):e2409752122.
 - Zhou, Q., Guns, R., and Engels, T. C. E. (2023). Towards indicating interdisciplinarity: Characterizing interdisciplinary knowledge flow. *Journal of the Association for Information Science and Technology*, 74(11):1325–1340.
