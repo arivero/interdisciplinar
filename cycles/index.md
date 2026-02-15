@@ -58,8 +58,12 @@
 - `C05` (content): completed; integrated Zwanenburg 2022 and Nakhoda 2023 into §3 and §6 (+10 lines, 2 new references). Aksnes 2026 integrated into §6. Manuscript 580 lines, 18 references.
 - `B06` (bibliography): completed; all sources now acquired (16 OK, 0 PENDING). Zwanenburg and Nakhoda from DNB OA. Marres-de Rijcke from user-provided watermark URL.
 
+- `D05` (discovery): completed; Satellite 2 structure (6 sections, ~4.5-5.5pp target).
+- `C06` (content): completed; Satellite 2 first draft (246 lines, 4 refs). Mock CVs, committee composition rule, 6 failure modes.
+- `Q06` (quality): completed; review of Sat2 draft. M1-m3 fixed, S1-S2 addressed. Guard checks pass.
+
 **Priority order:**
 
-1. Commit work.
-2. Satellite papers: S1 (institutional measurement), S2 (national evaluation — S02 in blackboards/2.md ready for promotion).
-3. Further quality refinement of main manuscript (additional Q cycles if desired).
+1. Commit Satellite 2.
+2. Satellite 1 (institutional measurement) — no blackboard work yet, needs S cycle first.
+3. Further work on main manuscript or Satellite 2 refinement as desired.
