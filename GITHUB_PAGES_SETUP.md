@@ -14,12 +14,15 @@ Since the gh CLI authentication has limitations in the CI environment, please co
    - Branch: Select `main` (or your default branch) and `/docs` folder
    - Click "Save"
 
-### 2. Update Repository Description
+### 2. Update Repository Description (with docs link)
 
 1. Go to the repository home page: https://github.com/arivero/interdisciplinar
 2. Click on the gear icon (⚙️) next to "About"
-3. Update the description to: "Interdisciplinarity measurement research with multi-component bibliometric indicators - ankink"
-4. Optionally, add the GitHub Pages URL once it's active: `https://arivero.github.io/interdisciplinar`
+3. Update the description to: 
+   ```
+   Interdisciplinarity measurement research with multi-component bibliometric indicators - ankink - Docs: https://arivero.github.io/interdisciplinar
+   ```
+4. In the "Website" field, add: `https://arivero.github.io/interdisciplinar`
 5. Click "Save changes"
 
 ### 3. Using the Automated Script (Recommended)
@@ -43,8 +46,11 @@ If you have gh CLI authenticated locally, you can run:
 # Enable GitHub Pages
 gh api repos/arivero/interdisciplinar/pages -X POST -f source[branch]=main -f source[path]=/docs
 
-# Update repository description
-gh repo edit arivero/interdisciplinar --description "Interdisciplinarity measurement research with multi-component bibliometric indicators - ankink"
+# Update repository description with docs link
+gh repo edit arivero/interdisciplinar --description "Interdisciplinarity measurement research with multi-component bibliometric indicators - ankink - Docs: https://arivero.github.io/interdisciplinar"
+
+# Set homepage URL
+gh repo edit arivero/interdisciplinar --homepage "https://arivero.github.io/interdisciplinar"
 ```
 
 ## What's Published

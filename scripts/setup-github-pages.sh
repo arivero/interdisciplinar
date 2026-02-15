@@ -8,7 +8,7 @@ set -euo pipefail
 
 REPO="arivero/interdisciplinar"
 PAGES_URL="https://arivero.github.io/interdisciplinar"
-DESCRIPTION="Interdisciplinarity measurement research with multi-component bibliometric indicators - ankink"
+DESCRIPTION="Interdisciplinarity measurement research with multi-component bibliometric indicators - ankink - Docs: https://arivero.github.io/interdisciplinar"
 
 echo "Setting up GitHub Pages for $REPO..."
 echo
