@@ -23,7 +23,7 @@ abstract: |
 # Introducción
 
 Las universidades buscan cada vez más fomentar y evaluar investigación
-interdisciplinaria dentro de su planeación estratégica y sus sistemas de
+interdisciplinaria dentro de su planificación estratégica y sus sistemas de
 aseguramiento de calidad. Sin embargo, las bases bibliométricas comerciales
 (Web of Science, Scopus) ofrecen una visión parcial de la actividad
 investigadora y, además, sus costos de suscripción pueden ser altos. A esto
@@ -32,7 +32,7 @@ coautorías, codirecciones doctorales, colaboraciones en proyectos y
 adscripciones departamentales — que muestran cómo ocurre realmente la
 integración del conocimiento.
 
-Esta nota presenta una guía operativa para medir interdisciplinariedad con
+Esta nota presenta una guía operativa para medir la interdisciplinariedad con
 predominio de datos internos. El enfoque central combina un panel
 bibliométrico de tres componentes — diversidad ($\Delta$), coherencia ($S$)
 y efecto transcampo ($E$), desarrollado en la revisión complementaria
@@ -147,6 +147,7 @@ de similitud ilustrativa.
 | C5 | 0.30 | 0.40 | 0.20 | 0.45 | 1.00 |
 
 Los valores son ilustrativos; en práctica deben estimarse con datos reales.
+Los valores son ilustrativos; en la práctica deben estimarse con datos reales.
 
 **Dra. Emma** ($\mathbf{p}_E = (0.40, 0.30, 0.25, 0.03, 0.02)$):
 - Panel: $\Delta = 0.42$, $S = 0.55$, $E = 0.22$

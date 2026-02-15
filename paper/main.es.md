@@ -26,7 +26,7 @@ abstract: |
 La investigación interdisciplinaria (IDR) se considera ampliamente esencial para
 abordar desafíos científicos y sociales complejos. Iniciativas políticas en
 Estados Unidos, Europa y otros lugares han tratado de fomentar
-interdisciplinariedad, a menudo basada en el supuesto de que cruzar
+la interdisciplinariedad, a menudo basada en el supuesto de que cruzar
 los límites disciplinarios conduce a resultados de investigación más impactantes
 (National Academies, 2005). Sin embargo, la medición de la interdisciplinariedad
 sigue siendo problemática. A pesar de décadas de trabajo, la literatura
@@ -36,111 +36,111 @@ Wang y Schneider (2020), probando 23 medidas de interdisciplinariedad en
 cuatro familias metodológicas, encontraron correlaciones sorprendentemente bajas incluso entre
 medidas diseñadas para capturar la misma dimensión, concluyendo que "ningún
 indicador puede identificar inequívocamente" la investigación interdisciplinaria. Leydesdorff,
-Wagner y Bornmann (2019) demostraron que la diversidad Rao-Stirling, ampliamente utilizada
-El índice está dominado por su componente de disparidad, lo que produce clasificaciones anómalas.
-y bajo poder discriminatorio. Cantone (2024) argumentó que la interdisciplinariedad
+Wagner y Bornmann (2019) demostraron que el índice de diversidad Rao-Stirling,
+ampliamente utilizado, está dominado por su componente de disparidad, lo que produce
+clasificaciones anómalas y bajo poder discriminatorio. Cantone (2024) argumentó que la interdisciplinariedad
 es una "construcción polisémica" cuyas múltiples dimensiones semánticas no pueden
-capturado por cualquier valor numérico único. Estos hallazgos apuntan a una cuestión fundamental
-desajuste entre la naturaleza multidimensional del IDR y los indicadores escalares
-utilizado para medirlo.
+capturarse con un único valor numérico. Estos hallazgos apuntan a un desajuste
+fundamental entre la naturaleza multidimensional del IDR y los indicadores escalares
+utilizados para medirlo.
 
-Este artículo hace dos contribuciones. Primero, analizamos el panorama de indicadores.
+Este artículo hace dos contribuciones. Primero, analizamos el panorama de indicadores
 y lo organizamos en una taxonomía de cuatro dimensiones conceptuales (diversidad,
-coherencia, difusión, novedad) cruzado con cuatro familias metodológicas
-(basado en referencias, basado en citas, basado en texto, basado en redes). En segundo lugar, proponemos un panel específico de tres componentes: diversidad, coherencia y
+coherencia, difusión, novedad) cruzadas con cuatro familias metodológicas
+(basadas en referencias, basadas en citas, basadas en texto, basadas en redes). En segundo lugar, proponemos un panel específico de tres componentes: diversidad, coherencia y
 efecto transcampo, y mostramos su poder de discriminación en un conjunto de
 datos de juguete con garantías de robustez analítica.
 
-El resto del artículo está estructurado de la siguiente manera. La sección 2 revisa la
+El resto del artículo está estructurado de la siguiente manera. La sección 2 revisa
 los fundamentos conceptuales de la medición de la interdisciplinariedad. La sección 3 presenta
 la taxonomía de indicadores. La sección 4 define nuestro panel, demuestra su
-poder de discriminación y demuestra resultados de robustez. La sección 5 analiza
-implicaciones para la evaluación a nivel institucional y nacional. Sección 6
-identifica problemas abiertos. La Sección 7 aplica el panel a nivel de departamento
-estudio de caso. La sección 8 concluye.
+poder de discriminación y prueba resultados de robustez. La sección 5 analiza
+las implicaciones para la evaluación a nivel institucional y nacional. La sección 6
+identifica problemas abiertos. La sección 7 aplica el panel al estudio de caso a nivel
+de departamento. La sección 8 concluye.
 
 # Fundamentos Conceptuales
 
 ## Marco de diversidad de Stirling
 
-La dificultad de medir la interdisciplinariedad es fundamentalmente una diversidad
-problema de medición. Stirling (2007) demostró que cualquier significado
-La caracterización de la diversidad requiere atención a tres propiedades:
+La dificultad de medir la interdisciplinariedad es, fundamentalmente, un problema de
+medición de diversidad. Stirling (2007) demostró que cualquier caracterización
+significativa de la diversidad requiere atención a tres propiedades:
 *variedad* (cuántas categorías están representadas), *equilibrio* (qué tan uniformemente
 distribuidas están) y *disparidad* (qué tan diferentes son las categorías de
-entre sí) - y que índices estándar como la entropía de Shannon o el
-El índice de concentración de Herfindahl captura sólo los dos primeros. Este tripartito
-marco se ha convertido en la lente conceptual estándar a través de la cual
-Se analizan indicadores de interdisciplinariedad en la literatura bibliométrica.
+entre sí), y que índices estándar como la entropía de Shannon o el índice de
+concentración de Herfindahl capturan solo las dos primeras. Este marco tripartito
+se ha convertido en la lente conceptual estándar a través de la cual
+se analizan indicadores de interdisciplinariedad en la literatura bibliométrica
 (Porter y Rafols, 2009; Leydesdorff y Rafols, 2011; Wang y Schneider,
 2020). La influencia del marco se extiende más allá de la bibliometría: Stirling
 lo desarrolló originalmente en contextos de diversidad ecológica y tecnológica,
 y su adopción por parte de la comunidad cienciométrica refleja un reconocimiento de que
-La interdisciplinariedad, como la biodiversidad, no puede reducirse a un recuento de
+la interdisciplinariedad, como la biodiversidad, no puede reducirse a un recuento de
 categorías sin atender a las distancias entre ellas. El Rao-Stirling
-índice $\Delta = \sum_{i \neq j} d_{ij} p_i p_j$, que pone en funcionamiento todos
-tres propiedades en una sola expresión, se ha convertido en consecuencia en la más
-punto de partida ampliamente utilizado para el diseño de indicadores (Rafols y Meyer, 2009;
+índice $\Delta = \sum_{i \neq j} d_{ij} p_i p_j$, que operacionaliza las tres
+propiedades en una sola expresión, se ha convertido, en consecuencia, en el
+punto de partida más utilizado para el diseño de indicadores (Rafols y Meyer, 2009;
 Zhang, Rousseau y Glanzel, 2016).
 
 ## Evolución histórica
 
-El estudio moderno de la interdisciplinariedad tiene sus raíces en los debates sobre política científica.
-década de 1970, pero los esfuerzos de medición cuantitativa se aceleraron sólo después
-La OCDE codificó una tipología tripartita que sigue siendo influyente en la actualidad (OCDE,
-1998; Morillo, Bordóns y Gómez, 2003). Bajo esa tipología,
-La investigación *multidisciplinaria* se basa en diferentes perspectivas disciplinarias.
-sin integrarlos; La investigación *interdisciplinaria* logra un resultado coherente.
-síntesis teórica, conceptual o metodológica; y *transdisciplinario*
-La investigación implica una integración mutua de epistemologías disciplinarias que pueden
+El estudio moderno de la interdisciplinariedad tiene sus raíces en debates de política
+científica de la década de 1970, pero los esfuerzos de medición cuantitativa se
+aceleraron sobre todo después de que la OCDE codificara una tipología tripartita que
+sigue siendo influyente (OCDE, 1998; Morillo, Bordons y Gómez, 2003). Bajo esa tipología,
+la investigación *multidisciplinaria* recurre a diferentes perspectivas disciplinarias
+sin integrarlas; la investigación *interdisciplinaria* logra una síntesis teórica,
+conceptual o metodológica coherente; y la investigación *transdisciplinaria* implica
+una integración mutua de epistemologías disciplinarias que puede
 trascender por completo las fronteras existentes. Si bien los límites entre estos
-categorías siguen siendo controvertidas, la distinción pone en primer plano una cuestión crítica
-para el diseño de indicadores: ¿debería la medición centrarse en la amplitud de las disciplinas?
-insumos (una propiedad multidisciplinaria) o la profundidad de su integración (una
+categorías siguen siendo controvertidos, la distinción pone en primer plano una cuestión crítica
+para el diseño de indicadores: ¿debería la medición centrarse en la amplitud de los insumos
+disciplinarios (una propiedad multidisciplinaria) o en la profundidad de su integración (una
 propiedad interdisciplinaria o transdisciplinaria)?
 
 Wagner y cols. (2011) elaboran estas definiciones en una revisión exhaustiva
-de medición IDR. La investigación multidisciplinaria "yuxtapone disciplinas
-perspectivas, agregando amplitud y conocimiento disponible --- el producto no es
-más y nada menos que la simple suma de sus partes." Investigación interdisciplinaria
+de la medición de la IDR. La investigación multidisciplinaria "yuxtapone
+perspectivas disciplinarias, agregando amplitud y conocimiento disponible --- el producto no es
+más y nada menos que la simple suma de sus partes". La investigación interdisciplinaria
 "integra datos disciplinarios separados, métodos, herramientas, conceptos y
 teorías para crear una visión holística" --- el producto es "diferente
-desde y más que la suma de sus partes." Enfoques transdisciplinarios
-"son marcos integrales que trascienden el estrecho alcance de las disciplinas
-visiones del mundo". Señalan que el uso común "rara vez distingue entre las
+diferente de y más que la suma de sus partes". Los enfoques transdisciplinarios
+"son marcos integradores que trascienden las visiones del mundo estrechamente
+disciplinarias". Señalan que el uso común "rara vez distingue entre las
 direcciones de entrada y salida de IDR" (Wagner et al., 2011, nota 10), sin embargo,
-La distinción es importante para la medición: un investigador puede recurrir a múltiples
-Métodos de las disciplinas al diseñar un estudio (interdisciplinariedad del lado de entrada).
+la distinción es importante para la medición: un investigador puede recurrir a múltiples
+métodos de distintas disciplinas al diseñar un estudio (interdisciplinariedad del lado de entrada)
 mientras se publica exclusivamente en un campo (concentración del lado de la producción), o
 por el contrario, puede publicar en muchos campos sin integración metodológica.
-Un cuarto modo, la investigación *transdisciplinaria*, implica hacer referencia a la literatura
-de otro campo sin ningún intento de integración (Aksnes, Karlstrøm y
-Piró, 2026; Hammarfelt, 2020).
+Un cuarto modo, la investigación *cross-disciplinary*, consiste en citar
+literatura de otro campo sin ningún intento de integración (Aksnes, Karlstrøm y
+Piro, 2026; Hammarfelt, 2020).
 
-Aksnes, Karlstrøm y Piro (2026), encuestando 1.498 publicaciones con
-calificaciones IDR autoinformadas, encontró que el 42 por ciento de los artículos fueron calificados como
+Aksnes, Karlstrøm y Piro (2026), al encuestar 1.498 publicaciones con
+calificaciones de IDR autoinformadas, encontraron que el 42 por ciento de los artículos fueron calificados como
 *tanto* multidisciplinarios como interdisciplinarios, y otro 23 por ciento como
 parcialmente ambos. Esta superposición empírica confirma que la multi/inter
-La distinción no es una partición limpia sino un espectro, y ese escalar único
-Indicadores de diversidad (que agregan amplitud sin tener en cuenta la integración).
-No podemos distinguir entre estos modos. Como lo expresaron Choi y Pak (2006)
-Abramo, D'Angelo y Zhang (2018), multi, inter y transdisciplinariedad
-formar "un continuo de niveles crecientes de participación de múltiples
+distinción no es una partición limpia sino un espectro, y que los indicadores escalares
+de diversidad (que agregan amplitud sin tener en cuenta la integración) no pueden
+distinguir entre estos modos. Como lo expresan Choi y Pak (2006), y en un sentido
+afín Abramo, D'Angelo y Zhang (2018), la multi-, inter- y transdisciplinariedad
+forman "un continuo de niveles crecientes de participación de múltiples
 disciplinas." La direccionalidad del flujo de conocimiento también importa. Cuando el
-El resultado de una disciplina sirve como insumo para otra sin síntesis, la
+resultado de una disciplina sirve como insumo para otra sin síntesis, la
 la literatura denomina esto *multidisciplinariedad secuencial* (Stokols et al., 2003);
 Cuando el insumo prestado transforma la disciplina receptora, es
 *interdisciplinariedad instrumental* (Klein, 2008). Intercambio bidireccional
 constituye *interdisciplinariedad recíproca*. Zhou, Guns y Engels (2023)
-formalizar la perspectiva del flujo a través de su flujo de conocimiento interdisciplinario
+formalizan esta perspectiva mediante su marco de *interdisciplinary knowledge flow*
 (IKF), que caracteriza los intercambios en tres dimensiones:
 amplitud, intensidad y homogeneidad. Estas distinciones tienen consecuencias directas
-Implicaciones para el panel presentado en la Sección 4: diversidad ($\Delta$)
+implicaciones para el panel presentado en la Sección 4: diversidad ($\Delta$)
 captura la amplitud independientemente de la dirección, la coherencia ($S$) distingue
 integración a partir de yuxtaposición y el efecto transcampo ($E$) mide
 difusión más allá de la disciplina local.
 
-La evidencia empírica sobre las tendencias a largo plazo agudiza esta cuestión. portero y
+La evidencia empírica sobre las tendencias a largo plazo agudiza esta cuestión. Porter y
 Rafols (2009) analizó los registros de publicaciones en diez áreas temáticas desde 1975
 a 2005 y documentó un crecimiento generalizado en los marcadores a nivel de superficie de
 interdisciplinariedad: el número promedio de autores por artículo aumentó en
@@ -150,123 +150,123 @@ aproximadamente el 50 por ciento, y la diversidad de disciplinas citadas se ampl
 comparativamente. Las tasas de publicación de un solo autor disminuyeron drásticamente en todos
 campos (del 71 al 37 por ciento en matemáticas; del 40 al 20 por ciento en
 física y biología; del 12 al 4 por ciento en química). Sin embargo, la integración
-Las puntuaciones basadas en el índice de Rao-Stirling mostraron sólo un modesto aumento promedio.
+las puntuaciones basadas en el índice de Rao-Stirling mostraron sólo un modesto aumento promedio
 de aproximadamente el 5 por ciento durante el mismo período (excluyendo matemáticas, donde el
-El aumento alcanzó el 39 por ciento desde una base muy baja). La conclusión fue
+ aumento alcanzó el 39 por ciento desde una base muy baja). La conclusión fue
 sorprendente: la ciencia se estaba volviendo "más interdisciplinaria, pero en pequeños pasos",
 con citas que llegan principalmente a campos vecinos y solo un crecimiento modesto en
 conexiones cognitivas distantes.
 
-Morillo, Bordons y Gómez (2001, 2003) proporcionaron evidencia complementaria en
-a nivel de revista y categoría. Entre 1981 y 1996, la revista ISI
-El sistema de clasificación agregó 38 nuevas categorías temáticas, de las cuales 21 aparecieron.
-solo en ingeniería: un aumento del 154 por ciento en el recuento de revistas de ese campo.
-Las nuevas categorías exhibieron sistemáticamente una mayor interdisciplinariedad: 69
-por ciento fueron asignados múltiples a más de una categoría (en comparación con el 55 por ciento
-de categorías más antiguas), y mostraron un vínculo entre categorías un 28 por ciento más fuerte
-fuerza y ​​un 30 por ciento más de diversidad disciplinaria. Totalmente el 80 por ciento de
+Morillo, Bordons y Gómez (2001, 2003) aportaron evidencia complementaria a nivel
+de revista y de categoría. Entre 1981 y 1996, el sistema de clasificación del ISI
+agregó 38 nuevas categorías temáticas, de las cuales 21 aparecieron solo en
+ingeniería: un aumento del 154 por ciento en el recuento de revistas de ese campo.
+Las nuevas categorías exhibieron sistemáticamente una mayor interdisciplinariedad: el 69
+por ciento recibió asignaciones múltiples (más de una categoría), en comparación con el 55 por ciento
+de las categorías más antiguas; además, mostraron una fuerza de enlace intercategoría 28 por ciento mayor
+y un 30 por ciento más de diversidad disciplinaria. En total, el 80 por ciento de
 las nuevas categorías se dividieron en grupos caracterizados por una alta
 interdisciplinariedad. Este patrón sugiere que el crecimiento de la ciencia
-procede a través de fragmentación e hibridación simultáneas - nuevo
-Las especialidades surgen en los límites disciplinarios y heredan un carácter interdisciplinario.
-carácter desde sus orígenes.
+procede a través de fragmentación e hibridación simultáneas: nuevas
+especialidades surgen en los límites disciplinarios y heredan un carácter interdisciplinario
+desde sus orígenes.
 
 ## El problema de la polisemia
 
 La interdisciplinariedad en sí misma no es un concepto unitario. Cantone (2024) enfatiza
 que IDR es una "construcción polisémica", un término que conlleva múltiples, parcialmente
 significados superpuestos entre comunidades académicas y contextos políticos. A
-físico que colabora con biólogos, un científico de datos que aplica métodos
+un físico que colabora con biólogos, un científico de datos que aplica métodos
 en todos los dominios, y un científico social que sintetiza teorías de múltiples
-Todas las disciplinas se llaman "interdisciplinarias", pero la naturaleza y profundidad de
+disciplinas se llaman "interdisciplinarias", pero la naturaleza y profundidad de
 su cruce de fronteras difiere cualitativamente. Esta polisemia significa que cualquier
-El sistema de medición debe seleccionar una definición operativa específica de
-interdisciplinariedad o acomodar explícitamente múltiples dimensiones. El
-La taxonomía presentada en la Sección 3 sigue la última estrategia.
+el sistema de medición debe seleccionar una definición operativa específica de
+interdisciplinariedad o acomodar explícitamente múltiples dimensiones. La
+taxonomía presentada en la Sección 3 sigue la última estrategia.
 
 El problema de la polisemia se ve agravado por una distinción cognitivo-social que
-atraviesa todas las definiciones (Cantone, 2024). Medida de enfoques cognitivos
+atraviesa todas las definiciones (Cantone, 2024). Los enfoques cognitivos miden la
 interdisciplinariedad a través de la diversidad de aportes de conocimiento: referencias,
-métodos, marcos teóricos y, por lo tanto, rastrear la amplitud epistemológica.
-Los enfoques de agrupamiento lo miden a través de estructuras sociales: coautorías,
-afiliaciones institucionales, composición de paneles. Análisis de enfoques semánticos.
-contenido textual (palabras clave, resúmenes, texto completo) para detectar temas de actualidad
-cruce de límites. Cada uno captura una faceta diferente del fenómeno, y
-Las puntuaciones altas en una dimensión no tienen por qué correlacionarse con puntuaciones altas en otra.
+métodos y marcos teóricos; por tanto, rastrean amplitud epistemológica. Los enfoques
+de agrupamiento la miden a través de estructuras sociales: coautorías, afiliaciones
+institucionales y composición de paneles. Los enfoques semánticos analizan contenido
+textual (palabras clave, resúmenes, texto completo) para detectar cruce de fronteras.
+Cada enfoque captura una faceta diferente del fenómeno, y puntuaciones altas en una
+dimensión no tienen por qué correlacionarse con puntuaciones altas en otra.
 La consecuencia práctica es que los investigadores que se autoidentifican como
-interdisciplinario no podrá registrarse como tal en los indicadores bibliométricos, y
+interdisciplinarios pueden no registrarse como tales en los indicadores bibliométricos, y
 viceversa (Zwanenburg, 2022). Esta discordancia entre lo autoinformado y
 la interdisciplinariedad medida no es simplemente un problema de calibración; refleja
 interpretaciones genuinamente diferentes de lo que significa el término.
 
 Morillo, Bordons y Gómez (2003) introdujeron una distinción adicional entre
-"gran interdisciplinariedad" - conexiones entre áreas disciplinarias distantes -
-y "pequeña interdisciplinariedad": conexiones entre categorías vecinas
+"gran interdisciplinariedad" (conexiones entre áreas disciplinarias distantes)
+y "pequeña interdisciplinariedad" (conexiones entre categorías vecinas)
 dentro del mismo amplio campo. La Química Aplicada, por ejemplo, exhibió 83
 por ciento revistas con asignaciones múltiples y 55,6 por ciento externas (entre áreas)
 enlaces, mientras que Polymer Science mostró solo el 39 por ciento de asignación múltiple y
-33,3 por ciento enlaces externos. La distinción grande/pequeño tiene consecuencias directas.
-implicaciones para el diseño de indicadores: un índice sensible sólo a la variedad
-combinar estos dos patrones cualitativamente diferentes, mientras que uno que
+33,3 por ciento de enlaces externos. La distinción grande/pequeña tiene consecuencias directas
+para el diseño de indicadores: un índice sensible sólo a la variedad combinará
+estos dos patrones cualitativamente diferentes, mientras que uno que
 incorpora disparidad los distinguirá.
 
 ## Desafíos epistemológicos
 
 Más allá de la polisemia, la medición de la interdisciplinariedad enfrenta varios
 dificultades epistemológicas que limitan qué indicadores pueden legítimamente
-pretender capturar. El más fundamental es la inestabilidad del régimen disciplinario.
-sistemas de clasificación de los que dependen todos los indicadores bibliométricos. El ISI
-Categorías temáticas de Web of Science (la clasificación más utilizada)
-lograr solo aproximadamente un 50 por ciento de alineación con el grupo basado en citas
-soluciones (Boyack, 2005) y la coincidencia con las clasificaciones derivadas de la red
-es igualmente imperfecto (Leydesdorff, 2006). Según recuentos recientes, el sistema
+pretender capturar. La más fundamental es la inestabilidad de los sistemas de
+clasificación disciplinaria de los que dependen todos los indicadores bibliométricos.
+Las categorías temáticas de Web of Science del ISI — la clasificación más utilizada —
+logran solo aproximadamente un 50 por ciento de alineación con soluciones de
+agrupamiento basadas en citación (Boyack, 2005), y la coincidencia con
+clasificaciones derivadas de redes es igualmente imperfecta (Leydesdorff, 2006).
+Según recuentos recientes, el sistema
 comprende 254 categorías temáticas, con el 39 por ciento de las revistas asignadas a
 más de una categoría. Mientras que Rafols y Leydesdorff demostraron que estos
-Las desalineaciones tienen efectos limitados en los mapas científicos agregados, pueden
+desalineamientos tienen efectos limitados en mapas científicos agregados, pueden
 afectar sustancialmente los valores de los indicadores a nivel individual.
 
 Un problema relacionado se refiere a las disciplinas "horizontales": categorías amplias como
 como biología, física, química o las ciencias multidisciplinarias comodín
-- que exhiben una asignación múltiple artificialmente baja precisamente porque la revista
-Las políticas de clasificación limitan la dispersión excesiva entre categorías (Morillo,
-Bordóns y Gómez, 2003). Revistas como Nature, Science y PNAS aparecen en
-Las ciencias multidisciplinarias todavía producen puntuaciones bajas de interdisciplinariedad en
-indicadores estándar a pesar de publicar trabajos que abarcan toda la disciplina
-espectro. Esto señala una preocupación epistemológica más profunda: las categorías que utilizamos
-definir límites disciplinarios son en sí mismos artefactos de la política administrativa.
-y convención histórica, no características estables del panorama del conocimiento
-(Cantón, 2024). Cualquier indicador construido sobre tales clasificaciones hereda su
+— que exhiben una asignación múltiple artificialmente baja precisamente porque las
+políticas de clasificación de revistas limitan la dispersión excesiva entre categorías
+(Morillo, Bordons y Gómez, 2003). Revistas como *Nature*, *Science* y *PNAS* aparecen en
+*Multidisciplinary Sciences* y, sin embargo, producen puntuaciones bajas de
+interdisciplinariedad bajo indicadores estándar, pese a publicar trabajos que abarcan
+todo el espectro disciplinario. Esto señala una preocupación epistemológica más profunda:
+las categorías que utilizamos para definir límites disciplinarios son, en sí mismas,
+artefactos de la administración y de la convención histórica, no rasgos estables del
+panorama del conocimiento
+(Cantone, 2024). Cualquier indicador construido sobre tales clasificaciones hereda su
 contingencia.
 
 ## Validez conceptual versus empírica
 
 Otra complicación es la brecha entre las definiciones conceptuales y las empíricas.
 operacionalización. Un indicador puede tener una motivación teórica clara (por ejemplo,
-"diversidad de aportes de conocimiento") pero no logran discriminar significativamente cuándo
-aplicado a datos reales. Wang y Schneider (2020) documentaron este problema.
+"diversidad de aportes de conocimiento") y, aun así, no discriminar de manera significativa
+cuando se aplica a datos reales. Wang y Schneider (2020) documentaron este problema
 sistemáticamente: medidas que deberían ser teóricamente equivalentes producen
 clasificaciones inconsistentes y a veces contradictorias cuando se aplican a los mismos
-conjunto de datos. Leydesdorff et al. (2019) mostraron que los valores de diversidad de Rao-Stirling
+conjuntos de datos. Leydesdorff et al. (2019) mostraron que los valores de diversidad de Rao-Stirling
 a menudo difieren sólo en el tercer decimal entre investigadores, lo que limita
 poder discriminatorio práctico. Estos hallazgos subrayan la necesidad de
-Validación empírica de cualquier indicador propuesto, no meramente teórico.
-justificación.
+validación empírica de cualquier indicador propuesto, no solo de justificación teórica.
 
-La crisis de validez tiene múltiples dimensiones (Zwanenburg, 2022). *Contenido
-validez* se ve amenazada por la disparidad entre la riqueza conceptual de
-interdisciplinariedad, que abarca variedad, equilibrio y disparidad, y
-la tendencia de los indicadores individuales a capturar sólo uno o dos de estos
-facetas. *La validez del dominio* se ve socavada por la multiplicidad de clasificaciones
-sistemas y la ambigüedad de las asignaciones de revistas a categorías. *Coherencia
-La validez* requiere coherencia entre operacionalizaciones alternativas del
-mismo constructo, sin embargo, los estudios empíricos encuentran repetidamente que teóricamente
-medidas equivalentes producen resultados divergentes. Rafols (2019) argumentó que la mayoría
-Los indicadores existentes carecen de validez analítica (no miden lo que
-dicen medir) o solidez social (no son percibidos como
-significativas para las comunidades que evalúan), y que las métricas responsables
-requieren ambos. Los principios de solidez, humildad, transparencia y
-La sensibilidad a la diversidad epistémica que Rafols articuló proporciona una
-marco que cualquier sistema de medición propuesto debería satisfacer.
+La crisis de validez tiene múltiples dimensiones (Zwanenburg, 2022). La *validez de
+contenido* se ve amenazada por la disparidad entre la riqueza conceptual de la
+interdisciplinariedad — que abarca variedad, equilibrio y disparidad — y la
+tendencia de los indicadores individuales a capturar solo una o dos de esas facetas.
+La *validez de dominio* se ve socavada por la multiplicidad de sistemas de clasificación
+y la ambigüedad de las asignaciones de revistas a categorías. La *validez de coherencia*
+exige consistencia entre operacionalizaciones alternativas del mismo constructo; sin
+embargo, estudios empíricos encuentran repetidamente que medidas teóricamente equivalentes
+producen resultados divergentes. Rafols (2019) argumentó que la mayoría de los indicadores
+existentes carecen de validez analítica (no miden lo que afirman medir) o de solidez social
+(no son percibidos como significativos por las comunidades que evalúan), y que las métricas
+responsables requieren ambas. Los principios de solidez, humildad, transparencia y
+sensibilidad a la diversidad epistémica que Rafols articuló proporcionan un marco normativo
+que cualquier sistema de medición propuesto debería satisfacer.
 
 Un problema distinto pero relacionado es la confusión entre interdisciplinariedad y
 calidad de la investigación. Los indicadores no registran una propiedad preexistente de
@@ -274,7 +274,7 @@ calidad de la investigación. Los indicadores no registran una propiedad preexis
 estas categorías: fuera de las prácticas de evaluación, tales propiedades no tienen
 existencia independiente. Cuando se utilizan indicadores de interdisciplinariedad junto con
 o en combinación con indicadores de calidad basados ​​en citas, el riesgo de circular
-El razonamiento es agudo: el trabajo interdisciplinario puede recibir mayores citas.
+el razonamiento es agudo: el trabajo interdisciplinario puede recibir mayores citas
 precisamente porque llega a audiencias más amplias, no porque sea
 intrínsecamente superior. El panel propuesto en la Sección 4 trata la calidad como
 ortogonal a la caracterización de la interdisciplinariedad, siguiendo el principio
@@ -284,79 +284,76 @@ adjudicando su mérito.
 ## Pluralismo metodológico
 
 La diversidad de perspectivas conceptuales revisadas anteriormente ha dado lugar a una
-conjunto de herramientas correspondientemente diverso de enfoques de medición. a lo sumo
-fin establecido, el índice de diversidad de Rao-Stirling captura la variedad, el equilibrio,
-y disparidad en una sola expresión, distinguiéndola de la entropía de Shannon
-y el índice de Herfindahl, que no incorpora ninguna medida de intercategoría.
-distancia (Porter y Rafols, 2009). A nivel de revista y categoría, el
-El índice de coseno de Salton normaliza los recuentos de diarios compartidos entre dos categorías
+conjunto de herramientas correspondientemente diverso de enfoques de medición. En el extremo
+más consolidado, el índice de diversidad Rao-Stirling captura variedad, equilibrio
+y disparidad en una sola expresión, distinguiéndose de la entropía de Shannon y del
+índice de Herfindahl, que no incorporan ninguna medida de distancia intercategoría
+(Porter y Rafols, 2009). A nivel de revista y de categoría, el índice de coseno de
+Salton normaliza los recuentos de revistas compartidas entre dos categorías
 por la media geométrica de sus tamaños, proporcionando una medida simétrica de
-fuerza del vínculo entre categorías que varía de cero a uno (Morillo, Bordons,
-y Gómez, 2003). Patrones de asignaciones múltiples: ya sea secundaria de una revista
-categorías caen dentro de la misma área amplia (interna o "pequeña"
-interdisciplinariedad) o entre áreas (externas o "grandes"
-interdisciplinariedad) – ofrecen una perspectiva estructural complementaria.
+fuerza de enlace intercategoría que varía de cero a uno (Morillo, Bordons y Gómez, 2003).
+Los patrones de asignación múltiple — si las categorías secundarias de una revista caen
+dentro de la misma gran área (interna, o "pequeña" interdisciplinariedad) o entre áreas
+(externa, o "gran" interdisciplinariedad) — ofrecen una perspectiva estructural complementaria.
 
 Diferentes indicadores son apropiados en diferentes niveles de agregación.
 La asignación múltiple de revistas en el sistema ISI proporciona una vista a nivel macro
-que es fácil de aplicar pero de resolución basta. Cita y referencia JCR
-Los patrones operan a nivel de categoría y son más sensibles a las medidas disciplinarias.
-dinámica. Análisis detallados a nivel de sección (por ejemplo, utilizando Chemical Abstracts
-secciones) ofrecen precisión a nivel de revista pero requieren un dominio específico.
-infraestructura (Morillo, Bordóns y Gómez, 2001). Propuestas más recientes
-abogar por métodos contextuales semicualitativos, incluidos mapas superpuestos en un
-Mapa científico básico que visualiza la variedad, el equilibrio y la disparidad.
-simultáneamente, como alternativas o complementos de los índices escalares (Rafols,
-2019). El principio rector es el de los "indicadores en plural": ningún
-métrica es suficiente, y una evaluación responsable requiere una triangulación entre
+que es fácil de aplicar pero de resolución gruesa. Los patrones de citación y de referencias
+en *Journal Citation Reports* (JCR) operan a nivel de categoría y son más sensibles a la dinámica
+disciplinaria. Análisis detallados a nivel de sección (por ejemplo, usando secciones de
+*Chemical Abstracts*) ofrecen precisión a nivel de revista, pero requieren infraestructura específica
+(Morillo, Bordons y Gómez, 2001). Propuestas más recientes abogan por métodos contextuales
+semicualitativos, incluidos mapas superpuestos sobre un mapa científico base que visualiza
+variedad, equilibrio y disparidad simultáneamente, como alternativas o complementos de los
+índices escalares (Rafols, 2019). El principio rector es el de los "indicadores en plural":
+ninguna métrica es suficiente, y una evaluación responsable requiere una triangulación entre
 métodos y niveles de análisis. El panel multicomponente desarrollado en
-La sección 4 está diseñada con este espíritu.
+la Sección 4 está diseñado con este espíritu.
 
 # Una taxonomía de indicadores de interdisciplinariedad
 
-Organizamos la literatura sobre indicadores en dos ejes: el *conceptual
-dimensión* de la interdisciplinariedad que se está midiendo, y la *metodológica
-familia* del indicador. Esto produce un mapa estructurado del campo que
-Aclara qué capta realmente cada indicador y dónde persisten las lagunas.
+Organizamos la literatura sobre indicadores en dos ejes: la *dimensión conceptual*
+de la interdisciplinariedad que se está midiendo y la *familia metodológica* del indicador.
+Esto produce un mapa estructurado del campo que
+aclara qué capta realmente cada indicador y dónde persisten las lagunas.
 
 ## Indicadores de diversidad
 
-Los indicadores de diversidad miden la heterogeneidad del conocimiento de un investigador.
-aportes --- típicamente la difusión disciplinaria de las referencias citadas. ellos son los
-familia de medidas de interdisciplinariedad más estudiada, y cualquier
-Una evaluación creíble del IDR a nivel del artículo, del autor o institucional debe
-tener en cuenta las opciones conceptuales y computacionales incluidas en su diseño.
-Esta subsección proporciona un tratamiento sistemático del índice principal.
-familias, las matrices de similitud que requieren, la evidencia empírica sobre
-su validez y las dificultades prácticas que surgen cuando se aplican
-a datos bibliométricos reales.
+Los indicadores de diversidad miden la heterogeneidad de los aportes de conocimiento
+de un investigador --- típicamente, la dispersión disciplinaria de las referencias
+citadas. Son la familia de medidas de interdisciplinariedad más estudiada, y cualquier
+evaluación creíble de la IDR a nivel de artículo, de autor o institucional debe
+tener en cuenta las decisiones conceptuales y computacionales incorporadas en su diseño.
+Esta subsección proporciona un tratamiento sistemático de las principales familias de
+índices, las matrices de similitud que requieren, la evidencia empírica sobre su validez
+y las dificultades prácticas que surgen cuando se aplican a datos bibliométricos reales.
 
 ### El marco de las tres propiedades de Stirling
 
-La base teórica para la mayoría de los indicadores de diversidad modernos es la de Stirling.
-(2007) descomposición de la diversidad en tres propiedades: *variedad* (el número
-de distintas categorías a las que se asignan elementos), *equilibrio* (el
-uniformidad de la distribución de elementos entre esas categorías), y
-*disparidad* (el grado de diferencia entre las categorías mismas). A
-Una medida de diversidad totalmente satisfactoria debe ser sensible a los tres.
+La base teórica para la mayoría de los indicadores de diversidad modernos es la
+descomposición de Stirling (2007) de la diversidad en tres propiedades: *variedad* (el número
+de distintas categorías a las que se asignan elementos), *equilibrio* (la
+uniformidad de la distribución de elementos entre esas categorías) y
+*disparidad* (el grado de diferencia entre las categorías mismas). Una medida de diversidad
+totalmente satisfactoria debe ser sensible a las tres
 propiedades simultáneamente. En la práctica, sin embargo, muchos índices ampliamente utilizados
-capturar sólo uno o dos de los tres, lo cual es una fuente principal de
+capturan solo una o dos de las tres, lo cual es una fuente principal de
 desacuerdo entre los estudios empíricos.
 
 ### Medidas que capturan únicamente la variedad y el equilibrio
 
-Se han adaptado varios índices clásicos de la ecología y la economía para el IDR.
-medición. Estos índices registran variedad y equilibrio, pero no ven
+Se han adaptado varios índices clásicos de la ecología y la economía para la
+medición de la IDR. Estos índices registran variedad y equilibrio, pero no ven
 disparidad --- tratan un cambio de la Química Orgánica a la Analítica
 Química de manera idéntica a un paso de la Química Orgánica a la Sociología.
 
 **Entropía de Shannon.** Para una publicación cuyas referencias se clasifican en categorías
 $i = 1, \ldots, n$ con proporciones $p_i$, la entropía de Shannon es
-[[MANTENER0]]. Alcanza su máximo $\ln n$ cuando las referencias
+$H = -\sum_{i} p_i \ln p_i$. Alcanza su máximo $\ln n$ cuando las referencias
 se distribuyen uniformemente entre las categorías $n$ y son iguales a cero cuando todas las referencias
 caen en una sola categoría.
 
-**Diversidad de Los Simpson.** El índice de Los Simpson $D_{\mathrm{Sim}} = 1 - \sum_i p_i^2$
+**Diversidad de Simpson.** El índice de Simpson $D_{\mathrm{Sim}} = 1 - \sum_i p_i^2$
 da la probabilidad de que dos referencias extraídas al azar pertenezcan a diferentes
 categorías. Está limitado entre 0 y $1 - 1/n$ y es más sensible a
 categorías dominantes que la entropía de Shannon.
@@ -364,46 +361,46 @@ categorías dominantes que la entropía de Shannon.
 **Índice de Brillouin.** Un análogo de muestra finita de la entropía de Shannon, definida como
 $HB = [\log(\sum_i c_i)! - \sum_i \log c_i!] / \sum_i c_i$ donde $c_i$ es
 el recuento de referencias en la categoría $i$. Wang y Schneider (2020) encontraron
-Shannon y Brillouin están casi perfectamente correlacionados ($r = 1.00$ en su
-Tabla 5), ​​haciéndolos empíricamente redundantes.
+que Shannon y Brillouin están casi perfectamente correlacionados ($r = 1.00$ en su
+Tabla 5), haciéndolos empíricamente redundantes.
 
 **Coeficiente de Gini invertido.** El coeficiente de Gini mide la concentración;
-$1 - G$ lo convierte en un indicador de saldo. Como Shannon, es insensible.
+$1 - G$ lo convierte en un indicador de equilibrio. Como Shannon, es insensible
 a la identidad de las categorías a través de las cuales se distribuyen las referencias.
 
-Una regularidad empírica importante es que estos índices de no disparidad son
-moderada a fuertemente correlacionadas entre sí (Wang y Schneider, 2020,
+Una regularidad empírica importante es que estos índices insensibles a la disparidad están
+moderada a fuertemente correlacionados entre sí (Wang y Schneider, 2020,
 Tabla 5, con correlaciones de Pearson por pares entre Simpson, Shannon,
 Brillouin y $1 - \text{Gini}$ entre 0,60 y 1,00), pero sólo débilmente
-correlacionados con índices que incorporan disparidades. Las dos familias así
-capturar aspectos genuinamente diferentes de la diversidad.
+correlacionados con índices que incorporan disparidad. Así, las dos familias
+capturan aspectos genuinamente diferentes de la diversidad.
 
 ### El índice de diversidad de Rao-Stirling
 
 El índice Rao-Stirling es el indicador más utilizado e incorpora todos
-tres de las propiedades de Stirling (Porter y Rafols, 2009; Rafols y Meyer,
+las tres propiedades de Stirling (Porter y Rafols, 2009; Rafols y Meyer,
 2009). En su forma estándar se define como
 
 $$\Delta = \sum_{\substack{i,j \\ i \neq j}} d_{ij}\, p_i\, p_j$$
 
 donde $p_i$ es la proporción de referencias en la categoría $i$ y
-$d_{ij} = 1 - s_{ij}$ es la diferencia entre las categorías $i$ y $j$,
+$d_{ij} = 1 - s_{ij}$ es la disimilitud entre las categorías $i$ y $j$,
 derivado de una matriz de similitud $\mathbf{S} = [s_{ij}]$.
 Cuando todas las categorías son máximamente diferentes ($d_{ij} = 1$ para todos $i \neq j$),
-el índice de Rao-Stirling se reduce al índice de Simpson. Cuando la similitud
-La matriz tiene una estructura real, el índice penaliza la diversidad entre personas cercanas.
-categorías y premia la diversidad entre las lejanas.
+el índice de Rao-Stirling se reduce al índice de Simpson. Cuando la matriz de similitud tiene
+una estructura real, el índice penaliza la diversidad entre categorías cercanas y premia la
+diversidad entre las lejanas.
 
 **Generalización alfa-beta.** Stirling (2007) propuso una familia más general
-[[MANTENER0]],
+$D_{\alpha,\beta} = \sum_{i \neq j} d_{ij}^{\alpha}\, (p_i\, p_j)^{\beta}$,
 donde los exponentes $\alpha$ y $\beta$ gobiernan el peso relativo dado a
-disparidad versus equilibrio. Los conjuntos de elección convencionales de Rao-Stirling
-[[MANTENER0]]. Aumentar $\alpha$ amplifica la contribución de
+disparidad versus equilibrio. La elección convencional de Rao-Stirling fija
+$\alpha = \beta = 1$. Aumentar $\alpha$ amplifica la contribución de
 pares de categorías muy dispares; aumentar $\beta$ amplifica el
-contribución de distribuciones bien equilibradas. En la mayoría de los cienciométricos empíricos
-trabajo $\alpha = \beta = 1$ se adopta sin discusión, pero la sensibilidad
+la contribución de distribuciones bien equilibradas. En la mayor parte del trabajo
+cienciométrico empírico $\alpha = \beta = 1$ se adopta sin discusión, pero la sensibilidad
 de los resultados a estas elecciones de parámetros ha recibido una investigación limitada.
-Los investigadores deben ser conscientes de que cambiar estos exponentes puede cambiar las clasificaciones.
+Los investigadores deben ser conscientes de que cambiar estos exponentes puede cambiar las clasificaciones
 de artículos o campos, incluso cuando los datos subyacentes sean idénticos.
 
 **El estudio de ocho variantes.** Wang y Schneider (2020) probaron ocho variantes
@@ -424,7 +421,7 @@ Matemáticas ocupó el puesto 221 de 224 categorías según RS\_P[$1 - S_C$] per
 79º por RS\_G[$1 - S_C$], a pesar de la fuerte correlación general de Spearman
 ($\rho = 0.91$) entre estas dos variantes. Wang y Schneider concluyeron que
 "Las mediciones actuales de la interdisciplinariedad deben interpretarse con
-Mucha precaución."
+mucha precaución."
 
 ### Medidas de diversidad verdadera tipo Hill
 
@@ -442,21 +439,21 @@ $${}^2D^S = \frac{1}{\sum_{i,j} s_{ij}\, p_i\, p_j}$$
 
 que está relacionado con el índice de Rao-Stirling, pero es distinto de él: sustituyendo
 $d_{ij} = 1 - s_{ij}$, se obtiene
-[[MANTENER0]].
+${}^2D^S = 1/(1 - \Delta)$.
 Mientras que el índice Rao-Stirling está limitado entre 0 y 1, ${}^2D^S$ oscila
 desde 1 (una sola categoría, o categorías perfectamente similares) a $N$ (todas
 categorías igualmente abundantes y máximamente diferentes), lo que le confiere
 la interpretación de un "número efectivo de disciplinas".
 
 La ventaja matemática de las medidas tipo Hill es que satisfacen seis
-Propiedades deseables que los índices basados ​​en la entropía violan (Jost, 2006, 2009):
+propiedades deseables que los índices basados ​​en la entropía violan (Jost, 2006, 2009):
 simetría, independencia de salida cero, principio de transferencia, invariancia de escala,
 el principio de replicación y la normalización. El principio de replicación es
 especialmente importante para las discusiones sobre políticas: si $m$ es igualmente diverso,
-Se agrupan carteras de investigación que no se superponen, una verdadera medida de diversidad.
-debería darle a la cartera agrupada una diversidad de $m \cdot D_0$. shannon
-la entropía y el índice de Simpson no pasan esta prueba. Sólo cuando se trabaja con verdadero
-diversidades ¿tiene sentido discutir los cambios porcentuales en la diversidad? ---
+se agrupan carteras de investigación que no se superponen, una verdadera medida de diversidad
+debería darle a la cartera agrupada una diversidad de $m \cdot D_0$. La entropía de Shannon
+la entropía y el índice de Simpson no pasan esta prueba. Sólo cuando se trabaja con
+diversidades verdaderas tiene sentido discutir los cambios porcentuales en la diversidad ---
 una propiedad que hace que las medidas tipo Hill sean particularmente atractivas para
 estudios longitudinales y comparativos. En una demostración empírica, Zhang,
 Rousseau y Glanzel (2016) demostraron que ${}^2D^S$ discrimina más
@@ -467,7 +464,7 @@ desde matemáticas especializadas hasta ciencias multidisciplinarias.
 
 Una tradición completamente diferente construye indicadores de interdisciplinariedad a partir de
 la asignación múltiple de revistas a categorías de clasificación en lugar de
-del análisis de la lista de referencias. Morillo, Bordóns y Gómez (2001) introdujeron
+del análisis de la lista de referencias. Morillo, Bordons y Gómez (2001) introdujeron
 un conjunto de indicadores para el sistema de categorías de materias ISI (ahora Clarivate):
 el porcentaje de revistas multiasignadas en una categoría, el porcentaje de
 revistas asignadas a categorías fuera del área de investigación, y la
@@ -477,7 +474,7 @@ Química Aplicada: una disciplina "horizontal" con un 83% de asignaciones múlti
 revistas --- obtuvieron consistentemente puntajes más altos que Polymer Science (39%
 multiasignado) en todos los indicadores.
 
-En un estudio de seguimiento, Morillo, Bordons y Gomez (2003) ampliaron la
+En un estudio de seguimiento, Morillo, Bordons y Gómez (2003) ampliaron la
 análisis a todas las categorías ISI y estableció una tipología de cuatro grupos de
 disciplinas basadas en porcentaje de asignaciones múltiples, porcentaje de enlaces externos,
 diversidad de vínculos y fuerza de los vínculos (la última medida por el Salton
@@ -508,10 +505,10 @@ $\mathbf{S}$ de flujos de citas entre categorías utilizando una similitud de co
 Históricamente, esta construcción amplía el mapeo de citas de revista-revista
 métodos desarrollados para el trabajo de clasificación en escala JCR (Leydesdorff, 2006).
 Wang y Schneider (2020) distinguieron dos variantes: el coseno vectorial de Salton
-[[MANTENER0]],
+$SC(i,j) = \sum_k c_{ik}\, c_{jk} / \sqrt{\sum_k c_{ik}^2 \cdot \sum_k c_{jk}^2}$,
 que compara los perfiles de citas de dos categorías, y el escalar de Ochiai
 coseno
-[[MANTENER0]],
+$SO(i,j) = (c_{ij} + c_{ji}) / \sqrt{(\sum_k c_{ik} + \sum_k c_{ki})(\sum_k c_{jk} + \sum_k c_{kj})}$,
 que utiliza el intercambio de citas bilateral directo. Estas dos formulaciones de cosenos
 puede producir paisajes de similitud sustancialmente diferentes: el basado en $SO$
 las matrices están extremadamente sesgadas a la izquierda (la mayoría de los pares tienen una disimilitud cercana a 1),
@@ -523,13 +520,13 @@ disimilitud. La opción estándar $d_{ij} = 1 - s_{ij}$ es intuitiva pero no
 la única opción; $d_{ij} = 1/s_{ij}$ también se ha utilizado (Jensen y
 Lutkouskaya, 2014). Wang y Schneider (2020) demostraron que la combinación de
 La variante del coseno y la transformación de disimilitud explican una mayor varianza en
-Resultados de Rao-Stirling que cualquier otra decisión metodológica única.
+resultados de Rao-Stirling que cualquier otra decisión metodológica única.
 
 El requisito de una gran base de datos de citas es en sí mismo una barrera de entrada.
 Cantone, Zheng, Tomaselli y Nightingale (2025) propusieron recientemente una
 alternativa: estimar matrices de similitud directamente a partir de modelos de lenguaje grandes
 (LLM). En su protocolo experimental, ChatGPT, Gemini y Claude fueron cada uno
-Se le pidió que produjera estimaciones de similitud numérica para pares de disciplinas.
+se le pidió que produjera estimaciones de similitud numérica para pares de disciplinas.
 bajo dos taxonomías. En 228 matrices muestreadas (16.200 individuos
 estimaciones), evaluaron cinco propiedades: precisión (varianza inversa entre
 indicaciones idénticas repetidas), acuerdo (correlación entre modelos), resiliencia
@@ -621,33 +618,31 @@ Abramo, D'Angelo y Zhang (2018) compararon los dos enfoques utilizando 43 667
 Publicaciones universitarias italianas, divididas en artículos de un solo autor (por
 construcción no interdisciplinaria bajo el método de autor), multiautor
 artículos de un solo campo y artículos de múltiples campos. Encontraron una convergencia general:
-La diversidad de la lista de referencias aumentó con el número de disciplinas distintas.
-sectores (SDS) reflejados en la firma, y ​​la disparidad fue mayor cuando el
-Las SDS de los autores abarcaron diferentes áreas disciplinarias universitarias (UDA) en lugar de
-que la misma UDA. Sin embargo, surgieron sorprendentes excepciones individuales. los tres
-publicaciones con la puntuación de diversidad integrada más alta en todo el conjunto de datos
-Eran artículos de un solo autor, precisamente los "integradores intrapersonales" cuyos
-La amplitud del conocimiento no puede ser detectada por el método del autor. este hallazgo
-destaca una limitación estructural de los enfoques basados ​​en el autor y subraya
-el valor complementario del análisis basado en referencias para identificar individuos
-integración de conocimientos.
+la diversidad de la lista de referencias aumentó con el número de disciplinas distintas
+(SDS) reflejadas en la firma, y la disparidad fue mayor cuando las SDS de los autores abarcaron
+diferentes áreas disciplinarias universitarias (UDA) en lugar de la misma UDA. Sin embargo,
+surgieron excepciones individuales sorprendentes. Las tres publicaciones con la puntuación de
+diversidad integrada más alta en todo el conjunto de datos eran artículos de un solo autor,
+precisamente los "integradores intrapersonales" cuya amplitud de conocimiento no puede ser
+detectada por el método basado en autores. Este hallazgo destaca una limitación estructural de
+los enfoques basados en autores y subraya el valor complementario del análisis basado en
+referencias para identificar integración de conocimientos a nivel individual.
 
 ### Resumen
 
 El panorama de los indicadores de diversidad es rico pero fragmentado. Medidas que
-incorporar disimilitud por pares (Rao-Stirling, tipo Hill, DIV) forma uno
-grupo empírico; medidas que no lo hacen (Shannon, Simpson, asignación múltiple
-recuentos) forman otro, y las correlaciones entre grupos son débiles (Wang y
+incorporan disimilitud por pares (Rao-Stirling, tipo Hill, DIV) forman un
+grupo empírico; medidas que no lo hacen (Shannon, Simpson, recuentos de asignación múltiple)
+forman otro, y las correlaciones entre grupos son débiles (Wang y
 Schneider, 2020). La elección de la especificación de la matriz de similitud tiene en cuenta
-tanta varianza en los resultados como la elección de la fórmula del índice. ningún soltero
-La medida satisface todos los criterios de validez (Zwanenburg, Nakhoda y Whigham,
-2022), y la estimación de similitud basada en LLM abre un camino prometedor pero aún
-alternativa inmadura a las matrices derivadas de citas (Cantone, Zheng, Tomaselli,
-y Ruiseñor, 2025). Para la evaluación aplicada, la implicación es clara:
-Los indicadores de diversidad deben informarse junto con sus datos computacionales.
-especificaciones (esquema de clasificación, método de similitud, disimilitud
-transformación, nivel de agregación) y conclusiones que dependen de un solo
-La variante del indicador debe tratarse con precaución.
+tanta varianza en los resultados como la elección de la fórmula del índice. Ninguna medida única
+satisface todos los criterios de validez (Zwanenburg, Nakhoda y Whigham, 2022), y la estimación
+de similitud basada en LLM abre un camino prometedor pero aún inmaduro como alternativa a las
+matrices derivadas de citas (Cantone, Zheng, Tomaselli y Nightingale, 2025). Para la evaluación
+aplicada, la implicación es clara: los indicadores de diversidad deben informarse junto con sus
+especificaciones computacionales (esquema de clasificación, método de similitud, transformación de
+disimilitud, nivel de agregación) y las conclusiones que dependen de una sola variante del indicador
+deben tratarse con precaución.
 
 ## Indicadores de coherencia
 
@@ -1182,7 +1177,7 @@ hallazgo y demostró que la medida de Uzzi en cambio se correlaciona con
 Rao--diversidad de Stirling---precisamente la construcción para la que fue diseñado
 complementar, no replicar. Esta combinación de novedad y diversidad dentro
 un solo indicador socava el marco interpretativo original y
-pone en duda las conclusiones políticas extraídas de él. Cantón (2024)
+pone en duda las conclusiones políticas extraídas de él. Cantone (2024)
 identifica una razón estructural para la combinación: el método de permutación
 combina las dimensiones de novedad y diversidad en una sola medida
 en lugar de separarlos sistemáticamente. Además, el método impone
@@ -1416,7 +1411,7 @@ Las cinco categorías son: física de la materia condensada ($C_1$), ciencia de 
 ($C_2$), química física ($C_3$), biología molecular ($C_4$) y aplicada
 matemáticas ($C_5$). Sus similitudes por pares están dadas por la matriz.
 
-| | $C_1$ | [[MANTENER1]] | [[MANTENER2]] | $C_4$ | $C_5$ |
+| | $C_1$ | $C_2$ | $C_3$ | $C_4$ | $C_5$ |
 |-------|-------|-------|-------|-------|-------|
 | $C_1$ | 1,00 | 0,60 | 0,40 | 0,10 | 0,30 |
 | $C_2$ | 0,60 | 1,00 | 0,50 | 0,15 | 0,20 |
@@ -1444,7 +1439,7 @@ especificado de forma independiente.
 **Vectores de referencia de publicación.** Cada entrada $r_{k,i}$ proporciona el número
 de referencias desde la publicación $k$ hasta la categoría $C_i$:
 
-| Publicación | $C_1$ | [[MANTENER1]] | [[MANTENER2]] | $C_4$ | $C_5$ | Totales |
+| Publicación | $C_1$ | $C_2$ | $C_3$ | $C_4$ | $C_5$ | Totales |
 |-------------|--------|--------|--------|--------|--------|-------|
 | A1 | 3 | 0 | 2 | 3 | 0 | 8 |
 | A2 | 4 | 1 | 0 | 3 | 0 | 8 |
@@ -1467,17 +1462,17 @@ de referencias desde la publicación $k$ hasta la categoría $C_i$:
 
 **Paso 1: Diversidad ($\Delta$).** El cálculo se realiza en tres etapas.
 Primero, obtenga proporciones agregadas: para el Investigador A, $p_1 = 12/40 = 0.300$,
-[[MANTENER0]], [[MANTENER1]], [[MANTENER2]],
-[[MANTENER0]]. En segundo lugar, calcule el índice de concentración de Herfindahl.
-[[MANTENER0]]:
+$p_2 = 3/40 = 0.075$, $p_3 = 7/40 = 0.175$, $p_4 = 14/40 = 0.350$,
+$p_5 = 4/40 = 0.100$. En segundo lugar, calcule el índice de concentración de Herfindahl
+$H = \sum_i p_i^2$:
 
 $$H_A = 0.300^2 + 0.075^2 + 0.175^2 + 0.350^2 + 0.100^2 = 0.258750$$
 
 En tercer lugar, calcule la suma ponderada por similitud completa
-[[MANTENER0]].
+$\sum_{i,j} s_{ij}\,p_i\,p_j = H + 2\sum_{i < j} s_{ij}\,p_i\,p_j$.
 Los términos cruzados dominantes para el Investigador A son:
 
-| Par $(i,j)$ | [[MANTENER1]] | [[MANTENER2]] | $p_j$ | $s_{ij}\,p_i\,p_j$ |
+| Par $(i,j)$ | $s_{ij}$ | $p_i$ | $p_j$ | $s_{ij}\,p_i\,p_j$ |
 |--------------|----------|--------|--------|---------------------|
 | $(C_1,C_4)$ | 0,10 | 0,300 | 0,350 | 0,010500 |
 | $(C_1,C_3)$ | 0,40 | 0,300 | 0,175 | 0,021000 |
@@ -1487,7 +1482,7 @@ Los términos cruzados dominantes para el Investigador A son:
 
 Sumando los diez pares fuera de la diagonal y aplicando el factor de simetría se obtiene
 $\sum_{i,j} s_{ij}\,p_i\,p_j = 0.440625$, de donde
-[[MANTENER0]].
+$\Delta_A = 1 - 0.440625 = 0.559375$.
 
 Para el Investigador B, la distribución uniforme $p_i = 0.200$ da $H_B = 0.200$
 y $\sum_{i,j} s_{ij}\,p_i\,p_j = 0.420$, entonces $\Delta_B = 0.580$.
@@ -1501,17 +1496,17 @@ $\cos(\mathbf{r}_{A1}, \mathbf{r}_{A2}) = 0.878$ (A1 y A2 ambos hacen referencia
 $C_1$ y $C_4$, compartiendo un puente entre física y biología) y
 $\cos(\mathbf{r}_{A2}, \mathbf{r}_{A4}) = 0.376$ (el par más débil, como A4
 evita $C_1$ por completo). La media de los diez pares es
-[[MANTENER0]].
+$S_A = 7.334/10 = 0.733$.
 
 Para el Investigador B, cada vector de publicación es ortogonal a todos los demás.
 (cada uno hace referencia exactamente a una categoría, y no hay dos que compartan una categoría), por lo que
 $\cos(\mathbf{r}_{Bk}, \mathbf{r}_{Bl}) = 0$ para todos $k \neq l$, dando
-[[MANTENER0]]. Esta coherencia cero es diagnóstica de polimatía: máxima
+$S_B = 0,000$. Esta coherencia cero es diagnóstica de polimatía: máxima
 amplitud sin integración entre publicaciones.
 
 Para el Investigador C, todas las publicaciones se agrupan en el vecindario $C_1$--$C_2$,
 produciendo cosenos por pares uniformemente altos (rango de 0,675 a 0,964) y
-[[MANTENER0]].
+$S_C = 0.881$.
 
 **Paso 3: Efecto transcampo ($E$).** Para cada publicación, asignamos la
 categoría primaria como $k^* = \arg\max_i r_{k,i}$ (empates rotos por el índice
@@ -1531,16 +1526,16 @@ se originan fuera de la categoría principal de la publicación citante, lo que 
 verdadero impacto transversal. Para el Investigador B, casi todas las citas provienen
 desde dentro del campo propio de cada publicación ($E_B = 1/16 = 0.063$); para
 Investigador C, una pequeña fracción de las citas provienen de campos vecinos
-([[MANTENER0]]).
+($E_C = 4/19 = 0.211$).
 
 ### Resultados
 
 Los valores completos del panel son:
 
-| Investigador | $\Delta$ | [[MANTENER1]] | [[MANTENER2]] | Tipo |
+| Investigador | $\Delta$ | $S$ | $E$ | Tipo |
 |------------|----------|-------|-------|------|
 | A (integrador) | 0,559 | 0,733 | 0,600 | Transdisciplinario |
-| B (erudito) | 0,580 | 0.000 | 0,063 | Amplitud polimática |
+| B (erudito) | 0,580 | 0,000 | 0,063 | Amplitud polimática |
 | C (especialista) | 0,245 | 0,881 | 0,211 | Disciplinario |
 
 La observación crítica es que $\Delta_A \approx \Delta_B$ (0,559 versus
@@ -1585,10 +1580,10 @@ donde $H = \sum_i p_i^2$ es el índice de concentración de Herfindahl.
 
 *Prueba.* Escribe $\Delta = 1 - \sum_{i,j} s_{ij}\,p_i\,p_j$. Bajo
 la perturbación, la suma cambia en
-[[MANTENER0]]. Desde
+$\varepsilon \sum_{i \neq j} p_i\,p_j$. Desde
 $\sum_{i,j} p_i\,p_j = \bigl(\sum_i p_i\bigr)^2 = 1$ y
 $\sum_i p_i^2 = H$, la suma fuera de la diagonal es igual a $1 - H$, dando el
-resultado. [[MANTENER0]]
+resultado. $\square$
 
 La fórmula hace explícita la dependencia de la concentración del investigador:
 una cartera más concentrada ($H$ más alta) experimenta una caída absoluta más pequeña
@@ -1609,7 +1604,7 @@ momento en el que se invierte la clasificación de diversidad de los dos investi
 
 ### Punto crítico de inversión
 
-Para los datos de los juguetes, los índices exactos de Herfindahl son $H_A = 0.258750$
+Para los datos de juguete, los índices exactos de Herfindahl son $H_A = 0.258750$
 y $H_B = 0.200000$, dando $H_A - H_B = 0.058750$. La diversidad exacta
 la brecha es $\Delta_A - \Delta_B = 0.559375 - 0.580000 = -0.020625$. El
 El punto crítico de inversión es por lo tanto
@@ -1651,7 +1646,7 @@ $$\overline{\Delta}_{AB} - \Delta_C = \overline{\Delta}_{AB,0} - \Delta_{C,0}
   - \varepsilon\,\bigl(\overline{1-H}_{AB} - (1-H_C)\bigr)$$
 
 donde $\overline{\Delta}_{AB,0} = 0.5697$ y $\overline{1-H}_{AB} = 0.7706$,
-[[MANTENER0]]. El coeficiente de $\varepsilon$ es $-0.255$, lo que significa
+$(1-H_C) = 0.5161$. El coeficiente de $\varepsilon$ es $-0.255$, lo que significa
 La separación A/B--C disminuye lentamente a medida que aumentan las similitudes, pero permanece
 por encima de 0,24 incluso en $\varepsilon = 0.35$. La capacidad del panel para separar
 especialistas de investigadores amplios se conservan en todos los aspectos realistas.
@@ -1661,7 +1656,7 @@ magnitudes de perturbación.
 
 La perturbación uniforme es el peor de los casos en un sentido preciso: desplaza todos
 similitudes en la misma dirección, maximizando el efecto acumulativo en
-[[MANTENER0]]. La incertidumbre del mundo real en matrices de similitud es más
+$\Delta$. La incertidumbre del mundo real en matrices de similitud es más
 heterogéneo. Por lo tanto, probamos dos escenarios adicionales que modelan
 patrones realistas de incertidumbre matricial.
 
@@ -1678,7 +1673,7 @@ métodos aplicados en todas las disciplinas).
 
 Los resultados se resumen a continuación:
 
-| Escenario | $\Delta_A$ | [[MANTENER1]] | [[MANTENER2]] | $|\Delta_A - \Delta_B|$ | $|\overline{\Delta}_{AB} - \Delta_C|$ |
+| Escenario | $\Delta_A$ | $\Delta_B$ | $\Delta_C$ | $|\Delta_A - \Delta_B|$ | $|\overline{\Delta}_{AB} - \Delta_C|$ |
 |----------|-----------|-----------|-----------|------------------------|--------------------------------------|
 | Originales | 0,559 | 0,580 | 0,245 | 0,021 | 0,32 |
 | Vecinos más cerca | 0,557 | 0,572 | 0,214 | 0,015 | 0,35 |
@@ -1697,29 +1692,28 @@ carteras.
 
 ### Invariancia de coherencia y efecto transcampo.
 
-Una ventaja distintiva del enfoque de componentes múltiples es que sólo uno
-de los tres indicadores del panel depende de la matriz de similitud. El
-El indicador de coherencia $S$ se calcula a partir de similitudes de cosenos por pares.
-entre vectores de referencia de publicación $\mathbf{r}_k$:
+Una ventaja distintiva del enfoque de componentes múltiples es que sólo uno de los tres
+indicadores del panel depende de la matriz de similitud. El indicador de coherencia $S$ se
+calcula a partir de similitudes de cosenos por pares entre vectores de referencia de publicación
+$\mathbf{r}_k$:
 
 $$S = \frac{1}{\binom{n}{2}} \sum_{k < l}
 \frac{\mathbf{r}_k \cdot \mathbf{r}_l}
 {\|\mathbf{r}_k\|\;\|\mathbf{r}_l\|}$$
 
-Esta cantidad depende exclusivamente de los propios vectores de referencia, no
-en cualquier estructura de similitud entre categorías. El efecto transcampo $E$
+Esta cantidad depende exclusivamente de los propios vectores de referencia, no de ninguna
+estructura de similitud entre categorías. El efecto transcampo $E$
 depende de los flujos de citas y de las asignaciones de categorías primarias (determinadas por
 $\arg\max_i r_{k,i}$), que también son independientes de $s_{ij}$. Ambos
-$S$ y $E$ son ​​por lo tanto *exactamente invariantes* bajo cualquier perturbación de
+$S$ y $E$ son por lo tanto *exactamente invariantes* bajo cualquier perturbación de
 la matriz de similitud, ya sea uniforme o no uniforme.
 
 Esta invariancia tiene una consecuencia práctica: la discriminación entre
-Investigador A ($S = 0.733$, $E = 0.600$) e Investigador B ($S = 0.000$,
-$E = 0.063$) no se ve afectado en absoluto por la elección de la matriz de similitud.
-Por lo tanto, el panel multicomponente es sustancialmente más robusto que cualquier otro.
+Investigador A ($S = 0.733$, $E = 0.600$) e Investigador B ($S = 0,000$,
+$E = 0.063$) no se ve afectada en absoluto por la elección de la matriz de similitud.
+Por ello, el panel multicomponente es sustancialmente más robusto que cualquier otro
 enfoque de indicador único basado únicamente en la diversidad, porque la coherencia
-y los canales de efecto transcampo no conllevan incertidumbre de matriz de similitud
-lo que.
+y los canales de efecto transcampo no conllevan incertidumbre de matriz de similitud.
 
 ### Resumen de robustez
 
@@ -1727,7 +1721,7 @@ El análisis de sensibilidad arroja tres conclusiones. Primero, el análisis
 fórmula de perturbación $\Delta_{\text{nuevo}} = \Delta_{\text{antiguo}} -
 \varepsilon(1-H)$ hace que los cambios de diversidad sean completamente predecibles: no hay
 efectos de umbral o sorpresas no lineales por debajo del punto de inversión
-[[MANTENER0]]. En segundo lugar, la perturbación crítica requerida para invertir.
+$\varepsilon^*$. En segundo lugar, la perturbación crítica requerida para invertir.
 incluso la brecha de diversidad más pequeña en nuestros datos ($\varepsilon^* = 0.351$)
 excede con creces la incertidumbre realista en la estimación de similitud. tercero, y
 Lo más importante es que los indicadores de coherencia y efecto entre campos son
@@ -1753,32 +1747,30 @@ diversidad), los entrelaza en un cuerpo coherente de trabajo con sustanciales
 acoplamiento bibliográfico entre publicaciones (alta coherencia) y produce
 investigación que se cita a través de fronteras disciplinarias (alto efecto
 transcampo). Este es el perfil canónico de la integración interdisciplinaria.
-En los datos de los juguetes, el investigador A ejemplifica este patrón con
-[[MANTENER0]].
+En los datos de juguete, el investigador A ejemplifica este patrón con
+$(\Delta, S, E) = (0,559, 0,733, 0,600)$.
 
-**Patrón 2: Alto $\Delta$, bajo $S$, bajo $E$ --- erudito.** El
-El investigador publica en muchos campos, produciendo altos categóricos.
-diversidad, pero las publicaciones son mutuamente incoherentes (baja o nula)
-acoplamiento bibliográfico) y cada uno se cita principalmente dentro de su propio campo
-(bajo efecto transcampo). Este perfil indica amplitud sin
-integración --- una colección de contribuciones disciplinarias independientes
-en lugar de un programa de investigación sintetizado. El investigador B ejemplifica
-este patrón con $(\Delta, S, E) = (0.580, 0.000, 0.063)$.
+**Patrón 2: Alto $\Delta$, bajo $S$, bajo $E$ --- erudito.** El investigador publica en
+muchos campos, produciendo una alta diversidad categórica, pero las publicaciones son
+mutuamente incoherentes (acoplamiento bibliográfico bajo o nulo) y cada una se cita
+principalmente dentro de su propio campo (bajo efecto transcampo). Este perfil indica amplitud
+sin integración --- una colección de contribuciones disciplinarias independientes en lugar de un
+programa de investigación sintetizado. El investigador B ejemplifica este patrón con
+$(\Delta, S, E) = (0,580, 0,000, 0,063)$.
 
-**Patrón 3: Bajo $\Delta$, alto $S$, bajo $E$ --- especialista.** El
-El investigador trabaja dentro de un grupo disciplinario estrecho, produciendo baja
-diversidad pero una alta coherencia interna. El impacto transversal es limitado
-porque la obra se dirige a un público especializado. Un investigador que expone
-este perfil que ha sido catalogado como "interdisciplinar" por un
-La agencia de evaluación probablemente esté mal clasificada y debería redirigirse a
-evaluación disciplinaria estándar. El investigador C ejemplifica este patrón
-con $(\Delta, S, E) = (0.245, 0.881, 0.211)$.
+**Patrón 3: Bajo $\Delta$, alto $S$, bajo $E$ --- especialista.** El investigador trabaja
+dentro de un grupo disciplinario estrecho, produciendo baja diversidad pero una alta coherencia
+interna. El impacto transversal es limitado porque el trabajo se dirige a un público
+especializado. Un investigador que exhiba este perfil y haya sido catalogado como
+"interdisciplinar" por una agencia de evaluación probablemente esté mal clasificado y debería
+redirigirse a la evaluación disciplinaria estándar. El investigador C ejemplifica este patrón
+con $(\Delta, S, E) = (0,245, 0,881, 0,211)$.
 
 **Patrón 4: $\Delta$ bajo, $S$ bajo, cualquier $E$ --- emergente o insuficiente
 datos.** Cuando tanto la diversidad como la coherencia son bajas, el panel señala
 ya sea un investigador que inicia su carrera cuyo registro de publicaciones es demasiado escaso
 para una estimación estable, o un investigador en un campo emergente donde
-Las categorías disciplinarias aún no se han estabilizado. En cualquier caso, el
+las categorías disciplinarias aún no se han estabilizado. En cualquier caso, el
 El perfil cuantitativo debe interpretarse con cautela y el perfil cualitativo.
 La evaluación de expertos puede ser más apropiada.
 
@@ -1786,20 +1778,20 @@ La evaluación de expertos puede ser más apropiada.
 
 Para el despliegue operativo, proponemos umbrales de decisión ilustrativos:
 
-| Clasificación | $\Delta$ | [[MANTENER1]] | [[MANTENER2]] |
+| Clasificación | $\Delta$ | $S$ | $E$ |
 |----------------|----------|------|------|
-| Integrador genuino | $\ge 0.40$ | [[MANTENER1]] | [[MANTENER2]] |
-| Polímata (no integrativa) | $\ge 0.40$ | [[MANTENER1]] | [[MANTENER2]] |
+| Integrador genuino | $\ge 0.40$ | $\ge 0.30$ | $\ge 0.30$ |
+| Polímata (no integrativa) | $\ge 0.40$ | $< 0.15$ | $< 0.15$ |
 | Especialista (reclasificar) | $< 0.35$ | cualquiera | cualquiera |
 | Ambiguo (revisión de expertos) | más | más | más |
 
-Estos umbrales se derivan del análisis de datos de juguetes y deben ser
-entendidos como puntos de partida y no como puntos de corte universales. Evaluación
-Las agencias deben calibrar los umbrales a su contexto específico, teniendo en cuenta
+Estos umbrales se derivan del análisis con datos de juguete y deben entenderse como
+puntos de partida, no como puntos de corte universales. Las agencias de evaluación
+deben calibrar los umbrales a su contexto específico, teniendo en cuenta
 cuenta la granularidad del sistema de clasificación disciplinaria, la
 normas de citación de los campos bajo revisión, y los objetivos de política de
 el ejercicio de evaluación. Validación sobre casos conocidos --- investigadores cuyos
-El estatus interdisciplinario se ha establecido mediante revisión por pares o
+estatus interdisciplinario se ha establecido mediante revisión por pares o
 El consenso de expertos es esencial antes del despliegue operativo.
 
 ### Casos extremos y modos de falla
@@ -2019,27 +2011,26 @@ cuando se utiliza la transformación inversa $1/\text{SC}$ versus $1/\text{SO}$.
 Por lo tanto, la elección de la fórmula de similitud afecta dramáticamente a la diversidad.
 estimaciones.
 
-La similitud del coseno tiene varias propiedades deseables para esta aplicación:
-es no paramétrico, acotado en $[0,1]$, invariante a escala absoluta (lineal
-combinaciones conservan los valores del coseno) y, naturalmente, ignora las entradas cero
-en vectores dispersos (Leydesdorff, Wagner y Bornmann, 2019). el estandar
-El procedimiento consiste en construir una matriz de citas $I \times I$ entre categorías.
-y convertir similitudes en diferencias mediante $d_{ij} = 1 - \cos(i,j)$.
+La similitud del coseno tiene varias propiedades deseables para esta aplicación: es no
+paramétrica, acotada en $[0,1]$, invariante a la escala absoluta (las combinaciones lineales
+conservan los valores del coseno) e ignora de forma natural las entradas cero en vectores
+dispersos (Leydesdorff, Wagner y Bornmann, 2019). El procedimiento estándar consiste en construir
+una matriz de citas $I \times I$ entre categorías y convertir similitudes en disimilitudes
+mediante $d_{ij} = 1 - \cos(i,j)$.
 
-Cuando los datos de citas no están disponibles, existen enfoques alternativos. cantón
-(2024) describe una normalización de matriz de confusión adecuada para la clasificación.
-esquemas donde se conocen las probabilidades de clasificación errónea. Más recientemente,
-Cantone (2025) ha explorado la estimación de modelos de lenguaje grandes, en los que un LLM
-Se le solicita que proporcione puntuaciones de similitud para todos los pares de categorías. Este
-El enfoque elimina la necesidad de acceder a la base de datos de citas pero introduce
-nuevas preocupaciones: precisión (variación entre consultas idénticas repetidas),
-acuerdo entre modelos (aún limitado) y solidez ante denominaciones triviales
-variaciones en las etiquetas de categorías.
+Cuando los datos de citas no están disponibles, existen enfoques alternativos. Cantone (2024)
+describe una normalización basada en matriz de confusión adecuada para esquemas de clasificación
+en los que se conocen las probabilidades de clasificación errónea. Más recientemente, Cantone
+(2025) ha explorado la estimación mediante modelos de lenguaje grandes, en la que se solicita a
+un LLM que proporcione puntuaciones de similitud para todos los pares de categorías. Este enfoque
+elimina la necesidad de acceder a la base de datos de citas pero introduce nuevas preocupaciones:
+precisión (variación entre consultas idénticas repetidas), acuerdo entre modelos (todavía
+limitado) y robustez ante variaciones triviales en las etiquetas de categorías.
 
 Otra preocupación distributiva afecta la interpretación de los resultados.
 Wang y Schneider (2020) encontraron que los valores de disimilitud basados ​​en Ochiai
 $(1 - \text{SO})$ están extremadamente sesgados a la izquierda, con la mayoría de los valores concentrados
-between 0.95 and 1.0. Bajo esta distribución, la diversidad Rao-Stirling
+entre 0.95 y 1.0. Bajo esta distribución, la diversidad Rao-Stirling
 se reduce efectivamente al índice de Simpson porque todos los pares de categorías cruzadas
 reciben ponderaciones de disparidad casi idénticas. Disimilitud basada en Salton
 $(1 - \text{SC})$ produce una distribución más uniforme y por lo tanto preserva la
@@ -2049,11 +2040,11 @@ que producen ponderaciones degeneradas.
 
 ## Procedimientos de control de calidad
 
-La multiplicidad de opciones metodológicas válidas crea un "investigador
-Problema de grados de libertad (Wang y Schneider, 2020): muchos defendibles
-combinaciones de base de datos, taxonomía, método de clasificación, similitud
-La fórmula y el nivel de agregación pueden producir resultados sustancialmente diferentes. A
-Un protocolo riguroso de control de calidad debe abordar al menos cuatro niveles.
+La multiplicidad de opciones metodológicas válidas crea un "problema de grados de libertad del
+investigador" (Wang y Schneider, 2020): muchas combinaciones defendibles de base de datos,
+taxonomía, método de clasificación, fórmula de similitud y nivel de agregación pueden producir
+resultados sustancialmente diferentes. Un protocolo riguroso de control de calidad debe abordar
+al menos cuatro niveles.
 
 *Integridad de los datos.* Antes de calcular cualquier indicador, el analista debe validar
 asignaciones de diario a categoría (verificando la lógica de tareas múltiples), evaluar
@@ -2263,8 +2254,8 @@ Los indicadores participativos de Marres y de Rijcke (2020) para cerrar esta bre
 
 # Estudio de caso: Evaluación a nivel de departamento
 
-La demostración de datos de juguetes en la Sección 4 estableció que los tres componentes
-El panel puede distinguir los arquetipos de los investigadores en principio. ahora aplicamos
+La demostración con datos de juguete en la Sección 4 estableció que los tres componentes
+del panel pueden distinguir los arquetipos de los investigadores en principio. Ahora aplicamos
 el panel hacia un escenario más realista: evaluar la interdisciplinariedad
 de siete investigadores en un departamento universitario de física y ciencia de materiales.
 Este estudio de caso ilustra el funcionamiento práctico del panel a una escala que
@@ -2298,7 +2289,7 @@ categorías relevantes para la cartera de investigación del departamento:
 Las similitudes por pares entre estas categorías, derivadas del coseno
 similitudes en la red de citas de revistas de WoS, son:
 
-| | $C_1$ | [[MANTENER1]] | [[MANTENER2]] | $C_4$ | $C_5$ | [[MANTENER5]] |
+| | $C_1$ | $C_2$ | $C_3$ | $C_4$ | $C_5$ | $C_6$ |
 |-------|-------|-------|-------|-------|-------|-------|
 | $C_1$ | 1,00 | 0,60 | 0,40 | 0,35 | 0,30 | 0,55 |
 | $C_2$ | 0,60 | 1,00 | 0,50 | 0,25 | 0,40 | 0,65 |
@@ -2329,11 +2320,11 @@ cada categoría.
 | Investigador | Etapa | Pubs | $\mathbf{p}$ | Citas | Citas entre campos |
 |------------|-------|------|--------------|-------|-------------------|
 | Chen | S | 42 | (0,35, 0,30, 0,20, 0,05, 0,05, 0,05) | 520 | 180 (35%) |
-| Al-Rahman | METRO | 35 | (0,20, 0,20, 0,20, 0,20, 0,15, 0,05) | 280 | 30 (11%) |
-| Kowalski | mi | 18 | (0,65, 0,25, 0,06, 0,02, 0,01, 0,01) | 85 | 10 (12%) |
+| Al-Rahman | M | 35 | (0,20, 0,20, 0,20, 0,20, 0,15, 0,05) | 280 | 30 (11%) |
+| Kowalski | E | 18 | (0,65, 0,25, 0,06, 0,02, 0,01, 0,01) | 85 | 10 (12%) |
 | Nguyen | S | 55 | (0,25, 0,25, 0,15, 0,10, 0,15, 0,10) | 890 | 420 (47%) |
-| Romero | METRO | 28 | (0,10, 0,15, 0,05, 0,05, 0,10, 0,55) | 195 | 140 (72%) |
-| Karlsson | mi | 12 | (0,50, 0,30, 0,10, 0,05, 0,03, 0,02) | 45 | 8 (18%) |
+| Romero | M | 28 | (0,10, 0,15, 0,05, 0,05, 0,10, 0,55) | 195 | 140 (72%) |
+| Karlsson | E | 12 | (0,50, 0,30, 0,10, 0,05, 0,03, 0,02) | 45 | 8 (18%) |
 | Osei | S | 48 | (0,70, 0,20, 0,05, 0,03, 0,01, 0,01) | 680 | 75 (11%) |
 
 Varias características de este conjunto de datos merecen comentarios. La distribución
@@ -2357,10 +2348,10 @@ Para Nguyen ($\mathbf{p}_N = (0.25, 0.25, 0.15, 0.10, 0.15, 0.10)$), el
 La suma fuera de la diagonal implica quince pares distintos. el dominante
 contribuciones provienen de los pares de alto peso y larga distancia: el
 El término $(C_1, C_5)$ aporta $2 \times 0.25 \times 0.15 \times 0.70 =
-0,053$; the $(C_1, C_4)$ term contributes $2 \veces 0,25 \veces 0,10
-\veces 0,65 = 0,033$; and the $(C_3, C_5)$ term contributes $2 \veces
-0,15 \veces 0,15 \veces 0,80 = 0,036$. Sumar los quince pares da
-[[MANTENER0]].
+0.053$; el término $(C_1, C_4)$ aporta $2 \times 0.25 \times 0.10
+\times 0.65 = 0.033$; y el término $(C_3, C_5)$ aporta $2 \times
+0.15 \times 0.15 \times 0.80 = 0.036$. Sumar los quince pares da
+$\Delta_N = 0.464$.
 
 Para Al-Rahman ($\mathbf{p}_F = (0.20, 0.20, 0.20, 0.20, 0.15, 0.05)$),
 la distribución casi uniforme genera muchos términos de comparación
@@ -2379,7 +2370,7 @@ todo el portafolio del investigador.
 
 **Tabla 2.** Valores del panel para los siete investigadores.
 
-| Investigador | $\Delta$ | [[MANTENER1]] | [[MANTENER2]] | Patrón |
+| Investigador | $\Delta$ | $S$ | $E$ | Patrón |
 |------------|----------|------|------|---------|
 | Chen | 0,390 | 0,42 | 0,35 | Integrador moderado |
 | Al-Rahman | 0,610 | 0,04 | 0,11 | Erudito |
@@ -2603,7 +2594,7 @@ evidencia multidimensional en lugar de clasificación de puntuación única (OQ4
 
 El panel de tres componentes que proponemos: diversidad ($\Delta$), coherencia ($S$),
 y efecto transcampo ($E$): aborda esta insuficiencia al abarcar tres
-dimensiones ortogonales. Nuestra demostración de datos sobre juguetes muestra que el panel
+dimensiones ortogonales. Nuestra demostración de datos de juguete muestra que el panel
 caracteriza de manera única a integradores, eruditos y especialistas donde cualquier
 falla un solo componente. El estudio de caso a nivel departamental de la Sección 7
 confirma este poder discriminatorio a escala realista: el panel correctamente
@@ -2657,6 +2648,7 @@ siguiente paso natural.
 - Moulton, R. and Jiang, Y. (2018). Maximally consistent sampling and the Jaccard index of probability distributions. In *Proceedings of the 2018 IEEE International Conference on Data Mining (ICDM)*, pages 347–356. IEEE.
 - Mutz, R. (2022). Diversity and interdisciplinarity: Should variety, balance and disparity be combined as a product or better as a sum? An information-theoretical and statistical estimation approach. *Scientometrics*, 127(12):7397–7414.
 - Nakhoda, M., Whigham, P., and Zwanenburg, S. (2023). Quantifying and addressing uncertainty in the measurement of interdisciplinarity. *Scientometrics*, 128:6107–6127.
+- National Academies. (2005). *Facilitating Interdisciplinary Research*. Washington, DC: National Academies Press.
 - Noji, H., Yasuda, R., Yoshida, M., and Kinosita, K. (1997). Direct observation of the rotation of F1-ATPase. *Nature*, 386(6622):299–302.
 - OECD (1998). *Interdisciplinarity in Science and Technology*. Paris: OECD Directorate for Science, Technology and Industry.
 - Porter, A. L. and Rafols, I. (2009). Is science becoming more interdisciplinary? Measuring and mapping six research fields over time. *Scientometrics*, 81(3):719–745.
@@ -2673,3 +2665,10 @@ siguiente paso natural.
 - Zhang, L., Rousseau, R., and Glänzel, W. (2016). Diversity of references as an indicator of the interdisciplinarity of journals: Taking similarity between subject fields into account. *Journal of the Association for Information Science and Technology*, 67(5):1257–1265.
 - Zhou, Q., Guns, R., and Engels, T. C. E. (2023). Towards indicating interdisciplinarity: Characterizing interdisciplinary knowledge flow. *Journal of the Association for Information Science and Technology*, 74(11):1325–1340.
 - Zwanenburg, S., Nakhoda, M., and Whigham, P. (2022). Toward greater consistency and validity in measuring interdisciplinarity: a systematic and conceptual evaluation. *Scientometrics*, 127:3035–3065.
+| | $C_1$ | $C_2$ | $C_3$ | $C_4$ | $C_5$ |
+|-------|-------|-------|-------|-------|-------|
+| $C_1$ | 1,00 | 0,60 | 0,40 | 0,10 | 0,30 |
+| $C_2$ | 0,60 | 1,00 | 0,50 | 0,15 | 0,20 |
+| $C_3$ | 0,40 | 0,50 | 1,00 | 0,35 | 0,10 |
+| $C_4$ | 0,10 | 0,15 | 0,35 | 1,00 | 0,05 |
+| $C_5$ | 0,30 | 0,20 | 0,10 | 0,05 | 1,00 |

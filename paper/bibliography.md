@@ -24,7 +24,7 @@ Track citation keys and their acquisition status here.
 | `xiang-romero-teplitskiy-2025` | Evaluating interdisciplinary research: Disparate outcomes for topic and knowledge base (PNAS, 2025) | `OK` | `sources/xiang-romero-teplitskiy-2025-a6f8b482.md` |
 | `cantone-2025` | Estimation of disciplinary similarity with large language models (Scientometrics, 2025) | `OK` | `sources/cantone-2025-llm.md` |
 | `self-reported-idr-2026` | Self-reported and bibliometric interdisciplinarity measures rarely correspond: a survey-based comparative analysis (Scientometrics, 2026) | `OK` | `sources/self-reported-idr-2026-a72855ae.md` |
-
+| `national-academies-2005` | Facilitating Interdisciplinary Research (National Academies Press, 2005) | `PENDING_LIBRARY` | Report/book; acquire from National Academies Press (nap.edu) |
 | `mutz-2022` | Diversity and interdisciplinarity: Should variety, balance and disparity be combined as a product or better as a sum? (Scientometrics, 2022) | `OK` | `sources/mutz-2022-1375bb08.md` |
 | `chen-song-2022` | Interdisciplinarity and impact: the effects of the citation time window (Scientometrics, 2022) | `OK` | `sources/chen-song-2022.md` |
 | `glanzel-debackere-2022` | Various aspects of interdisciplinarity in research and how to quantify and measure those (Scientometrics, 2022) | `OK` | `sources/glanzel-debackere-2022.md` |
