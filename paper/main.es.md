@@ -648,25 +648,24 @@ deben tratarse con precaución.
 
 Los indicadores de diversidad, por muy especificados que sean, responden sólo a una pregunta:
 *¿Cuán heterogéneos son los aportes de conocimiento?* No dicen nada sobre si
-Esos aportes heterogéneos se han tejido en un sistema intelectual unificado.
-tela o simplemente colocados uno al lado del otro. Rafols y Meyer (2009) presentaron
-el concepto de *coherencia* para llenar este vacío, definiéndolo como "la medida
-a qué temas, conceptos, herramientas, datos, etc. específicos se utilizan en una investigación
-proceso están relacionados" (p. 175). Mientras que la diversidad captura lo categórico
-amplitud de referencias, la coherencia captura la estructura relacional entre
-los elementos dentro de esas categorías --- la intensidad de su mutua
-integración.
+esos aportes heterogéneos se han tejido en un tejido intelectual unificado o simplemente se han
+colocado uno al lado del otro. Rafols y Meyer (2009) introdujeron el concepto de *coherencia*
+para llenar este vacío, definiéndolo como "el grado en que temas, conceptos, herramientas,
+datos, etc. específicos utilizados en un proceso de investigación están relacionados" (p. 175).
+Mientras que la diversidad captura la amplitud categórica de las referencias, la coherencia
+captura la estructura relacional entre los elementos dentro de esas categorías --- la intensidad
+de su integración mutua.
 
 La distinción es importante para la evaluación. La alta diversidad por sí sola no
-garantizar que se hayan sintetizado fuentes de conocimiento dispares; puede que
-reflejan mera yuxtaposición o amplitud polimática entre temas no relacionados.
-literaturas. La coherencia proporciona la señal que falta. Además, el
-La interpretación funcional de la coherencia depende de la unidad de análisis.
+garantiza que se hayan sintetizado fuentes de conocimiento dispares; puede reflejar mera
+yuxtaposición o amplitud polimática entre literaturas no relacionadas. La coherencia proporciona
+la señal que falta. Además, la interpretación funcional de la coherencia depende de la unidad de
+análisis.
 Una alta coherencia en la lista de referencias de un artículo indica que el artículo
 se basa en una especialidad establecida y conectada internamente. Alta coherencia
 en las publicaciones de un centro de investigación indica que el centro está
 logrando su misión integradora. La baja coherencia, por el contrario, indica que
-Se están poniendo en contacto cuerpos de conocimiento que antes no estaban relacionados ---
+se están poniendo en contacto cuerpos de conocimiento que antes no estaban relacionados ---
 un estado de integración interdisciplinaria *potencial* que puede madurar a lo largo de
 tiempo.
 
@@ -1200,29 +1199,27 @@ La medida es intuitiva: recompensa la investigación que ejemplifica
 emparejamientos disciplinarios no observados previamente, especialmente entre
 campos cognitivamente distantes.
 
-Sin embargo, la novedad cronometrada enfrenta múltiples limitaciones graves. requiere
-Datos de citas históricas suficientes para identificar las primeras apariciones.
-seguramente; en muestras que contienen sólo publicaciones recientes, todos los pares
-parecen novedosos por construcción, lo que produce puntuaciones engañosas (Cantone, 2024).
-La medida también es muy sensible a la granularidad de la taxonomía,
-haciéndolo inadecuado para sistemas de clasificación de grano grueso.
-Lo más crítico es que la medida carece de un mecanismo para calibrar la innovación.
-contra la difusión: una combinación "pionera" que ningún trabajo posterior
-alguna vez cita plantea la cuestión de si constituye una auténtica
-innovación o simplemente una anomalía improductiva. Bornmann (2019) y
-Fontana et al. (2020) no encontraron concordancia entre las puntuaciones de novedad cronometradas
-y novedad evaluada por expertos, cuestionando la validez epistémica de la medida.
+Sin embargo, la novedad cronometrada enfrenta múltiples limitaciones graves. Requiere datos de
+citas históricas suficientes para identificar con fiabilidad las primeras apariciones; en muestras
+que contienen sólo publicaciones recientes, todos los pares parecen novedosos por construcción,
+lo que produce puntuaciones engañosas (Cantone, 2024). La medida también es muy sensible a la
+granularidad de la taxonomía, lo que la vuelve inadecuada para sistemas de clasificación de grano
+grueso. Lo más crítico es que carece de un mecanismo para calibrar la innovación frente a la
+difusión: una combinación "pionera" que ningún trabajo posterior cite plantea la cuestión de si
+constituye una innovación genuina o simplemente una anomalía improductiva. Bornmann (2019) y
+Fontana et al. (2020) no encontraron concordancia entre las puntuaciones de novedad cronometrada y
+la novedad evaluada por expertos, lo que cuestiona la validez epistémica de la medida.
 
 ### Especificación de referencia
 
 Todas las medidas de novedad basadas en divergencia dependen de la elección del índice de referencia.
 $p(E)$, y esta elección está lejos de ser neutral. Tres enfoques han sido
-propuesto. Goyanes et al. (2020) adoptan un *antes uniforme* (igual peso
+propuestos. Goyanes et al. (2020) adoptan un *a priori uniforme* (igual peso
 en todas las categorías observadas), que Cantone (2024) critica como
 poco realista: "prácticamente ninguna aplicación real espera un equilibrio perfecto
 distribución". Uzzi et al. (2013) utilizan *permutación aleatoria*, intercambiando
 citas y al mismo tiempo preservar el recuento de referencias para generar un análisis basado en datos.
-modelo nulo: el enfoque preferido para los análisis de citas. cantón
+modelo nulo: el enfoque preferido para los análisis de citas. Cantone
 y Nightingale (2024) proponen un *punto de referencia jerárquico* en el que el
 La distribución disciplinaria de una unidad contenedora (por ejemplo, una revista) sirve.
 como $p(E)$ para sus artículos constituyentes, explotando el anidamiento natural de
@@ -2383,8 +2380,8 @@ todo el portafolio del investigador.
 El rango de valores de diversidad (0,176 a 0,610) es más amplio que en el
 ejemplo de juguete, que refleja tanto una variación disciplinaria genuina como la
 efecto de un conjunto de categorías más grande con distancias por pares heterogéneas.
-Los valores de coherencia se separan claramente en dos grupos: los casi cero de Al-Rahman
-coherencia ($S = 0.04$) contrasta marcadamente con la de moderada a alta
+Los valores de coherencia se separan claramente en dos grupos: la coherencia casi nula de
+Al-Rahman ($S = 0,04$) contrasta marcadamente con la coherencia de moderada a alta
 coherencia de todos los demás investigadores ($S \geq 0.42$), lo que indica que
 sus diversas publicaciones esencialmente no comparten referencias.
 
@@ -2440,10 +2437,10 @@ Requiere revisión de expertos: no encaja en el integrador estándar.
 perfil, pero su papel estructural en la red de investigación departamental
 puede ser igualmente valioso para fines de financiación interdisciplinaria.
 
-**Al-Rahman ($\Delta = 0.610$, $S = 0.04$, $E = 0.11$): erudito.**
+**Al-Rahman ($\Delta = 0.610$, $S = 0,04$, $E = 0.11$): erudito.**
 Al-Rahman tiene la mayor diversidad del departamento, con poblaciones casi uniformes.
 peso en cuatro categorías. Sin embargo, su coherencia es esencialmente nula.
-($S = 0.04$), indicando que sus publicaciones en diferentes campos
+($S = 0,04$), indicando que sus publicaciones en diferentes campos
 no comparten una base de referencia común: cada uno constituye una
 contribución a una conversación disciplinaria separada. Su efecto transcampo
 es correspondientemente bajo (11%): a pesar de publicar ampliamente, su
@@ -2565,7 +2562,7 @@ estabilidad para los investigadores con tasas de publicación anual más bajas.
 
 **Limitaciones del acoplamiento bibliográfico.** El indicador de coherencia $S$
 Mide la integración a través de referencias compartidas. El casi cero de Al-Rahman
-la coherencia ($S = 0.04$) puede subestimar las conexiones metodológicas latentes
+la coherencia ($S = 0,04$) puede subestimar las conexiones metodológicas latentes
 entre sus publicaciones si esas conexiones operan a través de
 técnicas o conceptos en lugar de literatura compartida. Basado en texto
 medidas, como análisis de palabras conjuntas de resúmenes o modelo de tema
