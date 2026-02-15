@@ -6,7 +6,7 @@
 
 ## Active / In Progress
 
-- `C21`: Spanish grammar pass for main review (`paper/main.es.md`).
+- None.
 
 ## Next Action
 
@@ -23,6 +23,5 @@
 - **Notebooks**: 5 (panel-worked-example, panel-sensitivity, panel-interpretation, formula-catalog, idr-typology)
 
 **Next priorities:**
-1. Spanish grammar review of main paper: `paper/main.es.md` (sequential errata workflow).
-2. Regenerate HTML outputs, copy to `docs/`, update `docs` index; push GitHub Pages.
-3. Bibliography hardening for remaining `PENDING`/`PENDING_LIBRARY` sources.
+1. Regenerate HTML outputs, copy to `docs/`, update `docs` index; push GitHub Pages.
+2. Bibliography hardening for remaining `PENDING`/`PENDING_LIBRARY` sources.
