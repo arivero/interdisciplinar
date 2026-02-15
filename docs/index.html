@@ -7,9 +7,9 @@
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-            font-size: 12pt;
-            line-height: 1.5;
-            max-width: 1200px;
+            font-size: 14px;
+            line-height: 1.6;
+            max-width: 900px;
             margin: 0 auto;
             padding: 20px;
             background-color: #f5f5f5;
@@ -23,11 +23,11 @@
         }
         h1 {
             margin: 0 0 10px 0;
-            font-size: 16pt;
+            font-size: 24px;
         }
         .subtitle {
             color: #ecf0f1;
-            font-size: 12pt;
+            font-size: 16px;
         }
         .papers {
             background-color: white;
@@ -40,77 +40,89 @@
             border-bottom: 2px solid #3498db;
             padding-bottom: 10px;
             margin-top: 30px;
-            font-size: 14pt;
+            font-size: 18px;
         }
         .paper-card {
-            background-color: #fff;
+            background-color: #f9f9f9;
             border: 1px solid #ddd;
             border-left: 4px solid #3498db;
             padding: 20px;
             margin: 20px 0;
             border-radius: 4px;
-            transition: all 0.3s ease;
-        }
-        .paper-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-            border-left-color: #2980b9;
         }
         .paper-id {
             font-family: 'Courier New', monospace;
             background-color: #ecf0f1;
-            padding: 2px 8px;
+            padding: 4px 10px;
             border-radius: 3px;
-            font-size: 0.9em;
+            font-size: 13px;
             color: #2c3e50;
             font-weight: bold;
         }
         .paper-title {
-            font-size: 13pt;
+            font-size: 16px;
             font-weight: bold;
             color: #2c3e50;
-            margin: 10px 0;
-        }
-        .paper-title a {
-            color: #2c3e50;
-            text-decoration: none;
-        }
-        .paper-title a:hover {
-            color: #3498db;
+            margin: 12px 0 8px 0;
         }
         .paper-meta {
             color: #7f8c8d;
-            font-size: 11pt;
+            font-size: 13px;
             margin: 5px 0;
         }
         .paper-abstract {
-            margin-top: 10px;
+            margin: 12px 0;
             color: #555;
-            line-height: 1.5;
-            font-size: 12pt;
+            line-height: 1.6;
+            font-size: 14px;
         }
-        .language-tag {
+        .lang-buttons {
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid #e0e0e0;
+        }
+        .lang-section {
             display: inline-block;
+            margin-right: 25px;
+            margin-bottom: 8px;
+        }
+        .lang-label {
+            font-weight: bold;
+            color: #2c3e50;
+            margin-right: 8px;
+            font-size: 13px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 6px 14px;
+            margin: 0 4px;
             background-color: #3498db;
             color: white;
-            padding: 3px 10px;
-            border-radius: 12px;
-            font-size: 0.85em;
-            margin-left: 10px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 13px;
+            transition: background-color 0.2s;
         }
-        .language-tag.es {
+        .btn:hover {
+            background-color: #2980b9;
+        }
+        .btn.pdf {
             background-color: #e74c3c;
+        }
+        .btn.pdf:hover {
+            background-color: #c0392b;
         }
         footer {
             text-align: center;
             margin-top: 40px;
             padding: 20px;
             color: #7f8c8d;
-            font-size: 11pt;
+            font-size: 13px;
         }
         .repo-link {
             display: inline-block;
             margin-top: 10px;
-            padding: 8px 15px;
+            padding: 10px 20px;
             background-color: #3498db;
             color: white;
             text-decoration: none;
@@ -125,104 +137,89 @@
 <body>
     <header>
         <h1>Interdisciplinarity Measurement</h1>
-        <p class="subtitle">a review</p>
+        <p class="subtitle">A review of bibliometric indicators and measurement protocols</p>
     </header>
 
     <div class="papers">
-        <p>This repository contains research on measuring interdisciplinary research using a multi-component indicator panel (Rao-Stirling diversity, network coherence, cross-field effect).</p>
+        <p>Research on measuring interdisciplinary research using a multi-component indicator panel (Rao-Stirling diversity, network coherence, cross-field effect).</p>
 
         <h2>Main Review Paper</h2>
 
         <div class="paper-card">
-            <div>
-                <span class="paper-id">main</span>
-                <span class="language-tag">EN</span>
-            </div>
+            <span class="paper-id">main</span>
             <div class="paper-title">
-                <a href="main.html">Measuring Interdisciplinarity: A Multi-Component Indicator Panel for Research Evaluation</a>
+                Measuring Interdisciplinarity: A Multi-Component Indicator Panel for Research Evaluation
             </div>
-            <div class="paper-meta">Authors: A. Rivero and A.I. Scaffold | 2026</div>
+            <div class="paper-meta">A. Rivero and A.I. Scaffold | 2026</div>
             <div class="paper-abstract">
-                Comprehensive review manuscript on interdisciplinarity measurement indicators and methodologies.
+                Comprehensive review manuscript on interdisciplinarity measurement indicators and methodologies. Presents a multi-component panel approach combining diversity, coherence, and cross-field metrics for institutional and national evaluation contexts.
             </div>
-        </div>
-
-        <div class="paper-card">
-            <div>
-                <span class="paper-id">main-es</span>
-                <span class="language-tag es">ES</span>
-            </div>
-            <div class="paper-title">
-                <a href="main.es.html">Medición de la interdisciplinariedad: un panel de indicadores de componentes múltiples para la evaluación de la investigación</a>
-            </div>
-            <div class="paper-meta">Authors: A. Rivero and A.I. Scaffold | 2026</div>
-            <div class="paper-abstract">
-                Revisión integral del panorama de indicadores bibliométricos de interdisciplinariedad y propuesta de un panel multicomponente para evaluación institucional y de agencia.
+            <div class="lang-buttons">
+                <div class="lang-section">
+                    <span class="lang-label">🇬🇧 English:</span>
+                    <a href="main.html" class="btn">HTML</a>
+                    <a href="main.pdf" class="btn pdf">PDF</a>
+                </div>
+                <div class="lang-section">
+                    <span class="lang-label">🇪🇸 Español:</span>
+                    <a href="main.es.html" class="btn">HTML</a>
+                    <a href="main.es.pdf" class="btn pdf">PDF</a>
+                </div>
             </div>
         </div>
 
         <h2>Satellite Papers (Companion Letters)</h2>
 
         <div class="paper-card">
-            <div>
-                <span class="paper-id">sat1-institutional</span>
-                <span class="language-tag">EN</span>
-            </div>
+            <span class="paper-id">sat1-institutional</span>
             <div class="paper-title">
-                <a href="sat1-institutional.html">Measuring Interdisciplinarity with Internal University Data: An Operational Guide</a>
+                Measuring Interdisciplinarity with Internal University Data: An Operational Guide
             </div>
-            <div class="paper-meta">Authors: A. Rivero and A.I. Scaffold | 2026</div>
+            <div class="paper-meta">A. Rivero and A.I. Scaffold | 2026</div>
             <div class="paper-abstract">
                 Universities possess rich internal data that external bibliometric services cannot access. We present an operational measurement protocol that leverages institutional data to assess interdisciplinary research at the departmental and institutional level.
             </div>
-        </div>
-
-        <div class="paper-card">
-            <div>
-                <span class="paper-id">sat1-institutional-es</span>
-                <span class="language-tag es">ES</span>
-            </div>
-            <div class="paper-title">
-                <a href="sat1-institutional-es.html">Medición de la Interdisciplinariedad con Datos Internos Universitarios: Guía Operativa</a>
-            </div>
-            <div class="paper-meta">Authors: A. Rivero and A.I. Scaffold | 2026</div>
-            <div class="paper-abstract">
-                Las universidades poseen datos internos ricos que los servicios bibliométricos externos no pueden acceder. Presentamos un protocolo de medición operacional que aprovecha datos institucionales para evaluar investigación interdisciplinaria a nivel departamental e institucional.
+            <div class="lang-buttons">
+                <div class="lang-section">
+                    <span class="lang-label">🇬🇧 English:</span>
+                    <a href="sat1-institutional.html" class="btn">HTML</a>
+                    <a href="sat1-institutional.pdf" class="btn pdf">PDF</a>
+                </div>
+                <div class="lang-section">
+                    <span class="lang-label">🇪🇸 Español:</span>
+                    <a href="sat1-institutional.es.html" class="btn">HTML</a>
+                    <a href="sat1-institutional.es.pdf" class="btn pdf">PDF</a>
+                </div>
             </div>
         </div>
 
         <div class="paper-card">
-            <div>
-                <span class="paper-id">sat2-national-evaluation</span>
-                <span class="language-tag">EN</span>
-            </div>
+            <span class="paper-id">sat2-national-evaluation</span>
             <div class="paper-title">
-                <a href="sat2-national-evaluation.html">Panel-Based Evaluation of Interdisciplinary Researchers: A Protocol for National Agencies</a>
+                Panel-Based Evaluation of Interdisciplinary Researchers: A Protocol for National Agencies
             </div>
-            <div class="paper-meta">Authors: A. Rivero and A.I. Scaffold | 2026</div>
+            <div class="paper-meta">A. Rivero and A.I. Scaffold | 2026</div>
             <div class="paper-abstract">
-                Protocol for national agencies assessing researchers classified as “Interdisciplinary” using a three-component indicator panel to inform profile classification and committee composition.
+                Protocol for national agencies assessing researchers classified as "Interdisciplinary" using a three-component indicator panel to inform profile classification and committee composition.
             </div>
-        </div>
-
-        <div class="paper-card">
-            <div>
-                <span class="paper-id">sat2-national-evaluation-es</span>
-                <span class="language-tag es">ES</span>
-            </div>
-            <div class="paper-title">
-                <a href="sat2-national-evaluation-es.html">Evaluación Basada en Panel de Investigadores Interdisciplinarios: Protocolo para Agencias Nacionales</a>
-            </div>
-            <div class="paper-meta">Authors: A. Rivero and A.I. Scaffold | 2026</div>
-            <div class="paper-abstract">
-                Protocolo para agencias nacionales de evaluación que valora investigadores “Interdisciplinarios” usando un panel de tres componentes y criterios de composición de comité.
+            <div class="lang-buttons">
+                <div class="lang-section">
+                    <span class="lang-label">🇬🇧 English:</span>
+                    <a href="sat2-national-evaluation.html" class="btn">HTML</a>
+                    <a href="sat2-national-evaluation.pdf" class="btn pdf">PDF</a>
+                </div>
+                <div class="lang-section">
+                    <span class="lang-label">🇪🇸 Español:</span>
+                    <a href="sat2-national-evaluation.es.html" class="btn">HTML</a>
+                    <a href="sat2-national-evaluation.es.pdf" class="btn pdf">PDF</a>
+                </div>
             </div>
         </div>
 
         <h2>Repository Information</h2>
-        <p>All papers are available in both HTML and PDF formats. The source repository contains additional technical notes, derivations, and research cycle documentation.</p>
+        <p>All papers are available in both English and Spanish, in HTML and PDF formats. The source repository contains additional technical notes, derivations, and research cycle documentation.</p>
         <p>
-            <a href="https://github.com/arivero/interdisciplinar" class="repo-link">View Source Repository</a>
+            <a href="https://github.com/arivero/interdisciplinar" class="repo-link">📂 View Source Repository</a>
         </p>
     </div>
 
