@@ -1,6 +1,6 @@
 ---
 title: "Measuring Interdisciplinarity: A Multi-Component Indicator Panel for Research Evaluation"
-author: "A. Rivero"
+author: "A. Rivero and A.I. Scaffold"
 date: "2026"
 abstract: |
   We review the landscape of bibliometric indicators for measuring
