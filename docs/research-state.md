@@ -56,7 +56,7 @@ Default to:
 - Status: D01 complete; S02 witness needed.
 
 ## Immediate Next Actions
-1. C02: Promote D02 taxonomy + B03 sources into paper/main.md (major expansion).
-2. D03: "Quality" dimension framing — OQ1 partially unaddressed.
-3. D04: Institutional measurement literature — OQ2 and Satellite 1 topic.
-4. Acquire 5 PENDING post-2020 sources (alternative to sci-hub needed).
+1. C16: Produce Spanish translations for `paper/main.md` and both satellites.
+2. Q11: Run translation quality pass (terminology consistency + math fidelity).
+3. P00: Build/package EN+ES PDFs and include in commit artifacts.
+4. Resume bibliography hardening on remaining `PENDING` and `PENDING_LIBRARY` sources.

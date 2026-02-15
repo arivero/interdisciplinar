@@ -55,17 +55,24 @@
 - `Q09` (quality): completed; quality alignment with motivations.md — all 4 goals and 4 OQs covered.
 - `Q09` (reference audit): completed; 6 missing reference entries added, 1 orphan (National Academies 2005) removed. 6 new PENDING sources identified.
 
+### Closure wave (D14/S08/S09/C15/Q10)
+- `D14` (discovery): completed; closure triage for quality/alignment + translation pipeline.
+- `S08` (study): completed; reference-math qualification matrix added to `blackboards/4.md`.
+- `S09` (study): completed; satellite synchronization deltas added to `blackboards/5.md`.
+- `C15` (content): completed; closure updates in main review + both satellites (+65/-4).
+- `Q10` (quality): completed; alignment/referee pass found no blocking issues.
+
 ## Next Action
 
 **Current status (2026-02-15):**
-- **Main manuscript**: 2,643 lines, 44 refs → ~54 compiled pages (target 50+ met ✓)
-- **Satellite 2**: 246 lines, 4 refs → ~5 compiled pages (target: 4-6) ✓
-- **Satellite 1**: 275 lines, 4 refs → ~5 compiled pages (target: 4-6) ✓
+- **Main manuscript**: 2,679 lines (post-C15 closure updates)
+- **Satellite 2**: 262 lines (post-C15 sync updates)
+- **Satellite 1**: 293 lines (post-C15 sync updates)
 - **Bibliography**: 35 OK + 6 PENDING (Klein 2008, Leinster 2012, Stokols 2003, Choi 2006, Hammarfelt 2020, Borlaug 2025) + 2 PENDING_LIBRARY (OECD 1998, Stirling 2007)
 - **Blackboards**: 6 active (README, 0-3, 4-5, formulas)
 - **Notebooks**: 5 (panel-worked-example, panel-sensitivity, panel-interpretation, formula-catalog, idr-typology)
 
 **Next priorities:**
-1. Acquire 6 PENDING sources (Klein, Leinster, Stokols, Choi, Hammarfelt, Borlaug)
-2. Integrate B09/B10 acquired sources into manuscript (remaining C-cycles)
-3. Expand §1 Introduction and §6 Open Problems (identified as thin in D13)
+1. `C16`: Spanish translations for main + both satellites.
+2. `Q11`: quality review and correction pass on translations.
+3. `P00`: build/package PDFs (EN + ES) and commit generated outputs.
